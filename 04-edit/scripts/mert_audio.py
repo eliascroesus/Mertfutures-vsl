@@ -109,11 +109,6 @@ def main():
     music = np.zeros((n, 2))
     mm = min(n, len(bed))
     music[:mm] = bed[:mm] * (v_rms / m_rms * 10 ** (-under / 20))
-    t1 = plan.get("intro_t1", 0)                                 # the hook: music up front, settling under him
-    if t1:
-        tt = np.arange(n) / SR
-        boost = np.where(tt < t1 - 1.0, 1.0, np.clip((t1 + 0.3 - tt) / 1.3, 0, 1))
-        music *= (10 ** (8.0 * boost / 20))[:, None]
     fx = np.zeros((n, 2))
     lib = {}
     for kind, t, g in plan["sfx"]:

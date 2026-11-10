@@ -304,10 +304,10 @@ edited in Iman Gadzhi's motion-graphics style with AB Nasdaq's structure. Transc
 - **Zooms:** 21 slow push-ins (cropped from the 4K) on the heavy lines, eased; pulled back out smoothly before any side text
   so the wall stays empty; reset under the light sweep into each card.
 - **Transitions:** a soft lime-to-white light sweep into and out of each full-screen card.
-- **Music:** "Me And The Devil" (instrumental), the full song with a gentle low shelf so the 808 doesn't muddy the voice,
-  looped once (`mert_songbed.py`: jumps back exactly 20 bars at the point where the harmony matches best, 0.994, and ends on
-  the song's real outro), 18 dB under his voice, flat (no ducking). The song isn't in this repo (it's copyrighted and the repo
-  is public); using it in a paid ad needs a licence.
+- **Music:** "Me And The Devil" (instrumental) exactly as uploaded: no EQ, no level riding, starting on its first beat at
+  0:00, playing to its natural end (3:02) and then starting again from the top (`mert_songbed.py`), 16 dB under his voice,
+  flat (no ducking), fading out over the last second. The song isn't in this repo (it's copyrighted and the repo is public);
+  using it in a paid ad needs a licence.
 - **Sound effects** (`mert_audio.py`, made from scratch): whooshes into cards and callouts, soft ticks on side text and list
   items, pops on the process steps, a swipe on the strike-through; mix at −14 LUFS.
 - **Rendering:** `mert_plan.py` → `mert/plan.json`; `mert_render.py plan.json base.mp4 out.mp4 [f0 f1]` (run in chunks in
