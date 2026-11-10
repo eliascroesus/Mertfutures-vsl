@@ -257,3 +257,55 @@ The four raw FAQ videos (`faq-raw-footage` release), edited exactly like thank-y
 | Is it saturated (`issaturated`) | 0:24 | red "HONESTLY DOESN'T WORK ANYMORE." with the falling line; TikTok / Instagram tiles over "INCREDIBLY DIFFICULT TO GET VIEWS AND SALES."; "STRICTLY ON YOUTUBE." |
 | Who you work with (`whoworkwith`) | 0:18 | "WITH ME PERSONALLY." with "NOT SOME OTHER ASSISTANT, / NOT SOME OTHER COACH." struck through in red; product / videos / store tiles over "SO YOU DON'T HAVE TO DO ANYTHING YOURSELF." |
 | What's inside (`Whatsinside`) | 1:28 | "7 DIFFERENT THINGS.", a numbered card for each of the seven as he names it (01–07), tiles for the coaching-call topics, and a recap of all seven at the end |
+
+## Mert's VSL (`scripts/mert_*.py`, plan in `mert/plan.json`)
+
+Mert's raw VSL (`Vsl.mov` in the [Mert raw VSL release](https://github.com/eliascroesus/Mertfutures-vsl/releases/tag/mert-raw-vsl)),
+edited in Iman Gadzhi's motion-graphics style with AB Nasdaq's structure. Transcript in
+[`mert-raw-vsl-footage/TRANSCRIPT.md`](../mert-raw-vsl-footage/TRANSCRIPT.md).
+
+- **Cut:** starts on "I am Mert" (0:17.8 in the raw); the generic "every trading video starts with payout screenshots, a
+  Lambo…" opening and the first-payout line are gone. Dead air between sentences trimmed only where the audio is truly
+  silent (13 s in total), 3:52.
+- **Picture:** the 4K60 original cut frame-exact to 30 fps at 2560×1440 (`mert_base.py`), lightly graded, so every push-in is
+  cropped from real resolution and stays sharp.
+- **Look (Iman):** near-black plate with a lime glow and curved band of light, drifting slowly; wide Unbounded caps that blur in
+  letter by letter as he says each word; spaced sub lines; one accent colour (lime) plus red for losses; a lime handwritten
+  (Caveat) line under headlines; soft dark backing wherever text sits on his white t-shirt.
+- **Structure (AB):** word captions (Inter Display, 1–3 words, soft shadow, dark fade at the bottom); key phrases as lime/red
+  callouts in big caps instead of the caption; side text on the empty wall beside him; split screen for the offer.
+- **Graphics, all bound to his words:**
+  - "I'M MERT / S&P 500 & NASDAQ FUTURES / 2 YEARS — MAIN INCOME" on the wall;
+  - "STOP GUESSING. / START READING THE REAL-TIME AUCTION.";
+  - watched videos / tried strategies / paid a course, each struck through in red, then "IT STILL DOESN'T WORK.";
+  - **a trade chart** (`Chart`): entry, target and stop lines, the move against you in red, "CLOSED" with a red X, then price
+    running to "TARGET HIT" in lime;
+  - "ACCOUNT GONE." on the red plate with the falling line;
+  - headline "PROBLEM IS NOT YOU." + *it's how you learned to trade*;
+  - "WHO IS BUYING / WHO IS SELLING";
+  - "ROULETTE.";
+  - story side text: AGE 16 / GAMING DISCORD, LEVERAGE 2021 / LOST MONEY, TOOK A RISK / DUBAI;
+  - "FOREX ICT GOLD EUR/USD";
+  - headline "LEARN ORDER FLOW.";
+  - **a depth-of-market ladder** (`Dom`): level-2 bids and asks ticking, then the bid wall lights up lime as "BUYERS" and the
+    ask wall red as "SELLERS";
+  - "2 FUNDED ACCOUNTS"; "2 THINGS" → "01 STOPPED PREDICTING."; the AI tool → fundamental bias on the wall;
+  - **his process** (`Steps`): BIAS → LOCATION → ORDER FLOW joined by a lime line as he names them, "NO CONFIRMATION, NO
+    TRADE.", each step pulsing on the recap;
+  - "02 SOMEONE CHECKS MY WORK.";
+  - "I DON'T SELL SIGNALS." (struck through);
+  - "1-ON-1 MENTORSHIP.";
+  - **split screen** for weeks 1–8 and 9–12, building line by line;
+  - "THIS IS FOR YOU.";
+  - "APPLICATION BELOW." with a lime arrow.
+- **Zooms:** 21 slow push-ins (cropped from the 4K) on the heavy lines, eased; pulled back out smoothly before any side text
+  so the wall stays empty; reset under the light sweep into each card.
+- **Transitions:** a soft lime-to-white light sweep into and out of each full-screen card.
+- **Music:** "Me And The Devil" (instrumental), the full song with a gentle low shelf so the 808 doesn't muddy the voice,
+  looped once (`mert_songbed.py`: jumps back exactly 20 bars at the point where the harmony matches best, 0.994, and ends on
+  the song's real outro), 18 dB under his voice, flat (no ducking). The song isn't in this repo (it's copyrighted and the repo
+  is public); using it in a paid ad needs a licence.
+- **Sound effects** (`mert_audio.py`, made from scratch): whooshes into cards and callouts, soft ticks on side text and list
+  items, pops on the process steps, a swipe on the strike-through; mix at −14 LUFS.
+- **Rendering:** `mert_plan.py` → `mert/plan.json`; `mert_render.py plan.json base.mp4 out.mp4 [f0 f1]` (run in chunks in
+  parallel); `mert_render.py plan.json stills base.mp4 dir t1,t2,…` for checking single frames.
