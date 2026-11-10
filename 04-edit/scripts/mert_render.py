@@ -99,7 +99,7 @@ class Sweeps(R.Leaks):
     PAL = np.array([[0.2, 0.26, 0.04], [0.5, 0.68, 0.1], [0.74, 0.92, 0.26], [0.9, 0.99, 0.62], [1.0, 1.0, 0.94]], np.float32)
 
 
-BASE_Z, ZMAX = 1.2, 1.5          # he sits far from the camera: every talking-head shot is framed closer than the raw
+BASE_Z, ZMAX = 1.0, 1.5          # he sits far from the camera: every talking-head shot is framed closer than the raw
 
 
 def zoomed(base, z, shift=0.0, pan=0.0):
@@ -597,7 +597,7 @@ class Intro:
 
     def __init__(self, s):
         self.s, self.t0, self.t1 = s, s["t0"], s["t1"]
-        self.runs = left_layout(s["rows"], 110, cy=505, maxw=760, gap=0.22)
+        self.runs = left_layout(s["rows"], 110, cy=505, maxw=520, gap=0.22)
 
     def draw(self, frame, t):
         frame *= 1 - LEFT * 0.8
@@ -766,9 +766,9 @@ def compose(base, t, st):
     else:
         sp = next((s for s in split if s.t0 <= t < s.t1), None)
         if intro is not None and t < intro.t1:
-            frame = zoomed(base, intro_zoom(t, intro.t1), 0.0, 400)
+            frame = zoomed(base, 1.0)
         else:
-            frame = zoomed(base, min(BASE_Z * zoom.at(t), ZMAX), sp.shift(t) if sp else 0.0, pan_at(t, pans))
+            frame = zoomed(base, min(BASE_Z * zoom.at(t), ZMAX), sp.shift(t) if sp else 0.0)
         frame *= 1 - BOTTOM
         if sp:
             sp.draw(frame, t)
@@ -782,9 +782,7 @@ def compose(base, t, st):
             frame = zoom_blur(frame, 0.13 * e)
             frame += (255 - frame) * 0.28 * e ** 2
     if t < 0.4:                                             # the opening: out of black, blur resolving
-        e = 1 - ease_out(t / 0.4)
-        frame = zoom_blur(frame, 0.16 * e)
-        frame *= ease_out(t / 0.3)
+        frame *= ease_out(t / 0.35)
     sweeps.apply(frame, t)
     frame *= VIGNETTE
     frame += GRAIN[int(t * FPS) % len(GRAIN)]
