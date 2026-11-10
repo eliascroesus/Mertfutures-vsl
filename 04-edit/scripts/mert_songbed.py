@@ -1,7 +1,8 @@
 """Music bed for Mert's VSL: 'Me And The Devil' (instrumental) exactly as uploaded, no EQ, no level changes.
 
-It plays from its first beat to its natural end (~3:00), then starts again from the top, as many times as the video
-needs; the last second fades out.
+The beat-only intro (first 5.5 s) is skipped: the video opens right where the symphony comes in (5.54 s into the song),
+plays to the song's natural end (~3:02), then goes back to that same point, as many times as the video needs; the last
+second fades out.
 
     python mert_songbed.py song.wav total_seconds out.wav
 """
@@ -20,16 +21,19 @@ def main():
     k = len(m) // hop
     db = 20 * np.log10(np.sqrt((m[:k * hop].reshape(k, hop) ** 2).mean(1)) + 1e-9)
     end = (np.nonzero(db > -45)[0][-1] + 1) * hop / SR              # where the song's own tail has died away
-    one = y[:int(end * SR)]
+    start = 5.54                                                     # where the strings/melody enter
+    one = y[int(start * SR):int(end * SR)].copy()
+    f = int(0.01 * SR)
+    one[:f] *= np.linspace(0, 1, f)[:, None]
     n = int(total * SR)
     reps = int(np.ceil(n / len(one))) + 1
     bed = np.concatenate([one] * reps)[:n].copy()
     fo = int(1.0 * SR)
     bed[-fo:] *= np.linspace(1, 0, fo)[:, None]
     sf.write(out, bed.astype(np.float32), SR, subtype="FLOAT")
-    json.dump({"song_length": round(end, 3), "restarts_at": [round(end * i, 3) for i in range(1, reps) if end * i < total]},
+    json.dump({"song_from": start, "song_to": round(end, 3), "restarts_at": [round((end - start) * i, 3) for i in range(1, reps) if (end - start) * i < total]},
               open(out.replace(".wav", "_loop.json"), "w"))
-    print(f"song as uploaded, {end:.1f}s long, restarts from the top at", [round(end * i, 1) for i in range(1, reps) if end * i < total])
+    print(f"song from {start}s (symphony) to {end:.1f}s; restarts at video time", [round((end - start) * i, 1) for i in range(1, reps) if (end - start) * i < total])
 
 
 if __name__ == "__main__":
