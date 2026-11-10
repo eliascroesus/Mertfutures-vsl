@@ -305,7 +305,7 @@ edited in Iman Gadzhi's motion-graphics style with AB Nasdaq's structure. Transc
   so the wall stays empty; reset under the light sweep into each card.
 - **Transitions:** a soft lime-to-white light sweep into and out of each full-screen card.
 - **Music:** "Me And The Devil" (instrumental) exactly as uploaded: no EQ, no level riding, starting on its first beat at
-  0:00, playing to its natural end (3:02) and then starting again from the top (`mert_songbed.py`), 16 dB under his voice,
+  0:00, playing to its natural end (3:02) and then starting again from the top (`mert_songbed.py`), 12 dB under his voice,
   flat (no ducking), fading out over the last second. The song isn't in this repo (it's copyrighted and the repo is public);
   using it in a paid ad needs a licence.
 - **Sound effects** (`mert_audio.py`, made from scratch): whooshes into cards and callouts, soft ticks on side text and list

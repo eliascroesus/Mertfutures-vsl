@@ -204,7 +204,6 @@ def build():
                                       ("_ _ S&P~500 & NASDAQ FUTURES", "sub", 34, "lime"),
                                       ("_ _ _ 2 YEARS — _ _ _ MAIN INCOME", "sub", 34, "white")])))
     e.off.append([0.0, T("in the next four minutes") - LEAD])
-    e.sfx += [["impact", 0.0, 1.0], ["impact_soft", round(T("mertz") - 0.02, 3), 0.8]]
 
     # the promise
     e.text("in the next four minutes i will show you how i stopped the guessing market and started reading real-time auction",
