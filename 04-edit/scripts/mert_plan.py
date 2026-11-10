@@ -184,7 +184,7 @@ class Edit:
         self.zk.sort(key=lambda k: k[0])
         self.scenes.sort(key=lambda s: s["t0"])
         plan = {"keep": [[round(a, 4), round(b, 4)] for a, b in self.keep], "dur": round(self.dur, 3),
-                "anchor": [980, 560], "words": self.words, "scenes": self.scenes, "leaks": self.leaks, "zoom": self.zk,
+                "anchor": [980, 560], "intro_t1": next(s["t1"] for s in self.scenes if s["kind"] == "intro"), "words": self.words, "scenes": self.scenes, "leaks": self.leaks, "zoom": self.zk,
                 "captions": caps, "off": off, "sfx": sorted(self.sfx, key=lambda s: s[1])}
         json.dump(plan, open(f"{D}/plan.json", "w"), indent=1)
         pushes = sum(1 for a, b in zip(self.zk, self.zk[1:]) if b[1] > a[1] + 1e-3)
@@ -198,18 +198,20 @@ def build():
     T, E = e.T, e.E
 
     # 0:00 who he is, on the empty wall beside him
-    e.side("i am mertz i trade sp500 and nasdaq futures and the last two years trading has been my main income",
-           [("I'M _ MERT", "big", 120, "white"),
-            ("_ _ S&P~500 & NASDAQ FUTURES", "sub", 30, "lime"),
-            ("_ _ _ 2 YEARS — _ _ _ MAIN INCOME", "sub", 30, "white")],
-           T("in the next four minutes") - LEAD, cy=480, t_in=0.3)
+    e.scenes.append(dict(kind="intro", t0=0.0, t1=round(T("in the next four minutes") - LEAD, 3),
+                         rows=e.rows("i am mertz i trade sp500 and nasdaq futures and the last two years trading has been my main income",
+                                     [("I'M _", "sub", 40, "dim"), ("MERT.", "big", 230, "white", {"ul": True}),
+                                      ("_ _ S&P~500 & NASDAQ FUTURES", "sub", 34, "lime"),
+                                      ("_ _ _ 2 YEARS — _ _ _ MAIN INCOME", "sub", 34, "white")])))
+    e.off.append([0.0, T("in the next four minutes") - LEAD])
+    e.sfx += [["impact", 0.0, 1.0], ["impact_soft", round(T("mertz") - 0.02, 3), 0.8]]
 
     # the promise
     e.text("in the next four minutes i will show you how i stopped the guessing market and started reading real-time auction",
            [("IN THE NEXT 4 MINUTES _ _ _ _ _ _", "sub", 34, "dim"),
             ("STOP _ GUESSING. _", "big", 112, "white"),
             ("_ START READING~THE", "sub", 38, "white"),
-            ("REAL-TIME AUCTION.", "big", 96, "lime")],
+            ("REAL-TIME AUCTION.", "big", 96, "lime", {"ul": True})],
            T("if you are watching this") - LEAD, cy=530)
     e.push("if you are watching this", 1.1, 2.4)
 
@@ -253,7 +255,7 @@ def build():
            [("_ IF YOUR STRATEGY ONLY WORKS", "sub", 38, "white"),
             ("BECAUSE OF YOUR WIN RATE", "big", 80, "white"),
             ("_ NOT SO DIFFERENT FROM", "sub", 38, "dim"),
-            ("ROULETTE.", "big", 170, "red")],
+            ("ROULETTE.", "big", 170, "red", {"ul": True})],
            T("i know because") - LEAD, cy=520)
     e.push("i know because", 1.08, 1.8)
     e.push("quit trading", 1.2, 0.9)
@@ -293,7 +295,7 @@ def build():
     # depth of market: who is really buying / selling
     e.card("dom", T("deep off market") - LEAD, T("then i switched sp") - LEAD,
            rows=e.rows("deep off market level two data",
-                       [("DEPTH OF MARKET", "sub", 36, "white"), ("LEVEL 2 DATA", "big", 66, "lime")]),
+                       [("DEPTH OF MARKET", "sub", 36, "white"), ("LEVEL 2 DATA", "big", 66, "lime", {"ul": True})]),
            t_buy=T("who is really buying"), t_sell=T("who is really selling"))
 
     e.text("first payout small then two funded accounts paying me",
@@ -311,7 +313,7 @@ def build():
     # the two things
     e.text("two things", [("2", "big", 300, "lime"), ("THINGS.", "sub", 52, "white")],
            T("first i stopped predicting") - LEAD, cy=500, sweep_out=False)
-    e.text("first i stopped predicting", [("01", "big", 150, "lime"), ("_ STOPPED PREDICTING.", "big", 96, "white")],
+    e.text("first i stopped predicting", [("01", "big", 150, "lime"), ("_ STOPPED PREDICTING.", "big", 96, "white", {"ul": True})],
            T("every morning before") - LEAD, cy=520, sweep_in=False)
     e.push("every morning before", 1.1, 3.0)
     e.pull(T("i built my own ai") - 1.0, 0.6)
@@ -327,7 +329,7 @@ def build():
     e.sfx += [["pop", round(T("location with volume"), 3), 0.7], ["pop", round(T("order flow confirms"), 3), 0.7]]
 
     e.text("second someone check my work that's the part nobody sells you",
-           [("02", "big", 150, "lime"), ("SOMEONE CHECKS MY WORK.", "big", 80, "white"),
+           [("02", "big", 150, "lime"), ("SOMEONE CHECKS MY WORK.", "big", 80, "white", {"ul": True}),
             ("_ THE PART NOBODY SELLS YOU.", "sub", 38, "dim")],
            T("and for me it changed") - LEAD, cy=520)
     e.push("and for me it changed", 1.14, 1.6)
@@ -346,7 +348,7 @@ def build():
     e.push("so i can watch every", 1.15, 2.2)
     e.callout("every student's trade", "lime")
 
-    e.text("it's a one-on-one mentorships", [("_ _ 1-ON-1", "big", 200, "lime"), ("MENTORSHIP.", "big", 92, "white")],
+    e.text("it's a one-on-one mentorships", [("_ _ 1-ON-1", "big", 200, "lime"), ("MENTORSHIP.", "big", 92, "white", {"ul": True})],
            T("weeks one to eight") - LEAD, cy=520)
 
     # the offer: split screen building line by line
@@ -382,7 +384,7 @@ def build():
     # the call to action
     e.card("cta", T("application is below") - LEAD, T("if it's not") - LEAD,
            rows=e.rows("application is below for a short question if it looks like a fit you book a call with me",
-                       [("APPLICATION", "big", 120, "white"), ("_ BELOW.", "big", 120, "lime"),
+                       [("APPLICATION", "big", 120, "white"), ("_ BELOW.", "big", 120, "lime", {"ul": True}),
                         ("_ _ SHORT QUESTIONS", "sub", 34, "white"),
                         ("_ _ _ _ _ _ _ BOOK A CALL WITH ME.", "sub", 34, "lime")]), cy=430)
     e.push("if it's not", 1.12, 3.0)

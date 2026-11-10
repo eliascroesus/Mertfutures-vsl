@@ -250,6 +250,7 @@
   980,
   560
  ],
+ "intro_t1": 7.973,
  "words": [
   {
    "w": "I",
@@ -4678,8 +4679,8 @@
  ],
  "scenes": [
   {
-   "kind": "side",
-   "t0": 0.05,
+   "kind": "intro",
+   "t0": 0.0,
    "t1": 7.973,
    "rows": [
     {
@@ -4691,15 +4692,23 @@
       [
        "_",
        0.513
-      ],
+      ]
+     ],
+     "style": "sub",
+     "size": 40,
+     "color": "dim"
+    },
+    {
+     "words": [
       [
-       "MERT",
+       "MERT.",
        0.673
       ]
      ],
      "style": "big",
-     "size": 120,
-     "color": "white"
+     "size": 230,
+     "color": "white",
+     "ul": true
     },
     {
      "words": [
@@ -4729,7 +4738,7 @@
       ]
      ],
      "style": "sub",
-     "size": 30,
+     "size": 34,
      "color": "lime"
     },
     {
@@ -4780,11 +4789,10 @@
       ]
      ],
      "style": "sub",
-     "size": 30,
+     "size": 34,
      "color": "white"
     }
-   ],
-   "cy": 480
+   ]
   },
   {
    "kind": "iman",
@@ -4898,7 +4906,8 @@
      ],
      "style": "big",
      "size": 96,
-     "color": "lime"
+     "color": "lime",
+     "ul": true
     }
    ],
    "cy": 530
@@ -5354,7 +5363,8 @@
      ],
      "style": "big",
      "size": 170,
-     "color": "red"
+     "color": "red",
+     "ul": true
     }
    ],
    "cy": 520
@@ -5690,7 +5700,8 @@
      ],
      "style": "big",
      "size": 66,
-     "color": "lime"
+     "color": "lime",
+     "ul": true
     }
    ],
    "t_buy": 112.84,
@@ -5885,7 +5896,8 @@
      ],
      "style": "big",
      "size": 96,
-     "color": "white"
+     "color": "white",
+     "ul": true
     }
    ],
    "cy": 520
@@ -6051,7 +6063,8 @@
      ],
      "style": "big",
      "size": 80,
-     "color": "white"
+     "color": "white",
+     "ul": true
     },
     {
      "words": [
@@ -6180,7 +6193,8 @@
      ],
      "style": "big",
      "size": 92,
-     "color": "white"
+     "color": "white",
+     "ul": true
     }
    ],
    "cy": 520
@@ -6617,7 +6631,8 @@
      ],
      "style": "big",
      "size": 120,
-     "color": "lime"
+     "color": "lime",
+     "ul": true
     },
     {
      "words": [
@@ -9161,7 +9176,7 @@
  ],
  "off": [
   [
-   0.04999999999999999,
+   0.0,
    7.973
   ],
   [
@@ -9259,8 +9274,13 @@
  ],
  "sfx": [
   [
-   "tick",
-   0.133,
+   "impact",
+   0.0,
+   1.0
+  ],
+  [
+   "impact_soft",
+   0.653,
    0.8
   ],
   [

@@ -68,6 +68,15 @@ def make(kind):
         f = 720 * np.exp(-t / 0.03) + 300
         x = np.sin(2 * np.pi * np.cumsum(f) / SR) * env(n, 0.002, 0.045)
         return stereo(x / np.abs(x).max(), 0, 0), 0.38
+    if kind in ("impact", "impact_soft"):
+        n = int((1.6 if kind == "impact" else 0.9) * SR)
+        t = np.arange(n) / SR
+        f = 38 + 70 * np.exp(-t / 0.06)
+        boom = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t / (0.55 if kind == "impact" else 0.3))
+        hit = signal.sosfilt(signal.butter(2, 900, "low", fs=SR, output="sos"), rng.normal(0, 1, n)) * np.exp(-t / 0.05)
+        air = signal.sosfilt(signal.butter(2, 3000, "high", fs=SR, output="sos"), rng.normal(0, 1, n)) * np.exp(-t / 0.35) * 0.12
+        x = boom + 0.6 * hit / np.abs(hit).max() + air
+        return stereo(x / np.abs(x).max(), 0, 0), (0.9 if kind == "impact" else 0.5)
     if kind == "swipe":
         x = sweep_noise(0.28, 1800, 7000, 1.4, 0.4)
         return stereo(x / np.abs(x).max(), -0.7, 0.7), 0.3
@@ -100,6 +109,11 @@ def main():
     music = np.zeros((n, 2))
     mm = min(n, len(bed))
     music[:mm] = bed[:mm] * (v_rms / m_rms * 10 ** (-under / 20))
+    t1 = plan.get("intro_t1", 0)                                 # the hook: music up front, settling under him
+    if t1:
+        tt = np.arange(n) / SR
+        boost = np.where(tt < t1 - 1.0, 1.0, np.clip((t1 + 0.3 - tt) / 1.3, 0, 1))
+        music *= (10 ** (8.0 * boost / 20))[:, None]
     fx = np.zeros((n, 2))
     lib = {}
     for kind, t, g in plan["sfx"]:

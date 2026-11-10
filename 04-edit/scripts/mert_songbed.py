@@ -7,7 +7,7 @@ and a slow level ride keeps the tension even.
 
     python mert_songbed.py song.wav total_seconds out.wav
 """
-import json, sys
+import json, math, sys
 import numpy as np, soundfile as sf, librosa, pyloudnorm as pyln
 from scipy import signal
 
@@ -20,7 +20,8 @@ def main():
     y, sr = sf.read(src, always_2d=True)
     assert sr == SR
     end = len(y) / SR
-    jump = 80 * BEAT                                            # 20 bars of 4
+    need = total + 0.4
+    jump = math.ceil((need - end) / (4 * BEAT)) * 4 * BEAT       # whole bars: starts on beat 1 and ends on the outro
     grid = np.arange(B0, end, BEAT)
     m = librosa.resample(y.mean(1), orig_sr=SR, target_sr=22050)
     C = librosa.feature.chroma_stft(y=m, sr=22050, hop_length=512)
@@ -45,10 +46,7 @@ def main():
     tail = y[int(b * SR) - xf // 2:].copy()
     r = np.linspace(0, 1, xf)[:, None]
     bed = np.concatenate([head[:-xf], head[-xf:] * np.sqrt(1 - r) + tail[:xf] * np.sqrt(r), tail[xf:]])
-    need = total + 0.4
-    skip = max(0.0, len(bed) / SR - need)
-    skip = round(skip / (4 * BEAT)) * 4 * BEAT if skip > 2 * BEAT else 0.0     # start on a bar so the groove sits
-    bed = bed[int(skip * SR):]
+    skip = 0.0                                                  # the song starts from its first beat
     sos = signal.butter(2, 28, "high", fs=SR, output="sos")
     bed = signal.sosfiltfilt(sos, bed, axis=0)
     b_, a_ = shelf(110, -4.5)
@@ -65,7 +63,7 @@ def main():
     bed = bed * (10 ** (g / 20))[:, None]
     n = int(total * SR)
     bed = bed[:n] if len(bed) >= n else np.concatenate([bed, np.zeros((n - len(bed), 2))])
-    fi, fo = int(0.25 * SR), int(1.2 * SR)
+    fi, fo = int(0.01 * SR), int(1.2 * SR)
     bed[:fi] *= np.linspace(0, 1, fi)[:, None]
     bed[-fo:] *= np.linspace(1, 0, fo)[:, None] ** 1.5
     bed = bed / max(np.abs(bed).max() / 0.95, 1.0)

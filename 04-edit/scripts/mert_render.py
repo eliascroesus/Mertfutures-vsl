@@ -12,6 +12,7 @@ then the captions / callouts.
     python mert_render.py plan.json base.mp4 out.mp4 [f0 f1]
 """
 import json, math, subprocess, sys
+import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
@@ -52,16 +53,61 @@ def backing(cx, cy, rx, ry, a):
 CALL_BACK = backing(W / 2, 985, 620, 95, 0.5)
 
 
+CUR = {"base": None, "blur": None}
+_plate_at = I.plate_at
+
+
+def frosted():
+    """His room, heavily blurred and darkened: the glass every card sits on (computed once per frame)."""
+    if CUR["blur"] is None:
+        b = CUR["base"]
+        sm = cv2.resize(b, (160, 90), interpolation=cv2.INTER_AREA)
+        sm = cv2.GaussianBlur(sm, (0, 0), 3.2)
+        CUR["blur"] = cv2.resize(sm, (W, H), interpolation=cv2.INTER_CUBIC).astype(np.float32)
+    return CUR["blur"]
+
+
+def plate_at(pl, p):
+    out = _plate_at(pl, p)
+    if CUR["base"] is None:
+        return out
+    return out * 0.9 + frosted() * 0.3
+
+
+I.plate_at = plate_at
+yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+VIGNETTE = (1 - 0.38 * np.clip(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - H / 2) / (H * 0.66)) ** 2, 0, 1) ** 1.3)[..., None]
+_g = np.random.default_rng(11)
+GRAIN = [cv2.GaussianBlur(_g.normal(0, 5.5, (H, W)).astype(np.float32), (0, 0), 0.7)[..., None] for _ in range(6)]
+del yy, xx
+
+
+def scale_about(frame, k, cx=W / 2, cy=H / 2):
+    M = cv2.getRotationMatrix2D((cx, cy), 0, k)
+    return cv2.warpAffine(frame, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+
+
+def zoom_blur(frame, amt, n=6):
+    acc = frame.copy()
+    for k in range(1, n):
+        acc += scale_about(frame, 1 + amt * k / (n - 1))
+    return acc / n
+
+
 class Sweeps(R.Leaks):
     """The light sweep on card changes, in the brand's lime-to-white, kept soft."""
     PAL = np.array([[0.2, 0.26, 0.04], [0.5, 0.68, 0.1], [0.74, 0.92, 0.26], [0.9, 0.99, 0.62], [1.0, 1.0, 0.94]], np.float32)
 
 
-def zoomed(base, z, shift=0.0):
-    """1920x1080 view of the 2560x1440 A-roll at zoom z around his face; `shift` moves him left (split screen)."""
+BASE_Z, ZMAX = 1.2, 1.5          # he sits far from the camera: every talking-head shot is framed closer than the raw
+
+
+def zoomed(base, z, shift=0.0, pan=0.0):
+    """1920x1080 view of the 2560x1440 A-roll at zoom z around his face; `shift` moves him left (split screen),
+    `pan` moves him right (room for text on the wall)."""
     s = BW / W
     cw, ch = BW / z, BH / z
-    x0 = min(max(CX * s - cw / 2, 0), BW - cw)
+    x0 = min(max(CX * s - pan * s / z - cw / 2, 0), BW - cw)
     y0 = min(max(CY * s - ch / 2, 0), BH - ch)
     im = Image.fromarray(base).resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + cw, y0 + ch))
     out = np.asarray(im).astype(np.float32)
@@ -104,6 +150,9 @@ def left_layout(rows, x, cy=None, top=None, maxw=600, gap=0.34):
             k += len(w) + 1
         if r["style"] == "item" and vis:
             runs.append({"bullet": True, "x": x - size * 0.75, "y": base - size * 0.36, "t": vis[0][1], "r": size * 0.14})
+        if r.get("ul") and vis:
+            runs.append({"ul": True, "x0": x, "x1": x + lw, "y": base + size * 0.17, "h": max(5, size * 0.055),
+                         "t": vis[-1][1] + 0.2, "rgb": I.COLORS["red"] if r.get("color") == "red" else LIME})
         if r.get("strike") and vis:
             runs.append({"strike": True, "x0": x - size * 0.1, "x1": x + lw + size * 0.1,
                          "y": base - size * 0.36, "h": max(4, size * 0.1), "t": vis[-1][1] + 0.3})
@@ -131,9 +180,27 @@ def dot_img(r, rgb, glow=2.6):
     return _dots[k]
 
 
+def draw_ul(frame, r, t, alpha=1.0):
+    """Iman's underline: a lime line that draws in from the left under the key words, with a soft glow."""
+    p = (t - r["t"]) / 0.45
+    if p <= 0:
+        return
+    e = ease_io(min(p, 1))
+    m = np.zeros((H, W), np.float32)
+    y0, y1 = int(r["y"] - r["h"] / 2), int(r["y"] + r["h"] / 2) + 1
+    x1 = r["x0"] + (r["x1"] - r["x0"]) * e
+    if x1 - r["x0"] < 2 or y1 >= H:
+        return
+    m[y0:y1, int(r["x0"]):int(x1)] = 1.0
+    glow_line(frame, m, r["rgb"], alpha, 0.8)
+
+
 def draw_runs(frame, runs, t, alpha=1.0):
-    plain = [r for r in runs if not r.get("bullet")]
+    plain = [r for r in runs if not r.get("bullet") and not r.get("ul")]
     I.draw_runs(frame, plain, t, alpha)
+    for r in runs:
+        if r.get("ul"):
+            draw_ul(frame, r, t, alpha)
     for r in runs:
         if r.get("bullet") and t >= r["t"]:
             e = ease_out((t - r["t"]) / 0.3)
@@ -322,9 +389,23 @@ class Card(Plate):
         R2.Scene.plates.setdefault("purple", I.plate(LIME))
         R2.Scene.plates.setdefault("red", I.plate(RED))
         self.sc = R2.Scene(s2)
+        self.ul = []
+        if s["kind"] == "iman":
+            runs, k = self.sc.runs, 0
+            for r in s["rows"]:
+                vis = [(w, tt) for w, tt in r["words"] if w != "_"]
+                mine = runs[k:k + len(vis)]
+                k += len(vis) + (1 if r.get("strike") and vis else 0)
+                if r.get("ul") and mine:
+                    lw = I.letter_layout(" ".join(w for w, _ in vis), r["style"], mine[0]["size"])[1]
+                    self.ul.append({"ul": True, "x0": mine[0]["x"], "x1": mine[0]["x"] + lw,
+                                    "y": mine[0]["base"] + mine[0]["size"] * 0.17, "h": max(5, mine[0]["size"] * 0.055),
+                                    "t": vis[-1][1] + 0.2, "rgb": RED if r.get("color") == "red" else LIME})
 
     def draw(self, frame, face, t, zprev):
         self.sc.draw(frame, face, t, zprev)
+        for u in self.ul:
+            draw_ul(frame, u, t)
 
 
 class Dom(Plate):
@@ -510,6 +591,23 @@ class Side:
         draw_runs(frame, self.runs, t, clamp((self.t1 - t) / 0.3))
 
 
+class Intro:
+    """The hook: from black into a tight close-up with letterbox bars, his name huge on the wall beside him."""
+    BAR = 118
+
+    def __init__(self, s):
+        self.s, self.t0, self.t1 = s, s["t0"], s["t1"]
+        self.runs = left_layout(s["rows"], 110, cy=505, maxw=760, gap=0.22)
+
+    def draw(self, frame, t):
+        frame *= 1 - LEFT * 0.8
+        draw_runs(frame, self.runs, t, clamp((self.t1 - t) / 0.25))
+        b = int(self.BAR * ease_out(t / 0.5) * (1 - ease_io((t - (self.t1 - 0.45)) / 0.45)))
+        if b > 0:
+            frame[:b] = 0
+            frame[H - b:] = 0
+
+
 class Headline:
     def __init__(self, s):
         self.s, self.t0, self.t1 = s, s["t0"], s["t1"]
@@ -613,7 +711,7 @@ class Captions:
 
 # ------------------------------------------------------------------ main loop
 FULL = {"iman": Card, "chart": Chart, "dom": Dom, "steps": Steps, "cta": Cta}
-OVER = {"side": Side, "headline": Headline}
+OVER = {"side": Side, "headline": Headline, "intro": Intro}
 
 
 def build(plan):
@@ -627,26 +725,69 @@ def build(plan):
             split.append(Split(s))
         else:
             over.append(OVER[s["kind"]](s))
-    leaks = [dict(l, s=l["s"] * 0.6) for l in plan["leaks"]]
-    return R.Zoom(plan["zoom"]), Sweeps(leaks), full, over, split, Captions(plan["captions"]), plan["dur"]
+    leaks = [dict(l, s=l["s"] * 0.35) for l in plan["leaks"]]
+    edges = []                                              # cuts into / out of full-screen graphics
+    fs = sorted(full, key=lambda x: x.t0)
+    for i, f in enumerate(fs):
+        if i == 0 or abs(fs[i - 1].t1 - f.t0) > 0.02:
+            edges.append((f.t0, 1.0))
+        else:
+            edges.append((f.t0, 0.55))
+        if i == len(fs) - 1 or abs(fs[i + 1].t0 - f.t1) > 0.02:
+            edges.append((f.t1, 1.0))
+    pans = [o for o in over if o.s["kind"] == "side"]
+    intro = next((o for o in over if o.s["kind"] == "intro"), None)
+    return (R.Zoom(plan["zoom"]), Sweeps(leaks), full, over, split, Captions(plan["captions"]), plan["dur"], edges, pans,
+            intro)
+
+
+def pan_at(t, pans):
+    w = 0.0
+    for o in pans:
+        w = max(w, ease_io((t - (o.t0 - 0.55)) / 0.6) * (1 - ease_io((t - o.t1) / 0.7)))
+    return 330 * w
+
+
+def intro_zoom(t, t1):
+    """Punch in from black to a tight shot, settle, then creep in until the first card."""
+    if t < 0.5:
+        return 1.75 - 0.33 * ease_out(t / 0.5)
+    return 1.42 + 0.12 * ease_io((t - 0.5) / max(t1 - 0.5, 1))
 
 
 def compose(base, t, st):
-    zoom, sweeps, full, over, split, caps, dur = st
+    zoom, sweeps, full, over, split, caps, dur, edges, pans, intro = st
+    CUR["base"], CUR["blur"] = base, None
     sc = next((s for s in full if s.t0 <= t < s.t1), None)
     if sc is not None:
         frame = np.empty((H, W, 3), np.float32)
         sc.draw(frame, base, t, zoom.at(sc.t0 - 0.002))
+        frame = scale_about(frame, 1 + 0.035 * ease_io((t - sc.t0) / max(sc.t1 - sc.t0, 0.5)))   # slow camera drift
     else:
         sp = next((s for s in split if s.t0 <= t < s.t1), None)
-        frame = zoomed(base, zoom.at(t), sp.shift(t) if sp else 0.0)
+        if intro is not None and t < intro.t1:
+            frame = zoomed(base, intro_zoom(t, intro.t1), 0.0, 400)
+        else:
+            frame = zoomed(base, min(BASE_Z * zoom.at(t), ZMAX), sp.shift(t) if sp else 0.0, pan_at(t, pans))
         frame *= 1 - BOTTOM
         if sp:
             sp.draw(frame, t)
         for o in over:
             if o.t0 <= t < o.t1:
                 o.draw(frame, t)
+    for b, k in edges:                                      # punch transition: zoom blur + a quick flash of light
+        d = abs(t - b)
+        if d < 0.2:
+            e = (1 - d / 0.2) ** 1.6 * k
+            frame = zoom_blur(frame, 0.13 * e)
+            frame += (255 - frame) * 0.28 * e ** 2
+    if t < 0.4:                                             # the opening: out of black, blur resolving
+        e = 1 - ease_out(t / 0.4)
+        frame = zoom_blur(frame, 0.16 * e)
+        frame *= ease_out(t / 0.3)
     sweeps.apply(frame, t)
+    frame *= VIGNETTE
+    frame += GRAIN[int(t * FPS) % len(GRAIN)]
     caps.draw(frame, t)
     if t > dur - 0.5:
         frame *= clamp((dur - t) / 0.5)
