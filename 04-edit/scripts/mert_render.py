@@ -24,16 +24,17 @@ RED = (255, 58, 58)
 I.PURPLE = LIME
 I.RED = RED
 I.COLORS.update({"lime": LIME, "red": RED, "dim": (196, 198, 190), "white": (255, 255, 255)})
-I.FONTS.update({"hand": "/root/.local/share/fonts/Caveat-700.ttf", "item": "/root/.local/share/fonts/Unbounded-600.ttf"})
-I.TRACK.update({"hand": 0.0, "item": 0.02, "sub": 0.22})
+I.FONTS.update({"big": "/root/.local/share/fonts/Poppins-800.ttf", "sub": "/root/.local/share/fonts/Poppins-600.ttf", "mark": "/root/.local/share/fonts/Poppins-700.ttf", "hand": "/root/.local/share/fonts/Poppins-500i.ttf", "item": "/root/.local/share/fonts/Poppins-600.ttf"})
+I.TRACK.update({"big": -0.015, "hand": 0.0, "item": 0.0, "sub": 0.16})
 I.draw_mark = lambda *a, **k: None                       # no brand mark: Mert has no logo yet
 import ty_render as R
 import ty_render2 as R2
 
 W, H, FPS = 1920, 1080, 30
 BW, BH = 2560, 1440                                      # the A-roll is rendered at 1440p so push-ins stay sharp
-SEMI = "/usr/share/fonts/opentype/inter/InterDisplay-SemiBold.otf"
-BOLD = "/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf"
+SEMI = "/root/.local/share/fonts/Poppins-600.ttf"
+BOLD = "/root/.local/share/fonts/Poppins-700.ttf"
+CAPF = "/root/.local/share/fonts/Poppins-700.ttf"
 clamp, ease_io, ease_out = R.clamp, R.ease_io, R.ease_out
 CX, CY = 980, 560
 
@@ -455,7 +456,7 @@ class Steps(Plate):
             if pulse > 0:
                 ring(frame, x, self.Y, 18 + 30 * pulse, LIME, pulse * 0.6)
             nm = self.NAMES[i]
-            size = 50
+            size = 60
             _, lw = I.letter_layout(nm, "big", size)
             rgb = tuple(int(255 - (255 - c) * pulse) for c in LIME) if pulse > 0 else (255, 255, 255)
             I.draw_letters(frame, nm, "big", size, x - lw / 2, self.Y - 58, t, tn, rgb, pulse > 0.2, stagger=0.03, dur=0.3)
@@ -570,7 +571,7 @@ def draw_runs_off(frame, runs, t, alpha, dx):
 # ------------------------------------------------------------------ captions
 class Captions:
     """AB's word captions (white, tight, soft shadow, low on the frame); key phrases as Iman's callout in lime/red caps."""
-    SIZE, BASE = 78, 1010
+    SIZE, BASE = 70, 1010
 
     def __init__(self, caps):
         self.caps = []
@@ -589,11 +590,11 @@ class Captions:
                     k += len(w) + 1
                 self.caps.append((c["t0"], c["t1"], items, size, c["hl"]))
             else:
-                xs, lw = T.layout_line(ws, self.SIZE)
+                xs, lw = T.layout_line(ws, self.SIZE, path=CAPF)
                 size = self.SIZE
                 if lw > 1500:
                     size = int(self.SIZE * 1500 / lw)
-                    xs, lw = T.layout_line(ws, size)
+                    xs, lw = T.layout_line(ws, size, path=CAPF)
                 x0 = (W - lw) / 2
                 self.caps.append((c["t0"], c["t1"], [(w, tw, x0 + x) for (w, tw), x in zip(c["words"], xs)], size, None))
 
@@ -607,7 +608,7 @@ class Captions:
                         I.draw_letters(frame, w, "big", size, x, self.BASE - 4, t, tw, rgb, True, stagger=0.025, dur=0.25, blur=12)
                 else:
                     for w, tw, x in words:
-                        T.draw_word(frame, w, size, x, self.BASE, t, tw, dur=0.12, rise=9)
+                        T.draw_word(frame, w, size, x, self.BASE, t, tw, path=CAPF, dur=0.12, rise=9)
 
 
 # ------------------------------------------------------------------ main loop

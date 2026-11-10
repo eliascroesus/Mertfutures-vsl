@@ -269,10 +269,13 @@ edited in Iman Gadzhi's motion-graphics style with AB Nasdaq's structure. Transc
   silent (13 s in total), 3:52.
 - **Picture:** the 4K60 original cut frame-exact to 30 fps at 2560×1440 (`mert_base.py`), lightly graded, so every push-in is
   cropped from real resolution and stays sharp.
-- **Look (Iman):** near-black plate with a lime glow and curved band of light, drifting slowly; wide Unbounded caps that blur in
-  letter by letter as he says each word; spaced sub lines; one accent colour (lime) plus red for losses; a lime handwritten
-  (Caveat) line under headlines; soft dark backing wherever text sits on his white t-shirt.
-- **Structure (AB):** word captions (Inter Display, 1–3 words, soft shadow, dark fade at the bottom); key phrases as lime/red
+- **Font: Poppins everywhere** (ExtraBold caps, SemiBold spaced sub lines and list items, Bold captions, Medium Italic for
+  the accent line under headlines). The font files come from the Fontsource npm package (`@fontsource/poppins`),
+  converted to TTF in `/root/.local/share/fonts/Poppins-<weight>[i].ttf`.
+- **Look (Iman):** near-black plate with a lime glow and curved band of light, drifting slowly; caps that blur in
+  letter by letter as he says each word; spaced sub lines; one accent colour (lime) plus red for losses; a lime italic
+  line under headlines; soft dark backing wherever text sits on his white t-shirt.
+- **Structure (AB):** word captions (1–3 words, soft shadow, dark fade at the bottom); key phrases as lime/red
   callouts in big caps instead of the caption; side text on the empty wall beside him; split screen for the offer.
 - **Graphics, all bound to his words:**
   - "I'M MERT / S&P 500 & NASDAQ FUTURES / 2 YEARS — MAIN INCOME" on the wall;
