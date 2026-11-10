@@ -1,0 +1,233 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display SemiBold,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H8C000000,0,0,0,0,100,100,0,0,1,0,2,2,160,160,64,1
+Style: CapS,Inter Display SemiBold,46,&H00FFFFFF,&H00FFFFFF,&H50000000,&H8C000000,0,0,0,0,100,100,0,0,3,10,0,1,110,820,48,1
+Style: Big,Unbounded ExtraBold,200,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Sub,Unbounded SemiBold,46,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,7,0,1,0,0,5,0,0,0,1
+Style: Head,Unbounded ExtraBold,84,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,0,0,0,0,100,100,1,0,1,0,5,5,0,0,0,1
+Style: Script,Caveat,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&HA0000000,-1,0,0,0,100,100,0,0,1,0,3,5,0,0,0,1
+Style: Mark,Unbounded Bold,24,&H70FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,6,0,1,0,0,2,0,0,44,1
+Style: Label,Unbounded SemiBold,30,&H00FFFFFF,&H00FFFFFF,&H50000000,&H00000000,0,0,0,0,100,100,3,0,3,16,0,8,120,120,56,1
+Style: Box,Inter,10,&H00000000,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 3,0:00:05.72,0:00:08.30,Big,,0,0,0,,{\pos(960,500)\fs250\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}${\alpha&HFF&\blur16\c&HFF5C96&\t(52,372,\alpha&H00&\blur0.6)}8{\alpha&HFF&\blur16\c&HFF5C96&\t(104,424,\alpha&H00&\blur0.6)}7{\alpha&HFF&\blur16\c&HFF5C96&\t(156,476,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:00:05.72,0:00:08.30,Sub,,0,0,0,,{\pos(960,686)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(392,672,\alpha&H00&\blur0.6)}N {\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(524,804,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(546,826,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:00:05.72,0:00:08.30,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:01:07.04,0:01:08.46,Big,,0,0,0,,{\pos(960,500)\fs250\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}${\alpha&HFF&\blur16\c&HFF5C96&\t(54,374,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(108,428,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:01:07.04,0:01:08.46,Sub,,0,0,0,,{\pos(960,686)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(392,672,\alpha&H00&\blur0.6)}F{\alpha&HFF&\blur10\t(414,694,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}R {\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}A {\alpha&HFF&\blur10\t(546,826,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur10\t(568,848,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(590,870,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur10\t(634,914,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(678,958,\alpha&H00&\blur0.6)}N {\alpha&HFF&\blur10\t(722,1002,\alpha&H00&\blur0.6)}V{\alpha&HFF&\blur10\t(744,1024,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(766,1046,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(788,1068,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur10\t(810,1090,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(832,1112,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:01:07.04,0:01:08.46,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:01:34.10,0:01:37.87,Big,,0,0,0,,{\pos(960,478)\fs96\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(0,320,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFFFFFF&\t(18,338,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur16\c&HFFFFFF&\t(36,356,\alpha&H00&\blur0.6)}E {\alpha&HFF&\blur16\c&HFFFFFF&\t(72,392,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(90,410,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFFFFFF&\t(108,428,\alpha&H00&\blur0.6)}E {\alpha&HFF&\blur16\c&HFFFFFF&\t(144,464,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur16\c&HFFFFFF&\t(162,482,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFFFFFF&\t(180,500,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFFFFFF&\t(198,518,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur16\c&HFFFFFF&\t(216,536,\alpha&H00&\blur0.6)}E {\alpha&HFF&\blur16\c&HFFFFFF&\t(252,572,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(270,590,\alpha&H00&\blur0.6)}V{\alpha&HFF&\blur16\c&HFFFFFF&\t(288,608,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(306,626,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur16\c&HFFFFFF&\t(324,644,\alpha&H00&\blur0.6)}Y {\alpha&HFF&\blur16\c&HFFFFFF&\t(360,680,\alpha&H00&\blur0.6)}G{\alpha&HFF&\blur16\c&HFFFFFF&\t(378,698,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur16\c&HFFFFFF&\t(396,716,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur16\c&HFFFFFF&\t(414,734,\alpha&H00&\blur0.6)}U
+Dialogue: 3,0:01:34.10,0:01:37.87,Big,,0,0,0,,{\pos(960,582)\fs96\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(220,540,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFFFFFF&\t(238,558,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(256,576,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFFFFFF&\t(274,594,\alpha&H00&\blur0.6)}D {\alpha&HFF&\blur16\c&HFFFFFF&\t(310,630,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur16\c&HFFFFFF&\t(328,648,\alpha&H00&\blur0.6)}E {\alpha&HFF&\blur16\c&HFF5C96&\t(364,684,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFF5C96&\t(382,702,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFF5C96&\t(400,720,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur16\c&HFFFFFF&\t(436,756,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFFFFFF&\t(454,774,\alpha&H00&\blur0.6)}O {\alpha&HFF&\blur16\c&HFFFFFF&\t(490,810,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur16\c&HFFFFFF&\t(508,828,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(526,846,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur16\c&HFFFFFF&\t(544,864,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur16\c&HFFFFFF&\t(580,900,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(598,918,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFFFFFF&\t(616,936,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:01:34.10,0:01:37.87,Box,,0,0,0,,{\an7\pos(809,622)\c&HFF5C96&\bord0\shad0\blur1.5\fscx0\t(650,1000,0.6,\fscx100)}{\p1}m 0 0 l 170 0 170 7 0 7{\p0}
+Dialogue: 3,0:01:34.10,0:01:37.87,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:02:04.55,0:02:08.90,Big,,0,0,0,,{\pos(960,495)\fs220\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(0,320,\alpha&H00&\blur0.6)}I {\alpha&HFF&\blur16\c&HFFFFFF&\t(92,412,\alpha&H00&\blur0.6)}Q{\alpha&HFF&\blur16\c&HFFFFFF&\t(138,458,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur16\c&HFFFFFF&\t(184,504,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur16\c&HFFFFFF&\t(230,550,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFFFFFF&\t(276,596,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:02:04.55,0:02:08.90,Script,,0,0,0,,{\pos(960,676)\c&HFF9BC4&\fad(0,120)}{\alpha&HFF&\blur8\t(420,680,\alpha&H00&\blur0.6)}w{\alpha&HFF&\blur8\t(436,696,\alpha&H00&\blur0.6)}i{\alpha&HFF&\blur8\t(452,712,\alpha&H00&\blur0.6)}t{\alpha&HFF&\blur8\t(468,728,\alpha&H00&\blur0.6)}h {\alpha&HFF&\blur8\t(500,760,\alpha&H00&\blur0.6)}${\alpha&HFF&\blur8\t(516,776,\alpha&H00&\blur0.6)}4{\alpha&HFF&\blur8\t(532,792,\alpha&H00&\blur0.6)}5{\alpha&HFF&\blur8\t(548,808,\alpha&H00&\blur0.6)}7 {\alpha&HFF&\blur8\t(580,840,\alpha&H00&\blur0.6)}t{\alpha&HFF&\blur8\t(596,856,\alpha&H00&\blur0.6)}o {\alpha&HFF&\blur8\t(628,888,\alpha&H00&\blur0.6)}m{\alpha&HFF&\blur8\t(644,904,\alpha&H00&\blur0.6)}y {\alpha&HFF&\blur8\t(676,936,\alpha&H00&\blur0.6)}n{\alpha&HFF&\blur8\t(692,952,\alpha&H00&\blur0.6)}a{\alpha&HFF&\blur8\t(708,968,\alpha&H00&\blur0.6)}m{\alpha&HFF&\blur8\t(724,984,\alpha&H00&\blur0.6)}e
+Dialogue: 3,0:02:04.55,0:02:08.90,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:02:41.07,0:02:42.42,Big,,0,0,0,,{\pos(960,500)\fs170\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}1{\alpha&HFF&\blur16\c&HFF5C96&\t(40,360,\alpha&H00&\blur0.6)}8{\alpha&HFF&\blur16\c&HFF5C96&\t(80,400,\alpha&H00&\blur0.6)},{\alpha&HFF&\blur16\c&HFF5C96&\t(120,440,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(160,480,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(200,520,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(240,560,\alpha&H00&\blur0.6)},{\alpha&HFF&\blur16\c&HFF5C96&\t(280,600,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(320,640,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(360,680,\alpha&H00&\blur0.6)}0
+Dialogue: 3,0:02:41.07,0:02:42.42,Sub,,0,0,0,,{\pos(960,642)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}V{\alpha&HFF&\blur10\t(392,672,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(414,694,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:02:41.07,0:02:42.42,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:02:43.12,0:02:44.65,Big,,0,0,0,,{\pos(960,500)\fs250\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}${\alpha&HFF&\blur16\c&HFF5C96&\t(52,372,\alpha&H00&\blur0.6)}8{\alpha&HFF&\blur16\c&HFF5C96&\t(104,424,\alpha&H00&\blur0.6)}7{\alpha&HFF&\blur16\c&HFF5C96&\t(156,476,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:02:43.12,0:02:44.65,Sub,,0,0,0,,{\pos(960,686)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(392,672,\alpha&H00&\blur0.6)}N {\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(524,804,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(546,826,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:02:43.12,0:02:44.65,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:03:18.27,0:03:19.53,Big,,0,0,0,,{\pos(960,427)\fs190\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(0,320,\alpha&H00&\blur0.6)}Y{\alpha&HFF&\blur16\c&HFFFFFF&\t(46,366,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(92,412,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur16\c&HFFFFFF&\t(138,458,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFFFFFF&\t(184,504,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur16\c&HFFFFFF&\t(230,550,\alpha&H00&\blur0.6)}B{\alpha&HFF&\blur16\c&HFFFFFF&\t(276,596,\alpha&H00&\blur0.6)}E
+Dialogue: 3,0:03:18.27,0:03:19.53,Big,,0,0,0,,{\pos(960,633)\fs190\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(220,540,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur16\c&HFF5C96&\t(266,586,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur16\c&HFF5C96&\t(312,632,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFF5C96&\t(358,678,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur16\c&HFF5C96&\t(404,724,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFF5C96&\t(450,770,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur16\c&HFF5C96&\t(496,816,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:03:18.27,0:03:19.53,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:04:32.60,0:04:34.80,Big,,0,0,0,,{\pos(960,484)\fs86\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(0,320,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur16\c&HFFFFFF&\t(28,348,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur16\c&HFFFFFF&\t(56,376,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFFFFFF&\t(84,404,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur16\c&HFFFFFF&\t(140,460,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur16\c&HFFFFFF&\t(168,488,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(196,516,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur16\c&HFFFFFF&\t(224,544,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur16\c&HFFFFFF&\t(280,600,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur16\c&HFFFFFF&\t(308,628,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(336,656,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(364,684,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur16\c&HFFFFFF&\t(392,712,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFFFFFF&\t(420,740,\alpha&H00&\blur0.6)}E
+Dialogue: 3,0:04:32.60,0:04:34.80,Big,,0,0,0,,{\pos(960,576)\fs86\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(220,540,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur16\c&HFF5C96&\t(246,566,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFF5C96&\t(272,592,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFF5C96&\t(298,618,\alpha&H00&\blur0.6)}'{\alpha&HFF&\blur16\c&HFF5C96&\t(324,644,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur16\c&HFFFFFF&\t(376,696,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur16\c&HFFFFFF&\t(402,722,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFFFFFF&\t(428,748,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur16\c&HFFFFFF&\t(454,774,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(480,800,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur16\c&HFFFFFF&\t(506,826,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur16\c&HFFFFFF&\t(532,852,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFFFFFF&\t(558,878,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFFFFFF&\t(584,904,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFFFFFF&\t(610,930,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur16\c&HFFFFFF&\t(636,956,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:04:32.60,0:04:34.80,Box,,0,0,0,,{\an7\pos(584,612)\c&HFF5C96&\bord0\shad0\blur1.5\fscx0\t(650,1000,0.6,\fscx100)}{\p1}m 0 0 l 225 0 225 7 0 7{\p0}
+Dialogue: 3,0:04:32.60,0:04:34.80,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:04:48.88,0:04:51.20,Big,,0,0,0,,{\pos(960,500)\fs200\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(56,376,\alpha&H00&\blur0.6)}1
+Dialogue: 3,0:04:48.88,0:04:51.20,Sub,,0,0,0,,{\pos(960,658)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}A {\alpha&HFF&\blur10\t(414,694,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}V{\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(524,804,\alpha&H00&\blur0.6)}N {\alpha&HFF&\blur10\t(568,848,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur10\t(590,870,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(634,914,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur10\t(678,958,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur10\t(700,980,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur10\t(722,1002,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:04:48.88,0:04:51.20,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:04:54.70,0:04:56.77,Big,,0,0,0,,{\pos(960,500)\fs200\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(56,376,\alpha&H00&\blur0.6)}2
+Dialogue: 3,0:04:54.70,0:04:56.77,Sub,,0,0,0,,{\pos(960,658)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}A {\alpha&HFF&\blur10\t(414,694,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(524,804,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(546,826,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur10\t(568,848,\alpha&H00&\blur0.6)}. {\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(634,914,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur10\t(700,980,\alpha&H00&\blur0.6)}A {\alpha&HFF&\blur10\t(744,1024,\alpha&H00&\blur0.6)}V{\alpha&HFF&\blur10\t(766,1046,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(788,1068,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur10\t(810,1090,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(832,1112,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(854,1134,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:04:54.70,0:04:56.77,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:05:01.61,0:05:04.03,Big,,0,0,0,,{\pos(960,500)\fs200\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur16\c&HFF5C96&\t(56,376,\alpha&H00&\blur0.6)}3
+Dialogue: 3,0:05:01.61,0:05:04.03,Sub,,0,0,0,,{\pos(960,658)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}A {\alpha&HFF&\blur10\t(414,694,\alpha&H00&\blur0.6)}B{\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur10\t(524,804,\alpha&H00&\blur0.6)}. {\alpha&HFF&\blur10\t(568,848,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(590,870,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}A {\alpha&HFF&\blur10\t(700,980,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(722,1002,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(744,1024,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(766,1046,\alpha&H00&\blur0.6)}-{\alpha&HFF&\blur10\t(788,1068,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(810,1090,\alpha&H00&\blur0.6)}F{\alpha&HFF&\blur10\t(832,1112,\alpha&H00&\blur0.6)}F {\alpha&HFF&\blur10\t(876,1156,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur10\t(898,1178,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(920,1200,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(942,1222,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(964,1244,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(986,1266,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(1008,1288,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:05:01.61,0:05:04.03,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:05:12.23,0:05:15.08,Big,,0,0,0,,{\pos(960,500)\fs260\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}Y{\alpha&HFF&\blur16\c&HFF5C96&\t(54,374,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur16\c&HFF5C96&\t(108,428,\alpha&H00&\blur0.6)}D
+Dialogue: 3,0:05:12.23,0:05:15.08,Sub,,0,0,0,,{\pos(960,691)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur10\t(392,672,\alpha&H00&\blur0.6)}Y {\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}1{\alpha&HFF&\blur10\t(458,738,\alpha&H00&\blur0.6)}-{\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(524,804,\alpha&H00&\blur0.6)}-{\alpha&HFF&\blur10\t(546,826,\alpha&H00&\blur0.6)}1 {\alpha&HFF&\blur10\t(590,870,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(634,914,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur10\t(678,958,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(700,980,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(722,1002,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(744,1024,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur10\t(766,1046,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(788,1068,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur10\t(810,1090,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:05:12.23,0:05:15.08,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:05:21.05,0:05:23.43,Big,,0,0,0,,{\pos(960,435)\fs120\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(0,320,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur16\c&HFFFFFF&\t(48,368,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(96,416,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(144,464,\alpha&H00&\blur0.6)}K{\alpha&HFF&\blur16\c&HFFFFFF&\t(192,512,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFFFFFF&\t(240,560,\alpha&H00&\blur0.6)}Y
+Dialogue: 3,0:05:21.05,0:05:23.43,Big,,0,0,0,,{\pos(960,565)\fs120\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(220,540,\alpha&H00&\blur0.6)}1{\alpha&HFF&\blur16\c&HFF5C96&\t(258,578,\alpha&H00&\blur0.6)}-{\alpha&HFF&\blur16\c&HFF5C96&\t(296,616,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFF5C96&\t(334,654,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFF5C96&\t(372,692,\alpha&H00&\blur0.6)}-{\alpha&HFF&\blur16\c&HFF5C96&\t(410,730,\alpha&H00&\blur0.6)}1 {\alpha&HFF&\blur16\c&HFF5C96&\t(486,806,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur16\c&HFF5C96&\t(524,844,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFF5C96&\t(562,882,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFF5C96&\t(600,920,\alpha&H00&\blur0.6)}L
+Dialogue: 3,0:05:21.05,0:05:23.43,Sub,,0,0,0,,{\pos(960,679)\fad(0,120)}{\alpha&HFF&\blur10\t(590,870,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(634,914,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}H {\alpha&HFF&\blur10\t(700,980,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur10\t(722,1002,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(744,1024,\alpha&H00&\blur0.6)}. {\alpha&HFF&\blur10\t(788,1068,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(810,1090,\alpha&H00&\blur0.6)}V{\alpha&HFF&\blur10\t(832,1112,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(854,1134,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(876,1156,\alpha&H00&\blur0.6)}Y {\alpha&HFF&\blur10\t(920,1200,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur10\t(942,1222,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(964,1244,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(986,1266,\alpha&H00&\blur0.6)}K{\alpha&HFF&\blur10\t(1008,1288,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:05:21.05,0:05:23.43,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:05:28.49,0:05:30.83,Big,,0,0,0,,{\pos(960,471)\fs110\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(0,320,\alpha&H00&\blur0.6)}4 {\alpha&HFF&\blur16\c&HFFFFFF&\t(88,408,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur16\c&HFFFFFF&\t(132,452,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(176,496,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(220,540,\alpha&H00&\blur0.6)}K{\alpha&HFF&\blur16\c&HFFFFFF&\t(264,584,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFFFFFF&\t(308,628,\alpha&H00&\blur0.6)}Y
+Dialogue: 3,0:05:28.49,0:05:30.83,Big,,0,0,0,,{\pos(960,589)\fs110\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(220,540,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur16\c&HFF5C96&\t(252,572,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFF5C96&\t(284,604,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFF5C96&\t(316,636,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur16\c&HFF5C96&\t(348,668,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur16\c&HFF5C96&\t(380,700,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur16\c&HFF5C96&\t(412,732,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFF5C96&\t(444,764,\alpha&H00&\blur0.6)}G {\alpha&HFF&\blur16\c&HFF5C96&\t(508,828,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur16\c&HFF5C96&\t(540,860,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFF5C96&\t(572,892,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFF5C96&\t(604,924,\alpha&H00&\blur0.6)}L{\alpha&HFF&\blur16\c&HFF5C96&\t(636,956,\alpha&H00&\blur0.6)}S
+Dialogue: 3,0:05:28.49,0:05:30.83,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:05:38.41,0:05:41.73,Big,,0,0,0,,{\pos(960,441)\fs110\fad(0,120)}{\alpha&HFF&\blur16\c&HFFFFFF&\t(0,320,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur16\c&HFFFFFF&\t(38,358,\alpha&H00&\blur0.6)}Y {\alpha&HFF&\blur16\c&HFFFFFF&\t(114,434,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur16\c&HFFFFFF&\t(152,472,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFFFFFF&\t(190,510,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur16\c&HFFFFFF&\t(228,548,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur16\c&HFFFFFF&\t(266,586,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFFFFFF&\t(304,624,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFFFFFF&\t(342,662,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFFFFFF&\t(380,700,\alpha&H00&\blur0.6)}L
+Dialogue: 3,0:05:38.41,0:05:41.73,Big,,0,0,0,,{\pos(960,559)\fs110\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(220,540,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur16\c&HFF5C96&\t(256,576,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur16\c&HFF5C96&\t(292,612,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur16\c&HFF5C96&\t(328,648,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFF5C96&\t(364,684,\alpha&H00&\blur0.6)}E {\alpha&HFF&\blur16\c&HFF5C96&\t(436,756,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur16\c&HFF5C96&\t(472,792,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur16\c&HFF5C96&\t(508,828,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur16\c&HFF5C96&\t(544,864,\alpha&H00&\blur0.6)}B{\alpha&HFF&\blur16\c&HFF5C96&\t(580,900,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur16\c&HFF5C96&\t(616,936,\alpha&H00&\blur0.6)}R
+Dialogue: 3,0:05:38.41,0:05:41.73,Sub,,0,0,0,,{\pos(960,668)\fad(0,120)}{\alpha&HFF&\blur10\t(590,870,\alpha&H00&\blur0.6)}M{\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(634,914,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}-{\alpha&HFF&\blur10\t(678,958,\alpha&H00&\blur0.6)}F{\alpha&HFF&\blur10\t(700,980,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(722,1002,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(744,1024,\alpha&H00&\blur0.6)}. {\alpha&HFF&\blur10\t(788,1068,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(810,1090,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(832,1112,\alpha&H00&\blur0.6)}T {\alpha&HFF&\blur10\t(876,1156,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(898,1178,\alpha&H00&\blur0.6)}N {\alpha&HFF&\blur10\t(942,1222,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(964,1244,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(986,1266,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(1008,1288,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(1030,1310,\alpha&H00&\blur0.6)}S{\alpha&HFF&\blur10\t(1052,1332,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur10\t(1074,1354,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(1096,1376,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(1118,1398,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur10\t(1140,1420,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:05:38.41,0:05:41.73,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:05:54.43,0:05:58.28,Big,,0,0,0,,{\pos(960,500)\fs210\fad(0,120)}{\alpha&HFF&\blur16\c&HFF5C96&\t(0,320,\alpha&H00&\blur0.6)}6{\alpha&HFF&\blur16\c&HFF5C96&\t(46,366,\alpha&H00&\blur0.6)}0 {\alpha&HFF&\blur16\c&HFF5C96&\t(138,458,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur16\c&HFF5C96&\t(184,504,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur16\c&HFF5C96&\t(230,550,\alpha&H00&\blur0.6)}Y{\alpha&HFF&\blur16\c&HFF5C96&\t(276,596,\alpha&H00&\blur0.6)}S
+Dialogue: 3,0:05:54.43,0:05:58.28,Sub,,0,0,0,,{\pos(960,664)\fad(0,120)}{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(392,672,\alpha&H00&\blur0.6)}R {\alpha&HFF&\blur10\t(436,716,\alpha&H00&\blur0.6)}I {\alpha&HFF&\blur10\t(480,760,\alpha&H00&\blur0.6)}K{\alpha&HFF&\blur10\t(502,782,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(524,804,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(546,826,\alpha&H00&\blur0.6)}P {\alpha&HFF&\blur10\t(590,870,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur10\t(612,892,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(634,914,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(656,936,\alpha&H00&\blur0.6)}K{\alpha&HFF&\blur10\t(678,958,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(700,980,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(722,1002,\alpha&H00&\blur0.6)}G {\alpha&HFF&\blur10\t(766,1046,\alpha&H00&\blur0.6)}W{\alpha&HFF&\blur10\t(788,1068,\alpha&H00&\blur0.6)}I{\alpha&HFF&\blur10\t(810,1090,\alpha&H00&\blur0.6)}T{\alpha&HFF&\blur10\t(832,1112,\alpha&H00&\blur0.6)}H {\alpha&HFF&\blur10\t(876,1156,\alpha&H00&\blur0.6)}Y{\alpha&HFF&\blur10\t(898,1178,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(920,1200,\alpha&H00&\blur0.6)}U {\alpha&HFF&\blur10\t(964,1244,\alpha&H00&\blur0.6)}F{\alpha&HFF&\blur10\t(986,1266,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(1008,1288,\alpha&H00&\blur0.6)}R {\alpha&HFF&\blur10\t(1052,1332,\alpha&H00&\blur0.6)}F{\alpha&HFF&\blur10\t(1074,1354,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(1096,1376,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(1118,1398,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(1140,1420,\alpha&H00&\blur0.6)}.
+Dialogue: 3,0:05:54.43,0:05:58.28,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 3,0:05:09.13,0:05:12.23,Big,,0,0,0,,{\pos(460,470)\fs120\fad(0,120)}{\alpha&HFF&\blur14\c&HFF5C96&\t(150,450,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur14\c&HFF5C96&\t(210,510,\alpha&H00&\blur0.6)}1
+Dialogue: 3,0:05:09.13,0:05:12.23,Sub,,0,0,0,,{\pos(460,590)\fs40\fad(0,120)}{\alpha&HFF&\blur10\t(310,590,\alpha&H00&\blur0.6)}P{\alpha&HFF&\blur10\t(340,620,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(370,650,\alpha&H00&\blur0.6)}O{\alpha&HFF&\blur10\t(400,680,\alpha&H00&\blur0.6)}D{\alpha&HFF&\blur10\t(430,710,\alpha&H00&\blur0.6)}U{\alpha&HFF&\blur10\t(460,740,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur10\t(490,770,\alpha&H00&\blur0.6)}T
+Dialogue: 3,0:05:09.13,0:05:12.23,Box,,0,0,0,,{\an7\pos(570,468)\c&HFF5C96&\bord0\shad0\blur1.5\fscx0\t(410,790,0.6,\fscx100)}{\p1}m 0 0 l 280 0 280 4 0 4{\p0}
+Dialogue: 3,0:05:09.13,0:05:12.23,Big,,0,0,0,,{\pos(960,470)\fs120\fad(0,120)}{\alpha&HFF&\blur14\c&HFF5C96&\t(570,870,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur14\c&HFF5C96&\t(630,930,\alpha&H00&\blur0.6)}2
+Dialogue: 3,0:05:09.13,0:05:12.23,Sub,,0,0,0,,{\pos(960,590)\fs40\fad(0,120)}{\alpha&HFF&\blur10\t(730,1010,\alpha&H00&\blur0.6)}C{\alpha&HFF&\blur10\t(760,1040,\alpha&H00&\blur0.6)}H{\alpha&HFF&\blur10\t(790,1070,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(820,1100,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(850,1130,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(880,1160,\alpha&H00&\blur0.6)}E{\alpha&HFF&\blur10\t(910,1190,\alpha&H00&\blur0.6)}L
+Dialogue: 3,0:05:09.13,0:05:12.23,Box,,0,0,0,,{\an7\pos(1070,468)\c&HFF5C96&\bord0\shad0\blur1.5\fscx0\t(830,1210,0.6,\fscx100)}{\p1}m 0 0 l 280 0 280 4 0 4{\p0}
+Dialogue: 3,0:05:09.13,0:05:12.23,Big,,0,0,0,,{\pos(1460,470)\fs120\fad(0,120)}{\alpha&HFF&\blur14\c&HFF5C96&\t(990,1290,\alpha&H00&\blur0.6)}0{\alpha&HFF&\blur14\c&HFF5C96&\t(1050,1350,\alpha&H00&\blur0.6)}3
+Dialogue: 3,0:05:09.13,0:05:12.23,Sub,,0,0,0,,{\pos(1460,590)\fs40\fad(0,120)}{\alpha&HFF&\blur10\t(1150,1430,\alpha&H00&\blur0.6)}B{\alpha&HFF&\blur10\t(1180,1460,\alpha&H00&\blur0.6)}R{\alpha&HFF&\blur10\t(1210,1490,\alpha&H00&\blur0.6)}A{\alpha&HFF&\blur10\t(1240,1520,\alpha&H00&\blur0.6)}N{\alpha&HFF&\blur10\t(1270,1550,\alpha&H00&\blur0.6)}D
+Dialogue: 3,0:05:09.13,0:05:12.23,Mark,,0,0,0,,{\fad(200,120)}YTD
+Dialogue: 2,0:04:51.20,0:04:54.65,Label,,0,0,0,,{\fad(160,160)}01  A PROVEN PRODUCT
+Dialogue: 2,0:04:56.77,0:05:01.53,Label,,0,0,0,,{\fad(160,160)}02  A CHANNEL. NOT A VIDEO.
+Dialogue: 2,0:05:04.03,0:05:09.13,Label,,0,0,0,,{\fad(160,160)}03  A BRAND. NOT A ONE-OFF WINNER.
+Dialogue: 2,0:05:23.43,0:05:28.43,Label,,0,0,0,,{\fad(160,160)}WEEKLY 1-ON-1 CALL WITH ME
+Dialogue: 2,0:05:30.83,0:05:38.33,Label,,0,0,0,,{\fad(160,160)}4 WEEKLY COACHING CALLS
+Dialogue: 2,0:05:41.73,0:05:50.03,Label,,0,0,0,,{\fad(160,160)}MY PERSONAL PHONE NUMBER
+Dialogue: 2,0:06:10.10,0:06:19.20,Label,,0,0,0,,{\fad(160,160)}APPLY BELOW {\fnInter Display}↓{\fnUnbounded SemiBold}
+Dialogue: 1,0:00:00.00,0:00:03.60,Cap,,0,0,0,,18 million people viewed\Nmy product in one month
+Dialogue: 1,0:00:03.60,0:00:05.72,Cap,,0,0,0,,and from that, I only made
+Dialogue: 1,0:00:08.43,0:00:09.89,Cap,,0,0,0,,I owed money to my mom
+Dialogue: 1,0:00:09.89,0:00:11.53,Cap,,0,0,0,,my friends were\Ncalling me an idiot
+Dialogue: 1,0:00:11.53,0:00:13.99,Cap,,0,0,0,,and I was this close\Nto believing them.
+Dialogue: 1,0:00:13.99,0:00:16.33,Cap,,0,0,0,,Then, I changed\Nthree simple things
+Dialogue: 1,0:00:16.33,0:00:18.33,Cap,,0,0,0,,but I still ran the same products
+Dialogue: 1,0:00:18.33,0:00:23.75,Cap,,0,0,0,,I didn't run ads, but I made\N$10,000 in just three days.
+Dialogue: 1,0:00:23.75,0:00:24.03,Cap,,0,0,0,,And
+Dialogue: 1,0:00:24.37,0:00:26.05,CapS,,0,0,0,,I'll even show you live
+Dialogue: 1,0:00:26.05,0:00:27.97,CapS,,0,0,0,,because if I can't\Nshow you live
+Dialogue: 1,0:00:27.97,0:00:30.08,CapS,,0,0,0,,then I shouldn't\Nshow you at all.
+Dialogue: 1,0:00:30.08,0:00:32.14,CapS,,0,0,0,,And as you can see,\Nit's still here.
+Dialogue: 1,0:00:32.14,0:00:32.20,CapS,,0,0,0,,But
+Dialogue: 1,0:00:32.38,0:00:33.82,Cap,,0,0,0,,by the end of this video
+Dialogue: 1,0:00:33.82,0:00:37.46,Cap,,0,0,0,,I'm going to show you the three\Nthings that I personally used to take
+Dialogue: 1,0:00:37.46,0:00:41.74,Cap,,0,0,0,,a store from $0 to $10,000\Nin just three days.
+Dialogue: 1,0:00:41.74,0:00:45.90,Cap,,0,0,0,,And one of them is probably the\Nreason that you still haven't gotten
+Dialogue: 1,0:00:45.90,0:00:46.96,Cap,,0,0,0,,your first sale.
+Dialogue: 1,0:00:46.96,0:00:49.34,Cap,,0,0,0,,Because maybe you already\Ntried dropshipping before
+Dialogue: 1,0:00:49.34,0:00:51.12,Cap,,0,0,0,,you spent hours\Nlooking for a product
+Dialogue: 1,0:00:51.12,0:00:52.60,Cap,,0,0,0,,you spent hours recording
+Dialogue: 1,0:00:52.60,0:00:54.72,Cap,,0,0,0,,you made the videos,\Nyou posted them
+Dialogue: 1,0:00:54.72,0:00:57.52,Cap,,0,0,0,,and you only got a\Ncouple thousand views.
+Dialogue: 1,0:00:57.52,0:00:59.80,Cap,,0,0,0,,Then, one video finally pops.
+Dialogue: 1,0:00:59.80,0:01:01.06,Cap,,0,0,0,,You get a million views
+Dialogue: 1,0:01:01.06,0:01:03.27,Cap,,0,0,0,,but you check Shopify at 2am
+Dialogue: 1,0:01:03.27,0:01:04.62,Cap,,0,0,0,,waiting for your first sale
+Dialogue: 1,0:01:04.62,0:01:06.62,Cap,,0,0,0,,and still, after a million views
+Dialogue: 1,0:01:06.62,0:01:07.04,Cap,,0,0,0,,you made
+Dialogue: 1,0:01:08.54,0:01:10.74,Cap,,0,0,0,,Or maybe you haven't\Neven started yet
+Dialogue: 1,0:01:10.74,0:01:13.94,Cap,,0,0,0,,because every guru is telling\Nyou that you need to run ads.
+Dialogue: 1,0:01:13.94,0:01:15.66,Cap,,0,0,0,,The truth is, you don't.
+Dialogue: 1,0:01:15.66,0:01:19.50,Cap,,0,0,0,,And either way, whatever misconception\Nyou've been led to believe
+Dialogue: 1,0:01:19.50,0:01:20.69,Cap,,0,0,0,,it's not your fault.
+Dialogue: 1,0:01:20.69,0:01:23.30,Cap,,0,0,0,,The problem is the\Nplatform you're posting on.
+Dialogue: 1,0:01:23.30,0:01:27.72,Cap,,0,0,0,,Because the apps everybody is telling\Nyou to post on are kind of saturated
+Dialogue: 1,0:01:27.72,0:01:30.86,Cap,,0,0,0,,and really difficult\Nto go viral on.
+Dialogue: 1,0:01:30.86,0:01:34.10,Cap,,0,0,0,,The place to actually go\Nviral and get sales is
+Dialogue: 1,0:01:37.93,0:01:40.91,Cap,,0,0,0,,And I'm going to tell you\Nexactly where that was.
+Dialogue: 1,0:01:40.91,0:01:45.59,Cap,,0,0,0,,But not that long ago, I was working\Nat a dining server for $16 an
+Dialogue: 1,0:01:45.59,0:01:46.03,Cap,,0,0,0,,hour.
+Dialogue: 1,0:01:46.03,0:01:48.88,Cap,,0,0,0,,Every shift, my co-workers\Nwere making fun of me
+Dialogue: 1,0:01:48.88,0:01:50.84,Cap,,0,0,0,,my managers were complete jerks
+Dialogue: 1,0:01:50.84,0:01:54.76,Cap,,0,0,0,,and even one time, a grown\Nman threatened me at work.
+Dialogue: 1,0:01:54.76,0:01:58.14,Cap,,0,0,0,,I remember walking out of there\Nthinking every single night that I
+Dialogue: 1,0:01:58.14,0:02:01.40,Cap,,0,0,0,,can't do this anymore and I'm not\Ngoing to live the rest of my life
+Dialogue: 1,0:02:01.40,0:02:04.34,Cap,,0,0,0,,working as a dining server\Nat a retirement home.
+Dialogue: 1,0:02:04.34,0:02:04.55,Cap,,0,0,0,,So
+Dialogue: 1,0:02:08.96,0:02:11.42,Cap,,0,0,0,,and I decided to go\Nall in on dropshipping.
+Dialogue: 1,0:02:11.42,0:02:14.12,Cap,,0,0,0,,When I told my cousins and my\Nclosest friends that I was going to
+Dialogue: 1,0:02:14.12,0:02:15.50,Cap,,0,0,0,,go all in on dropshipping
+Dialogue: 1,0:02:15.50,0:02:17.71,Cap,,0,0,0,,they literally made\Nfun of me and they said
+Dialogue: 1,0:02:17.71,0:02:20.71,Cap,,0,0,0,,bro, you're falling\Nfor the TikTok scams.
+Dialogue: 1,0:02:20.71,0:02:22.57,Cap,,0,0,0,,I took every dollar I had
+Dialogue: 1,0:02:22.57,0:02:24.93,Cap,,0,0,0,,spent $1,500 on a mentor
+Dialogue: 1,0:02:24.93,0:02:27.37,Cap,,0,0,0,,and he gave me the\Nworst advice ever.
+Dialogue: 1,0:02:27.37,0:02:28.87,Cap,,0,0,0,,So I started teaching myself.
+Dialogue: 1,0:02:28.87,0:02:31.03,Cap,,0,0,0,,I covered my entire wall in notes
+Dialogue: 1,0:02:31.03,0:02:33.71,Cap,,0,0,0,,and I tested product after\Nproduct after product.
+Dialogue: 1,0:02:33.71,0:02:36.29,Cap,,0,0,0,,And I even ran 40\Ndifferent products
+Dialogue: 1,0:02:36.29,0:02:39.45,Cap,,0,0,0,,and I still made only\Na couple hundred bucks.
+Dialogue: 1,0:02:39.45,0:02:40.87,Cap,,0,0,0,,And one finally went viral.
+Dialogue: 1,0:02:40.87,0:02:41.07,Cap,,0,0,0,,I got
+Dialogue: 1,0:02:42.43,0:02:43.12,Cap,,0,0,0,,but I only made
+Dialogue: 1,0:02:44.79,0:02:47.15,Cap,,0,0,0,,By then, I was $500\Nin debt to my mom
+Dialogue: 1,0:02:47.15,0:02:50.45,Cap,,0,0,0,,and she said, Ricky, I don't think\Nyou should be doing this anymore.
+Dialogue: 1,0:02:50.45,0:02:52.91,Cap,,0,0,0,,You should go back to working\Nat the retirement home.
+Dialogue: 1,0:02:52.91,0:02:55.13,Cap,,0,0,0,,And that was the fuel\Nthat I needed to say
+Dialogue: 1,0:02:55.13,0:02:55.77,Cap,,0,0,0,,you know what?
+Dialogue: 1,0:02:55.77,0:02:58.45,Cap,,0,0,0,,I'm going to do everything in\Nmy power to make this work.
+Dialogue: 1,0:02:58.45,0:02:59.43,Cap,,0,0,0,,And I did.
+Dialogue: 1,0:02:59.43,0:03:02.85,Cap,,0,0,0,,But honestly, I started to think\Neverybody was right about me.
+Dialogue: 1,0:03:02.85,0:03:04.87,Cap,,0,0,0,,And if that's where\Nyou are right now
+Dialogue: 1,0:03:04.87,0:03:06.87,Cap,,0,0,0,,please do not click\Noff of this video
+Dialogue: 1,0:03:06.87,0:03:10.95,Cap,,0,0,0,,because what happened next is why\NI'm actually making this video now.
+Dialogue: 1,0:03:10.95,0:03:14.29,Cap,,0,0,0,,But there was one place that I\Nnever tried that every dropshipper
+Dialogue: 1,0:03:14.29,0:03:17.87,Cap,,0,0,0,,said to stay away from because only\Nkids watch it and it doesn't convert.
+Dialogue: 1,0:03:19.57,0:03:20.65,Cap,,0,0,0,,So I tried it.
+Dialogue: 1,0:03:20.65,0:03:23.51,Cap,,0,0,0,,I posted one video, and\NI got a million views.
+Dialogue: 1,0:03:23.51,0:03:23.60,Cap,,0,0,0,,As
+Dialogue: 1,0:03:23.81,0:03:25.63,CapS,,0,0,0,,soon as I posted\Nmy first video
+Dialogue: 1,0:03:25.63,0:03:28.05,CapS,,0,0,0,,I was getting hundreds\Nof thousands of views
+Dialogue: 1,0:03:28.05,0:03:30.81,CapS,,0,0,0,,every single day,\Nuntil finally
+Dialogue: 1,0:03:30.81,0:03:33.65,CapS,,0,0,0,,I was getting millions of\Nviews every single day.
+Dialogue: 1,0:03:33.65,0:03:36.45,CapS,,0,0,0,,And I've been running the\Nsame channel for over a year
+Dialogue: 1,0:03:36.45,0:03:36.89,CapS,,0,0,0,,now.
+Dialogue: 1,0:03:36.89,0:03:37.04,CapS,,0,0,0,,And
+Dialogue: 1,0:03:37.11,0:03:41.17,Cap,,0,0,0,,that channel made me over $300,000\Nbecause I found out about YouTube
+Dialogue: 1,0:03:41.17,0:03:43.37,Cap,,0,0,0,,Store, where you can\Ntag your products.
+Dialogue: 1,0:03:43.37,0:03:45.15,Cap,,0,0,0,,And ever since I\Nstarted doing that
+Dialogue: 1,0:03:45.15,0:03:49.45,Cap,,0,0,0,,I started getting sale after\Nsale after sale every single day.
+Dialogue: 1,0:03:49.45,0:03:49.60,Cap,,0,0,0,,So
+Dialogue: 1,0:03:49.75,0:03:52.85,CapS,,0,0,0,,I went back to TikTok and\Nran all of the products that
+Dialogue: 1,0:03:52.85,0:03:55.11,CapS,,0,0,0,,I ran before that\Ndidn't make me money.
+Dialogue: 1,0:03:55.11,0:03:56.97,CapS,,0,0,0,,And they all\Nstarted printing.
+Dialogue: 1,0:03:56.97,0:03:59.10,CapS,,0,0,0,,85 million views\Nin 90 days.
+Dialogue: 1,0:03:59.10,0:04:01.50,CapS,,0,0,0,,And this channel went from\Nzero to a quarter million
+Dialogue: 1,0:04:01.50,0:04:03.38,CapS,,0,0,0,,views in just two days.
+Dialogue: 1,0:04:03.38,0:04:06.76,CapS,,0,0,0,,This channel got 19 million\Nviews in the very first
+Dialogue: 1,0:04:06.76,0:04:07.76,CapS,,0,0,0,,month of posting.
+Dialogue: 1,0:04:07.76,0:04:10.90,CapS,,0,0,0,,And this channel got 36\Nmillion views a lifetime.
+Dialogue: 1,0:04:10.90,0:04:13.76,CapS,,0,0,0,,And there are a dozen other\Nchannels that I've run that
+Dialogue: 1,0:04:13.76,0:04:15.70,CapS,,0,0,0,,have gotten results\Njust like this.
+Dialogue: 1,0:04:15.70,0:04:15.90,CapS,,0,0,0,,And
+Dialogue: 1,0:04:16.08,0:04:18.02,Cap,,0,0,0,,after my first $10,000 month
+Dialogue: 1,0:04:18.02,0:04:19.84,Cap,,0,0,0,,I started going on vacations
+Dialogue: 1,0:04:19.84,0:04:22.12,Cap,,0,0,0,,buying my brother\Nthe brand new iPhone
+Dialogue: 1,0:04:22.12,0:04:25.46,Cap,,0,0,0,,and just doing whatever I\Nwanted to at a very young age.
+Dialogue: 1,0:04:25.46,0:04:28.78,Cap,,0,0,0,,And every single person who\Ntold me to get a real job
+Dialogue: 1,0:04:28.78,0:04:30.08,Cap,,0,0,0,,I had proven them wrong.
+Dialogue: 1,0:04:30.08,0:04:32.60,Cap,,0,0,0,,And that is what I'm\Nmost happy about.
+Dialogue: 1,0:04:35.02,0:04:39.09,Cap,,0,0,0,,Posting on YouTube Shorts is not\Nwhat made me that amount of money.
+Dialogue: 1,0:04:39.09,0:04:42.26,Cap,,0,0,0,,There are dropshippers posting on\NYouTube Shorts every single day
+Dialogue: 1,0:04:42.26,0:04:44.28,Cap,,0,0,0,,that still aren't\Ngetting any sales.
+Dialogue: 1,0:04:44.28,0:04:47.90,Cap,,0,0,0,,What made the difference was the\Nthree things that I promised you
+Dialogue: 1,0:04:47.90,0:04:48.88,Cap,,0,0,0,,at the start.
+Dialogue: 1,0:04:51.40,0:04:54.70,Cap,,0,0,0,,that is already proven that\Npeople are going to buy.
+Dialogue: 1,0:04:56.91,0:05:01.61,Cap,,0,0,0,,a video, not an ad, a channel that\NI will review every single week.
+Dialogue: 1,0:05:04.09,0:05:04.39,Cap,,0,0,0,,winner.
+Dialogue: 1,0:05:04.39,0:05:08.39,Cap,,0,0,0,,We build a branded store that will\Ncontinue making you money month
+Dialogue: 1,0:05:08.39,0:05:09.13,Cap,,0,0,0,,after month.
+Dialogue: 1,0:05:15.35,0:05:16.65,Cap,,0,0,0,,We will find your product
+Dialogue: 1,0:05:16.65,0:05:20.55,Cap,,0,0,0,,make you go viral, and build a\Nstore that will pay you every single
+Dialogue: 1,0:05:20.55,0:05:21.05,Cap,,0,0,0,,month.
+Dialogue: 1,0:05:23.83,0:05:26.89,Cap,,0,0,0,,your product, and you will leave\Nthe call knowing exactly what you
+Dialogue: 1,0:05:26.89,0:05:28.49,Cap,,0,0,0,,need to do for the next week.
+Dialogue: 1,0:05:30.95,0:05:32.87,Cap,,0,0,0,,where we go over product research
+Dialogue: 1,0:05:32.87,0:05:34.93,Cap,,0,0,0,,competitor research, videos
+Dialogue: 1,0:05:34.93,0:05:38.41,Cap,,0,0,0,,and Q &As where you can ask me\Nany questions that you have.
+Dialogue: 1,0:05:42.13,0:05:46.11,Cap,,0,0,0,,not an assistant, my actual phone\Nnumber so that you can ask me any
+Dialogue: 1,0:05:46.11,0:05:49.45,Cap,,0,0,0,,question that you want whenever you\Nfeel stuck or you need some more
+Dialogue: 1,0:05:49.45,0:05:50.13,Cap,,0,0,0,,guidance.
+Dialogue: 1,0:05:50.13,0:05:52.71,Cap,,0,0,0,,If you do the work and you're\Nnot live with a product
+Dialogue: 1,0:05:52.71,0:05:54.43,Cap,,0,0,0,,a store, and a channel in the next
+Dialogue: 1,0:05:58.53,0:06:02.37,Cap,,0,0,0,,I take every call myself and I only\Nwork with a small group of people
+Dialogue: 1,0:06:02.37,0:06:02.99,Cap,,0,0,0,,at a time.
+Dialogue: 1,0:06:02.99,0:06:04.94,Cap,,0,0,0,,If you're tired of\Ngetting zero views
+Dialogue: 1,0:06:04.94,0:06:08.44,Cap,,0,0,0,,not getting any sales, the\Napplication is down below.
+Dialogue: 1,0:06:08.44,0:06:11.96,Cap,,0,0,0,,And then we will look at your\Nproduct and your store live and point
+Dialogue: 1,0:06:11.96,0:06:15.00,Cap,,0,0,0,,you in the right direction and\Ntell you the price straight up.
+Dialogue: 1,0:06:15.00,0:06:17.48,Cap,,0,0,0,,If it's not a fit, you'll know\Nwithin a couple of minutes.
+Dialogue: 1,0:06:17.48,0:06:19.06,Cap,,0,0,0,,I will see you inside.
+Dialogue: 9,0:06:18.60,0:06:19.30,Box,,0,0,0,,{\an7\pos(0,0)\c&H000000&\fad(550,0)}{\p1}m 0 0 l 1920 0 1920 1080 0 1080{\p0}

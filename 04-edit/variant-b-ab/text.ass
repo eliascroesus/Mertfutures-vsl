@@ -1,0 +1,714 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter Display Medium,78,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-2.5,0,1,0,0,5,0,0,0,1
+Style: Em,Inter Display Black,104,&H00FF9A2B,&H00FF9A2B,&H00FF9A2B,&H00000000,0,0,0,0,100,100,-3,0,1,0,0,5,0,0,0,1
+Style: Key,Inter Display Medium,96,&H00141414,&H00141414,&H00000000,&H00000000,0,0,0,0,100,100,-3,0,1,0,0,5,0,0,0,1
+Style: Num,Inter Display Bold,240,&H00FF9A2B,&H00FF9A2B,&H00000000,&H00000000,0,0,0,0,100,100,-6,0,1,0,0,5,0,0,0,1
+Style: Small,Inter Display Medium,38,&H00909090,&H00909090,&H00000000,&H00000000,0,0,0,0,100,100,9,0,1,0,0,5,0,0,0,1
+Style: HookA,Inter Display Medium,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-2.5,0,1,0,0,4,0,0,0,1
+Style: HookB,Inter Display Black,100,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-3,0,1,0,0,4,0,0,0,1
+Style: List,Inter Display SemiBold,62,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-2,0,1,0,0,4,0,0,0,1
+Style: Item,Inter Display SemiBold,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-1.5,0,1,0,0,7,0,0,0,1
+Style: ItemS,Inter Display Medium,38,&H00A0A0A0,&H00A0A0A0,&H00000000,&H00000000,0,0,0,0,100,100,-0.5,0,1,0,0,7,0,0,0,1
+Style: Title,Inter Display Black,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-1.5,0,1,0,0,5,0,0,0,1
+Style: Box,Inter,10,&H00000000,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 4,0:00:00.00,0:00:01.40,HookA,,0,0,0,,{\an4\pos(110,399)\c&H000000&\alpha&H6A&\blur9}18 million
+Dialogue: 5,0:00:00.00,0:00:01.40,HookA,,0,0,0,,{\an4\pos(110,395)}18 million
+Dialogue: 4,0:00:00.00,0:00:01.40,HookB,,0,0,0,,{\an4\pos(106,494)\c&H000000&\alpha&H6A&\blur9}PEOPLE
+Dialogue: 5,0:00:00.00,0:00:01.40,HookB,,0,0,0,,{\an4\pos(106,490)}PEOPLE
+Dialogue: 4,0:00:01.40,0:00:03.55,HookA,,0,0,0,,{\an4\pos(110,399)\c&H000000&\alpha&H6A&\blur9}viewed my product
+Dialogue: 5,0:00:01.40,0:00:03.55,HookA,,0,0,0,,{\an4\pos(110,395)}viewed my product
+Dialogue: 4,0:00:01.40,0:00:03.55,HookB,,0,0,0,,{\an4\pos(106,494)\c&H000000&\alpha&H6A&\blur9}IN ONE MONTH
+Dialogue: 5,0:00:01.40,0:00:03.55,HookB,,0,0,0,,{\an4\pos(106,490)}IN ONE MONTH
+Dialogue: 4,0:00:03.55,0:00:05.72,HookA,,0,0,0,,{\an4\pos(110,399)\c&H000000&\alpha&H6A&\blur9}and from that
+Dialogue: 5,0:00:03.55,0:00:05.72,HookA,,0,0,0,,{\an4\pos(110,395)}and from that
+Dialogue: 4,0:00:03.55,0:00:05.72,HookB,,0,0,0,,{\an4\pos(106,494)\c&H000000&\alpha&H6A&\blur9}I ONLY MADE
+Dialogue: 5,0:00:03.55,0:00:05.72,HookB,,0,0,0,,{\an4\pos(106,490)}I ONLY MADE
+Dialogue: 4,0:00:05.72,0:00:08.30,Num,,0,0,0,,{\an4\pos(100,430)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fs230\fscx90\fscy90\t(0,140,\fscx100\fscy100)}$87
+Dialogue: 5,0:00:05.72,0:00:08.30,Num,,0,0,0,,{\an4\pos(100,435)\c&H000000&\alpha&H7A&\blur10\fs230\fscx90\fscy90\t(0,140,\fscx100\fscy100)}$87
+Dialogue: 6,0:00:05.72,0:00:08.30,Num,,0,0,0,,{\an4\pos(100,430)\fs230\fscx90\fscy90\t(0,140,\fscx100\fscy100)}$87
+Dialogue: 4,0:00:05.92,0:00:08.30,HookA,,0,0,0,,{\an4\pos(112,594)\c&H000000&\alpha&H6A&\blur9\fs52\fsp7}IN SALES
+Dialogue: 5,0:00:05.92,0:00:08.30,HookA,,0,0,0,,{\an4\pos(112,590)\fs52\fsp7}IN SALES
+Dialogue: 4,0:00:12.03,0:00:13.93,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}and I was
+Dialogue: 5,0:00:12.03,0:00:13.93,Cap,,0,0,0,,{\pos(960,812)}and I was
+Dialogue: 4,0:00:12.03,0:00:13.93,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}THIS CLOSE
+Dialogue: 5,0:00:12.03,0:00:13.93,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}THIS CLOSE
+Dialogue: 6,0:00:12.03,0:00:13.93,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}THIS CLOSE
+Dialogue: 4,0:00:13.99,0:00:16.28,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}then I changed
+Dialogue: 5,0:00:13.99,0:00:16.28,Cap,,0,0,0,,{\pos(960,812)}then I changed
+Dialogue: 4,0:00:13.99,0:00:16.28,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}THREE SIMPLE THINGS
+Dialogue: 5,0:00:13.99,0:00:16.28,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}THREE SIMPLE THINGS
+Dialogue: 6,0:00:13.99,0:00:16.28,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}THREE SIMPLE THINGS
+Dialogue: 4,0:00:20.03,0:00:23.23,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}but I made
+Dialogue: 5,0:00:20.03,0:00:23.23,Cap,,0,0,0,,{\pos(960,812)}but I made
+Dialogue: 4,0:00:20.03,0:00:23.23,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}$10,000 IN 3 DAYS
+Dialogue: 5,0:00:20.03,0:00:23.23,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}$10,000 IN 3 DAYS
+Dialogue: 6,0:00:20.03,0:00:23.23,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}$10,000 IN 3 DAYS
+Dialogue: 4,0:01:13.90,0:01:15.60,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}the truth is
+Dialogue: 5,0:01:13.90,0:01:15.60,Cap,,0,0,0,,{\pos(960,812)}the truth is
+Dialogue: 4,0:01:13.90,0:01:15.60,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}YOU DON'T
+Dialogue: 5,0:01:13.90,0:01:15.60,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}YOU DON'T
+Dialogue: 6,0:01:13.90,0:01:15.60,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}YOU DON'T
+Dialogue: 4,0:01:19.50,0:01:20.62,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}it's
+Dialogue: 5,0:01:19.50,0:01:20.62,Cap,,0,0,0,,{\pos(960,812)}it's
+Dialogue: 4,0:01:19.50,0:01:20.62,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}NOT YOUR FAULT
+Dialogue: 5,0:01:19.50,0:01:20.62,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}NOT YOUR FAULT
+Dialogue: 6,0:01:19.50,0:01:20.62,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}NOT YOUR FAULT
+Dialogue: 4,0:01:57.90,0:01:59.00,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}I
+Dialogue: 5,0:01:57.90,0:01:59.00,Cap,,0,0,0,,{\pos(960,812)}I
+Dialogue: 4,0:01:57.90,0:01:59.00,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}CAN'T DO THIS ANYMORE
+Dialogue: 5,0:01:57.90,0:01:59.00,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}CAN'T DO THIS ANYMORE
+Dialogue: 6,0:01:57.90,0:01:59.00,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}CAN'T DO THIS ANYMORE
+Dialogue: 4,0:02:17.68,0:02:20.03,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}you're falling for
+Dialogue: 5,0:02:17.68,0:02:20.03,Cap,,0,0,0,,{\pos(960,812)}you're falling for
+Dialogue: 4,0:02:17.68,0:02:20.03,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}THE TIKTOK SCAMS
+Dialogue: 5,0:02:17.68,0:02:20.03,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}THE TIKTOK SCAMS
+Dialogue: 6,0:02:17.68,0:02:20.03,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}THE TIKTOK SCAMS
+Dialogue: 4,0:03:00.57,0:03:02.62,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}everybody was
+Dialogue: 5,0:03:00.57,0:03:02.62,Cap,,0,0,0,,{\pos(960,812)}everybody was
+Dialogue: 4,0:03:00.57,0:03:02.62,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}RIGHT ABOUT ME
+Dialogue: 5,0:03:00.57,0:03:02.62,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}RIGHT ABOUT ME
+Dialogue: 6,0:03:00.57,0:03:02.62,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}RIGHT ABOUT ME
+Dialogue: 4,0:03:04.82,0:03:06.82,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}please
+Dialogue: 5,0:03:04.82,0:03:06.82,Cap,,0,0,0,,{\pos(960,812)}please
+Dialogue: 4,0:03:04.82,0:03:06.82,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}DO NOT CLICK OFF
+Dialogue: 5,0:03:04.82,0:03:06.82,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}DO NOT CLICK OFF
+Dialogue: 6,0:03:04.82,0:03:06.82,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}DO NOT CLICK OFF
+Dialogue: 4,0:03:37.57,0:03:39.17,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}that channel made me
+Dialogue: 5,0:03:37.57,0:03:39.17,Cap,,0,0,0,,{\pos(960,812)}that channel made me
+Dialogue: 4,0:03:37.57,0:03:39.17,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}$300,000
+Dialogue: 5,0:03:37.57,0:03:39.17,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}$300,000
+Dialogue: 6,0:03:37.57,0:03:39.17,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}$300,000
+Dialogue: 4,0:03:45.52,0:03:49.07,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}I started getting
+Dialogue: 5,0:03:45.52,0:03:49.07,Cap,,0,0,0,,{\pos(960,812)}I started getting
+Dialogue: 4,0:03:45.52,0:03:49.07,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}SALE AFTER SALE
+Dialogue: 5,0:03:45.52,0:03:49.07,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}SALE AFTER SALE
+Dialogue: 6,0:03:45.52,0:03:49.07,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}SALE AFTER SALE
+Dialogue: 4,0:04:16.30,0:04:17.90,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}after my first
+Dialogue: 5,0:04:16.30,0:04:17.90,Cap,,0,0,0,,{\pos(960,812)}after my first
+Dialogue: 4,0:04:16.30,0:04:17.90,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}$10,000 MONTH
+Dialogue: 5,0:04:16.30,0:04:17.90,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}$10,000 MONTH
+Dialogue: 6,0:04:16.30,0:04:17.90,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}$10,000 MONTH
+Dialogue: 4,0:04:36.45,0:04:38.77,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}is not what made me
+Dialogue: 5,0:04:36.45,0:04:38.77,Cap,,0,0,0,,{\pos(960,812)}is not what made me
+Dialogue: 4,0:04:36.45,0:04:38.77,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}THAT MONEY
+Dialogue: 5,0:04:36.45,0:04:38.77,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}THAT MONEY
+Dialogue: 6,0:04:36.45,0:04:38.77,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}THAT MONEY
+Dialogue: 4,0:05:53.98,0:05:55.53,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}in the next
+Dialogue: 5,0:05:53.98,0:05:55.53,Cap,,0,0,0,,{\pos(960,812)}in the next
+Dialogue: 4,0:05:53.98,0:05:55.53,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}60 DAYS
+Dialogue: 5,0:05:53.98,0:05:55.53,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}60 DAYS
+Dialogue: 6,0:05:53.98,0:05:55.53,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}60 DAYS
+Dialogue: 4,0:05:56.73,0:05:58.08,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}I'll work with you
+Dialogue: 5,0:05:56.73,0:05:58.08,Cap,,0,0,0,,{\pos(960,812)}I'll work with you
+Dialogue: 4,0:05:56.73,0:05:58.08,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}COMPLETELY FREE
+Dialogue: 5,0:05:56.73,0:05:58.08,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}COMPLETELY FREE
+Dialogue: 6,0:05:56.73,0:05:58.08,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}COMPLETELY FREE
+Dialogue: 4,0:06:06.25,0:06:07.85,Cap,,0,0,0,,{\pos(960,816)\c&H000000&\alpha&H6A&\blur9}the application is
+Dialogue: 5,0:06:06.25,0:06:07.85,Cap,,0,0,0,,{\pos(960,812)}the application is
+Dialogue: 4,0:06:06.25,0:06:07.85,Em,,0,0,0,,{\pos(960,918)\bord7\3c&HFF9A2B&\blur16\alpha&H58&\fad(50,0)}DOWN BELOW
+Dialogue: 5,0:06:06.25,0:06:07.85,Em,,0,0,0,,{\pos(960,923)\c&H000000&\alpha&H7A&\blur10\fad(50,0)}DOWN BELOW
+Dialogue: 6,0:06:06.25,0:06:07.85,Em,,0,0,0,,{\pos(960,918)\fad(50,0)}DOWN BELOW
+Dialogue: 5,0:01:34.10,0:01:37.87,Key,,0,0,0,,{\pos(960,481)}{\alpha&HFF&\c&H141414&\t(39,129,\alpha&H00&)}The {\alpha&HFF&\c&H141414&\t(219,309,\alpha&H00&)}one {\alpha&HFF&\c&H141414&\t(640,730,\alpha&H00&)}place {\alpha&HFF&\c&H141414&\t(1140,1230,\alpha&H00&)}every {\alpha&HFF&\c&H141414&\t(1626,1716,\alpha&H00&)}guru
+Dialogue: 5,0:01:34.10,0:01:37.87,Key,,0,0,0,,{\pos(960,599)}{\alpha&HFF&\c&H141414&\t(2006,2096,\alpha&H00&)}was {\alpha&HFF&\c&H141414&\t(2286,2376,\alpha&H00&)}telling {\alpha&HFF&\c&H141414&\t(2526,2616,\alpha&H00&)}me {\alpha&HFF&\c&H141414&\t(2726,2816,\alpha&H00&)}not {\alpha&HFF&\c&H141414&\t(2986,3076,\alpha&H00&)}to {\alpha&HFF&\c&H141414&\t(3146,3236,\alpha&H00&)}post {\alpha&HFF&\c&H141414&\t(3426,3516,\alpha&H00&)}on
+Dialogue: 5,0:02:04.55,0:02:08.90,Key,,0,0,0,,{\pos(960,481)}{\alpha&HFF&\c&H141414&\t(0,90,\alpha&H00&)}So {\alpha&HFF&\c&H141414&\t(109,199,\alpha&H00&)}I {\alpha&HFF&\c&H141414&\t(269,359,\alpha&H00&)}quit,
+Dialogue: 5,0:02:04.55,0:02:08.90,Key,,0,0,0,,{\pos(960,599)}{\alpha&HFF&\c&H141414&\t(689,779,\alpha&H00&)}with {\alpha&HFF&\c&HFF9A2B&\t(1109,1199,\alpha&H00&)}$457 {\alpha&HFF&\c&H141414&\t(3170,3260,\alpha&H00&)}to {\alpha&HFF&\c&H141414&\t(3730,3820,\alpha&H00&)}my {\alpha&HFF&\c&H141414&\t(3930,4020,\alpha&H00&)}name
+Dialogue: 5,0:04:32.60,0:04:34.80,Key,,0,0,0,,{\pos(960,481)}{\alpha&HFF&\c&H141414&\t(0,90,\alpha&H00&)}Here's {\alpha&HFF&\c&H141414&\t(279,369,\alpha&H00&)}the {\alpha&HFF&\c&H141414&\t(399,489,\alpha&H00&)}part {\alpha&HFF&\c&H141414&\t(639,729,\alpha&H00&)}that {\alpha&HFF&\c&H141414&\t(879,969,\alpha&H00&)}most
+Dialogue: 5,0:04:32.60,0:04:34.80,Key,,0,0,0,,{\pos(960,599)}{\alpha&HFF&\c&H141414&\t(1120,1210,\alpha&H00&)}people {\alpha&HFF&\c&H141414&\t(1399,1489,\alpha&H00&)}don't {\alpha&HFF&\c&H141414&\t(1659,1749,\alpha&H00&)}understand
+Dialogue: 5,0:01:07.04,0:01:08.46,Num,,0,0,0,,{\pos(960,505)\fscx88\fscy88\t(0,180,\fscx100\fscy100)}$0
+Dialogue: 5,0:01:07.04,0:01:08.46,Small,,0,0,0,,{\pos(960,665)\fad(120,0)}— AFTER A MILLION VIEWS —
+Dialogue: 5,0:02:41.07,0:02:42.42,Num,,0,0,0,,{\pos(960,505)\fscx88\fscy88\t(0,180,\fscx100\fscy100)}18,000,000
+Dialogue: 5,0:02:41.07,0:02:42.42,Small,,0,0,0,,{\pos(960,665)\fad(120,0)}— VIEWS —
+Dialogue: 5,0:02:43.12,0:02:44.65,Num,,0,0,0,,{\pos(960,505)\fscx88\fscy88\t(0,180,\fscx100\fscy100)}$87
+Dialogue: 5,0:02:43.12,0:02:44.65,Small,,0,0,0,,{\pos(960,665)\fad(120,0)}— IN SALES —
+Dialogue: 3,0:04:48.80,0:05:12.73,Box,,0,0,0,,{\an7\pos(0,0)\c&H000000&\alpha&H70&\blur60\fad(250,250)}{\p1}m 1220 0 l 1920 0 1920 1080 1220 1080{\p0}
+Dialogue: 4,0:04:48.90,0:04:55.00,List,,0,0,0,,{\an4\pos(1290,434)\c&H000000&\alpha&H6A&\blur9\fad(120,0)}A proven product  ←
+Dialogue: 5,0:04:48.90,0:04:55.00,List,,0,0,0,,{\an4\pos(1290,430)\fad(120,0)}A proven product  ←
+Dialogue: 4,0:04:55.00,0:05:01.63,List,,0,0,0,,{\an4\pos(1290,434)\c&H000000&\alpha&H6A&\blur9\alpha&H8C&}A proven product
+Dialogue: 5,0:04:55.00,0:05:01.63,List,,0,0,0,,{\an4\pos(1290,430)\alpha&H8C&}A proven product
+Dialogue: 4,0:05:01.63,0:05:09.13,List,,0,0,0,,{\an4\pos(1290,434)\c&H000000&\alpha&H6A&\blur9\alpha&H8C&}A proven product
+Dialogue: 5,0:05:01.63,0:05:09.13,List,,0,0,0,,{\an4\pos(1290,430)\alpha&H8C&}A proven product
+Dialogue: 4,0:05:09.13,0:05:12.73,List,,0,0,0,,{\an4\pos(1290,434)\c&H000000&\alpha&H6A&\blur9}A proven product
+Dialogue: 5,0:05:09.13,0:05:12.73,List,,0,0,0,,{\an4\pos(1290,430)}A proven product
+Dialogue: 4,0:04:55.00,0:05:01.63,List,,0,0,0,,{\an4\pos(1290,544)\c&H000000&\alpha&H6A&\blur9\fad(120,0)}A channel, not a video  ←
+Dialogue: 5,0:04:55.00,0:05:01.63,List,,0,0,0,,{\an4\pos(1290,540)\fad(120,0)}A channel, not a video  ←
+Dialogue: 4,0:05:01.63,0:05:09.13,List,,0,0,0,,{\an4\pos(1290,544)\c&H000000&\alpha&H6A&\blur9\alpha&H8C&}A channel, not a video
+Dialogue: 5,0:05:01.63,0:05:09.13,List,,0,0,0,,{\an4\pos(1290,540)\alpha&H8C&}A channel, not a video
+Dialogue: 4,0:05:09.13,0:05:12.73,List,,0,0,0,,{\an4\pos(1290,544)\c&H000000&\alpha&H6A&\blur9}A channel, not a video
+Dialogue: 5,0:05:09.13,0:05:12.73,List,,0,0,0,,{\an4\pos(1290,540)}A channel, not a video
+Dialogue: 4,0:05:01.63,0:05:09.13,List,,0,0,0,,{\an4\pos(1290,654)\c&H000000&\alpha&H6A&\blur9\fad(120,0)}A brand, not a one-off  ←
+Dialogue: 5,0:05:01.63,0:05:09.13,List,,0,0,0,,{\an4\pos(1290,650)\fad(120,0)}A brand, not a one-off  ←
+Dialogue: 4,0:05:09.13,0:05:12.73,List,,0,0,0,,{\an4\pos(1290,654)\c&H000000&\alpha&H6A&\blur9}A brand, not a one-off
+Dialogue: 5,0:05:09.13,0:05:12.73,List,,0,0,0,,{\an4\pos(1290,650)}A brand, not a one-off
+Dialogue: 6,0:05:21.03,0:05:49.38,Title,,0,0,0,,{\pos(1380,215)\fad(150,120)}WHAT'S INCLUDED
+Dialogue: 6,0:05:21.03,0:05:49.38,Title,,0,0,0,,{\pos(1380,285)\fad(150,120)}INSIDE {\c&HFF9A2B&}YTD
+Dialogue: 6,0:05:21.03,0:05:49.38,Title,,0,0,0,,{\pos(1380,285)\bord8\3c&HFF9A2B&\blur22\alpha&HA0&\fad(150,120)}INSIDE YTD
+Dialogue: 6,0:05:21.13,0:05:49.38,Box,,0,0,0,,{\an7\pos(0,0)\c&HFFFFFF&\alpha&H60&\fad(150,120)}{\p1}m 1160 340 l 1600 340 1600 343 1160 343{\p0}
+Dialogue: 6,0:05:21.03,0:05:49.38,Item,,0,0,0,,{\pos(960,420)\fad(120,120)}1.
+Dialogue: 6,0:05:21.03,0:05:49.38,Item,,0,0,0,,{\pos(1020,420)\fad(120,120)}One weekly 1-on-1 call
+Dialogue: 6,0:05:21.18,0:05:49.38,ItemS,,0,0,0,,{\pos(1022,486)\fad(150,120)}your videos, store and product, every week
+Dialogue: 6,0:05:28.53,0:05:49.38,Item,,0,0,0,,{\pos(960,595)\fad(120,120)}2.
+Dialogue: 6,0:05:28.53,0:05:49.38,Item,,0,0,0,,{\pos(1020,595)\fad(120,120)}Four weekly coaching calls
+Dialogue: 6,0:05:28.68,0:05:49.38,ItemS,,0,0,0,,{\pos(1022,661)\fad(150,120)}product research, competitors, videos, Q&As
+Dialogue: 6,0:05:38.43,0:05:49.38,Item,,0,0,0,,{\pos(960,770)\fad(120,120)}3.
+Dialogue: 6,0:05:38.43,0:05:49.38,Item,,0,0,0,,{\pos(1020,770)\fad(120,120)}My personal phone number
+Dialogue: 6,0:05:38.58,0:05:49.38,ItemS,,0,0,0,,{\pos(1022,836)\fad(150,120)}Monday to Friday, not an assistant
+Dialogue: 2,0:00:08.43,0:00:09.35,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I owed money to
+Dialogue: 3,0:00:08.43,0:00:09.35,Cap,,0,0,0,,{\pos(960,880)}I owed money to
+Dialogue: 2,0:00:09.35,0:00:09.89,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}my mom
+Dialogue: 3,0:00:09.35,0:00:09.89,Cap,,0,0,0,,{\pos(960,880)}my mom
+Dialogue: 2,0:00:09.89,0:00:10.77,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}my friends were calling
+Dialogue: 3,0:00:09.89,0:00:10.77,Cap,,0,0,0,,{\pos(960,880)}my friends were calling
+Dialogue: 2,0:00:10.77,0:00:11.53,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}me an idiot
+Dialogue: 3,0:00:10.77,0:00:11.53,Cap,,0,0,0,,{\pos(960,880)}me an idiot
+Dialogue: 2,0:00:11.53,0:00:12.03,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and I was
+Dialogue: 3,0:00:11.53,0:00:12.03,Cap,,0,0,0,,{\pos(960,880)}and I was
+Dialogue: 2,0:00:16.33,0:00:17.27,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}but I still ran
+Dialogue: 3,0:00:16.33,0:00:17.27,Cap,,0,0,0,,{\pos(960,880)}but I still ran
+Dialogue: 2,0:00:17.27,0:00:18.33,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}the same products
+Dialogue: 3,0:00:17.27,0:00:18.33,Cap,,0,0,0,,{\pos(960,880)}the same products
+Dialogue: 2,0:00:18.33,0:00:19.75,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I didn't run ads
+Dialogue: 3,0:00:18.33,0:00:19.75,Cap,,0,0,0,,{\pos(960,880)}I didn't run ads
+Dialogue: 2,0:00:19.75,0:00:20.03,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}but
+Dialogue: 3,0:00:19.75,0:00:20.03,Cap,,0,0,0,,{\pos(960,880)}but
+Dialogue: 2,0:00:23.75,0:00:24.37,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And
+Dialogue: 3,0:00:23.75,0:00:24.37,Cap,,0,0,0,,{\pos(960,880)}And
+Dialogue: 2,0:00:24.37,0:00:25.49,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I'll even show you
+Dialogue: 3,0:00:24.37,0:00:25.49,Cap,,0,0,0,,{\pos(960,880)}I'll even show you
+Dialogue: 2,0:00:25.49,0:00:26.05,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}live
+Dialogue: 3,0:00:25.49,0:00:26.05,Cap,,0,0,0,,{\pos(960,880)}live
+Dialogue: 2,0:00:26.05,0:00:27.07,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}because if I can't
+Dialogue: 3,0:00:26.05,0:00:27.07,Cap,,0,0,0,,{\pos(960,880)}because if I can't
+Dialogue: 2,0:00:27.07,0:00:27.97,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}show you live
+Dialogue: 3,0:00:27.07,0:00:27.97,Cap,,0,0,0,,{\pos(960,880)}show you live
+Dialogue: 2,0:00:27.97,0:00:28.78,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}then I shouldn't
+Dialogue: 3,0:00:27.97,0:00:28.78,Cap,,0,0,0,,{\pos(960,880)}then I shouldn't
+Dialogue: 2,0:00:28.78,0:00:30.08,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}show you at all
+Dialogue: 3,0:00:28.78,0:00:30.08,Cap,,0,0,0,,{\pos(960,880)}show you at all
+Dialogue: 2,0:00:30.08,0:00:30.72,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And as you can
+Dialogue: 3,0:00:30.08,0:00:30.72,Cap,,0,0,0,,{\pos(960,880)}And as you can
+Dialogue: 2,0:00:30.72,0:00:31.08,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}see
+Dialogue: 3,0:00:30.72,0:00:31.08,Cap,,0,0,0,,{\pos(960,880)}see
+Dialogue: 2,0:00:31.08,0:00:32.14,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}it's still here
+Dialogue: 3,0:00:31.08,0:00:32.14,Cap,,0,0,0,,{\pos(960,880)}it's still here
+Dialogue: 2,0:00:32.14,0:00:32.38,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}But
+Dialogue: 3,0:00:32.14,0:00:32.38,Cap,,0,0,0,,{\pos(960,880)}But
+Dialogue: 2,0:00:32.38,0:00:33.14,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}by the end of
+Dialogue: 3,0:00:32.38,0:00:33.14,Cap,,0,0,0,,{\pos(960,880)}by the end of
+Dialogue: 2,0:00:33.14,0:00:33.82,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}this video
+Dialogue: 3,0:00:33.14,0:00:33.82,Cap,,0,0,0,,{\pos(960,880)}this video
+Dialogue: 2,0:00:33.82,0:00:34.40,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I'm going to show
+Dialogue: 3,0:00:33.82,0:00:34.40,Cap,,0,0,0,,{\pos(960,880)}I'm going to show
+Dialogue: 2,0:00:34.40,0:00:35.44,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you the three things
+Dialogue: 3,0:00:34.40,0:00:35.44,Cap,,0,0,0,,{\pos(960,880)}you the three things
+Dialogue: 2,0:00:35.44,0:00:36.36,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}that I personally
+Dialogue: 3,0:00:35.44,0:00:36.36,Cap,,0,0,0,,{\pos(960,880)}that I personally
+Dialogue: 2,0:00:36.36,0:00:37.60,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}used to take a
+Dialogue: 3,0:00:36.36,0:00:37.60,Cap,,0,0,0,,{\pos(960,880)}used to take a
+Dialogue: 2,0:00:37.60,0:00:37.95,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}store from
+Dialogue: 3,0:00:37.60,0:00:37.95,Cap,,0,0,0,,{\pos(960,880)}store from
+Dialogue: 2,0:00:41.74,0:00:42.62,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And one of them
+Dialogue: 3,0:00:41.74,0:00:42.62,Cap,,0,0,0,,{\pos(960,880)}And one of them
+Dialogue: 2,0:00:42.62,0:00:43.94,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}is probably the reason
+Dialogue: 3,0:00:42.62,0:00:43.94,Cap,,0,0,0,,{\pos(960,880)}is probably the reason
+Dialogue: 2,0:00:43.94,0:00:45.64,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}that you still haven't
+Dialogue: 3,0:00:43.94,0:00:45.64,Cap,,0,0,0,,{\pos(960,880)}that you still haven't
+Dialogue: 2,0:00:45.64,0:00:46.54,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}gotten your first
+Dialogue: 3,0:00:45.64,0:00:46.54,Cap,,0,0,0,,{\pos(960,880)}gotten your first
+Dialogue: 2,0:00:46.54,0:00:46.96,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}sale
+Dialogue: 3,0:00:46.54,0:00:46.96,Cap,,0,0,0,,{\pos(960,880)}sale
+Dialogue: 2,0:00:46.96,0:00:47.68,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Because maybe you
+Dialogue: 3,0:00:46.96,0:00:47.68,Cap,,0,0,0,,{\pos(960,880)}Because maybe you
+Dialogue: 2,0:00:47.68,0:00:48.78,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}already tried dropshipping
+Dialogue: 3,0:00:47.68,0:00:48.78,Cap,,0,0,0,,{\pos(960,880)}already tried dropshipping
+Dialogue: 2,0:00:48.78,0:00:49.34,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}before
+Dialogue: 3,0:00:48.78,0:00:49.34,Cap,,0,0,0,,{\pos(960,880)}before
+Dialogue: 2,0:00:49.34,0:00:50.48,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you spent hours looking
+Dialogue: 3,0:00:49.34,0:00:50.48,Cap,,0,0,0,,{\pos(960,880)}you spent hours looking
+Dialogue: 2,0:00:50.48,0:00:51.12,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}for a product
+Dialogue: 3,0:00:50.48,0:00:51.12,Cap,,0,0,0,,{\pos(960,880)}for a product
+Dialogue: 2,0:00:51.12,0:00:52.60,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you spent hours recording
+Dialogue: 3,0:00:51.12,0:00:52.60,Cap,,0,0,0,,{\pos(960,880)}you spent hours recording
+Dialogue: 2,0:00:52.60,0:00:53.78,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you made the videos
+Dialogue: 3,0:00:52.60,0:00:53.78,Cap,,0,0,0,,{\pos(960,880)}you made the videos
+Dialogue: 2,0:00:53.78,0:00:54.72,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you posted them
+Dialogue: 3,0:00:53.78,0:00:54.72,Cap,,0,0,0,,{\pos(960,880)}you posted them
+Dialogue: 2,0:00:54.72,0:00:55.98,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and you only got
+Dialogue: 3,0:00:54.72,0:00:55.98,Cap,,0,0,0,,{\pos(960,880)}and you only got
+Dialogue: 2,0:00:55.98,0:00:56.82,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a couple thousand
+Dialogue: 3,0:00:55.98,0:00:56.82,Cap,,0,0,0,,{\pos(960,880)}a couple thousand
+Dialogue: 2,0:00:56.82,0:00:57.52,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}views
+Dialogue: 3,0:00:56.82,0:00:57.52,Cap,,0,0,0,,{\pos(960,880)}views
+Dialogue: 2,0:00:57.52,0:00:58.22,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Then
+Dialogue: 3,0:00:57.52,0:00:58.22,Cap,,0,0,0,,{\pos(960,880)}Then
+Dialogue: 2,0:00:58.22,0:00:59.18,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}one video finally
+Dialogue: 3,0:00:58.22,0:00:59.18,Cap,,0,0,0,,{\pos(960,880)}one video finally
+Dialogue: 2,0:00:59.18,0:00:59.80,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}pops
+Dialogue: 3,0:00:59.18,0:00:59.80,Cap,,0,0,0,,{\pos(960,880)}pops
+Dialogue: 2,0:00:59.80,0:01:00.48,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}You get a million
+Dialogue: 3,0:00:59.80,0:01:00.48,Cap,,0,0,0,,{\pos(960,880)}You get a million
+Dialogue: 2,0:01:00.48,0:01:01.06,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}views
+Dialogue: 3,0:01:00.48,0:01:01.06,Cap,,0,0,0,,{\pos(960,880)}views
+Dialogue: 2,0:01:01.06,0:01:01.45,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}but you
+Dialogue: 3,0:01:01.06,0:01:01.45,Cap,,0,0,0,,{\pos(960,880)}but you
+Dialogue: 2,0:01:04.70,0:01:05.36,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}still
+Dialogue: 3,0:01:04.70,0:01:05.36,Cap,,0,0,0,,{\pos(960,880)}still
+Dialogue: 2,0:01:05.36,0:01:06.62,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}after a million views
+Dialogue: 3,0:01:05.36,0:01:06.62,Cap,,0,0,0,,{\pos(960,880)}after a million views
+Dialogue: 2,0:01:06.62,0:01:07.04,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you made
+Dialogue: 3,0:01:06.62,0:01:07.04,Cap,,0,0,0,,{\pos(960,880)}you made
+Dialogue: 2,0:01:08.54,0:01:10.04,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Or maybe you haven't
+Dialogue: 3,0:01:08.54,0:01:10.04,Cap,,0,0,0,,{\pos(960,880)}Or maybe you haven't
+Dialogue: 2,0:01:10.04,0:01:10.74,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}even started yet
+Dialogue: 3,0:01:10.04,0:01:10.74,Cap,,0,0,0,,{\pos(960,880)}even started yet
+Dialogue: 2,0:01:10.74,0:01:11.88,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}because every guru
+Dialogue: 3,0:01:10.74,0:01:11.88,Cap,,0,0,0,,{\pos(960,880)}because every guru
+Dialogue: 2,0:01:11.88,0:01:12.80,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}is telling you that
+Dialogue: 3,0:01:11.88,0:01:12.80,Cap,,0,0,0,,{\pos(960,880)}is telling you that
+Dialogue: 2,0:01:12.80,0:01:13.42,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you need to run
+Dialogue: 3,0:01:12.80,0:01:13.42,Cap,,0,0,0,,{\pos(960,880)}you need to run
+Dialogue: 2,0:01:13.42,0:01:13.90,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}ads
+Dialogue: 3,0:01:13.42,0:01:13.90,Cap,,0,0,0,,{\pos(960,880)}ads
+Dialogue: 2,0:01:15.66,0:01:17.16,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And either way
+Dialogue: 3,0:01:15.66,0:01:17.16,Cap,,0,0,0,,{\pos(960,880)}And either way
+Dialogue: 2,0:01:17.16,0:01:18.06,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}whatever misconception
+Dialogue: 3,0:01:17.16,0:01:18.06,Cap,,0,0,0,,{\pos(960,880)}whatever misconception
+Dialogue: 2,0:01:18.06,0:01:19.02,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you've been led to
+Dialogue: 3,0:01:18.06,0:01:19.02,Cap,,0,0,0,,{\pos(960,880)}you've been led to
+Dialogue: 2,0:01:19.02,0:01:19.50,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}believe
+Dialogue: 3,0:01:19.02,0:01:19.50,Cap,,0,0,0,,{\pos(960,880)}believe
+Dialogue: 2,0:01:20.69,0:01:21.93,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}The problem is the
+Dialogue: 3,0:01:20.69,0:01:21.93,Cap,,0,0,0,,{\pos(960,880)}The problem is the
+Dialogue: 2,0:01:21.93,0:01:22.95,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}platform you're posting
+Dialogue: 3,0:01:21.93,0:01:22.95,Cap,,0,0,0,,{\pos(960,880)}platform you're posting
+Dialogue: 2,0:01:22.95,0:01:23.30,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}on
+Dialogue: 3,0:01:22.95,0:01:23.30,Cap,,0,0,0,,{\pos(960,880)}on
+Dialogue: 2,0:01:23.30,0:01:24.34,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Because the apps
+Dialogue: 3,0:01:23.30,0:01:24.34,Cap,,0,0,0,,{\pos(960,880)}Because the apps
+Dialogue: 2,0:01:24.34,0:01:25.24,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}everybody is telling
+Dialogue: 3,0:01:24.34,0:01:25.24,Cap,,0,0,0,,{\pos(960,880)}everybody is telling
+Dialogue: 2,0:01:25.24,0:01:26.02,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you to post on
+Dialogue: 3,0:01:25.24,0:01:26.02,Cap,,0,0,0,,{\pos(960,880)}you to post on
+Dialogue: 2,0:01:26.02,0:01:27.72,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}are kind of saturated
+Dialogue: 3,0:01:26.02,0:01:27.72,Cap,,0,0,0,,{\pos(960,880)}are kind of saturated
+Dialogue: 2,0:01:27.72,0:01:29.52,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and really difficult
+Dialogue: 3,0:01:27.72,0:01:29.52,Cap,,0,0,0,,{\pos(960,880)}and really difficult
+Dialogue: 2,0:01:29.52,0:01:30.86,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}to go viral on
+Dialogue: 3,0:01:29.52,0:01:30.86,Cap,,0,0,0,,{\pos(960,880)}to go viral on
+Dialogue: 2,0:01:30.86,0:01:31.88,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}The place to actually
+Dialogue: 3,0:01:30.86,0:01:31.88,Cap,,0,0,0,,{\pos(960,880)}The place to actually
+Dialogue: 2,0:01:31.88,0:01:33.26,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}go viral and get
+Dialogue: 3,0:01:31.88,0:01:33.26,Cap,,0,0,0,,{\pos(960,880)}go viral and get
+Dialogue: 2,0:01:33.26,0:01:34.10,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}sales is
+Dialogue: 3,0:01:33.26,0:01:34.10,Cap,,0,0,0,,{\pos(960,880)}sales is
+Dialogue: 2,0:01:37.93,0:01:38.57,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And I'm going to
+Dialogue: 3,0:01:37.93,0:01:38.57,Cap,,0,0,0,,{\pos(960,880)}And I'm going to
+Dialogue: 2,0:01:38.57,0:01:39.61,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}tell you exactly
+Dialogue: 3,0:01:38.57,0:01:39.61,Cap,,0,0,0,,{\pos(960,880)}tell you exactly
+Dialogue: 2,0:01:39.61,0:01:40.91,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}where that was
+Dialogue: 3,0:01:39.61,0:01:40.91,Cap,,0,0,0,,{\pos(960,880)}where that was
+Dialogue: 2,0:01:40.91,0:01:41.69,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}But not that long
+Dialogue: 3,0:01:40.91,0:01:41.69,Cap,,0,0,0,,{\pos(960,880)}But not that long
+Dialogue: 2,0:01:41.69,0:01:42.09,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}ago
+Dialogue: 3,0:01:41.69,0:01:42.09,Cap,,0,0,0,,{\pos(960,880)}ago
+Dialogue: 2,0:01:42.09,0:01:42.91,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I was working at
+Dialogue: 3,0:01:42.09,0:01:42.91,Cap,,0,0,0,,{\pos(960,880)}I was working at
+Dialogue: 2,0:01:42.91,0:01:44.21,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a dining server for
+Dialogue: 3,0:01:42.91,0:01:44.21,Cap,,0,0,0,,{\pos(960,880)}a dining server for
+Dialogue: 2,0:01:44.21,0:01:46.03,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}$16 an hour
+Dialogue: 3,0:01:44.21,0:01:46.03,Cap,,0,0,0,,{\pos(960,880)}$16 an hour
+Dialogue: 2,0:01:46.03,0:01:46.98,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Every shift
+Dialogue: 3,0:01:46.03,0:01:46.98,Cap,,0,0,0,,{\pos(960,880)}Every shift
+Dialogue: 2,0:01:46.98,0:01:47.78,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}my co-workers were
+Dialogue: 3,0:01:46.98,0:01:47.78,Cap,,0,0,0,,{\pos(960,880)}my co-workers were
+Dialogue: 2,0:01:47.78,0:01:48.84,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}making fun of me
+Dialogue: 3,0:01:47.78,0:01:48.84,Cap,,0,0,0,,{\pos(960,880)}making fun of me
+Dialogue: 2,0:01:48.88,0:01:49.82,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}my managers were
+Dialogue: 3,0:01:48.88,0:01:49.82,Cap,,0,0,0,,{\pos(960,880)}my managers were
+Dialogue: 2,0:01:49.82,0:01:50.84,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}complete jerks
+Dialogue: 3,0:01:49.82,0:01:50.84,Cap,,0,0,0,,{\pos(960,880)}complete jerks
+Dialogue: 2,0:01:50.84,0:01:52.28,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and even one time
+Dialogue: 3,0:01:50.84,0:01:52.28,Cap,,0,0,0,,{\pos(960,880)}and even one time
+Dialogue: 2,0:01:52.28,0:01:53.62,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a grown man threatened
+Dialogue: 3,0:01:52.28,0:01:53.62,Cap,,0,0,0,,{\pos(960,880)}a grown man threatened
+Dialogue: 2,0:01:53.62,0:01:54.76,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}me at work
+Dialogue: 3,0:01:53.62,0:01:54.76,Cap,,0,0,0,,{\pos(960,880)}me at work
+Dialogue: 2,0:01:54.76,0:01:55.50,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I remember walking
+Dialogue: 3,0:01:54.76,0:01:55.50,Cap,,0,0,0,,{\pos(960,880)}I remember walking
+Dialogue: 2,0:01:55.50,0:01:56.30,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}out of there thinking
+Dialogue: 3,0:01:55.50,0:01:56.30,Cap,,0,0,0,,{\pos(960,880)}out of there thinking
+Dialogue: 2,0:01:56.30,0:01:57.48,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}every single night
+Dialogue: 3,0:01:56.30,0:01:57.48,Cap,,0,0,0,,{\pos(960,880)}every single night
+Dialogue: 2,0:01:57.48,0:01:57.90,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}that
+Dialogue: 3,0:01:57.48,0:01:57.90,Cap,,0,0,0,,{\pos(960,880)}that
+Dialogue: 2,0:01:59.04,0:01:59.86,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and I'm not going
+Dialogue: 3,0:01:59.04,0:01:59.86,Cap,,0,0,0,,{\pos(960,880)}and I'm not going
+Dialogue: 2,0:01:59.86,0:02:00.76,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}to live the rest
+Dialogue: 3,0:01:59.86,0:02:00.76,Cap,,0,0,0,,{\pos(960,880)}to live the rest
+Dialogue: 2,0:02:00.76,0:02:02.00,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}of my life working
+Dialogue: 3,0:02:00.76,0:02:02.00,Cap,,0,0,0,,{\pos(960,880)}of my life working
+Dialogue: 2,0:02:02.00,0:02:03.12,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}as a dining server
+Dialogue: 3,0:02:02.00,0:02:03.12,Cap,,0,0,0,,{\pos(960,880)}as a dining server
+Dialogue: 2,0:02:03.12,0:02:04.34,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}at a retirement home
+Dialogue: 3,0:02:03.12,0:02:04.34,Cap,,0,0,0,,{\pos(960,880)}at a retirement home
+Dialogue: 2,0:02:04.34,0:02:04.55,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}So
+Dialogue: 3,0:02:04.34,0:02:04.55,Cap,,0,0,0,,{\pos(960,880)}So
+Dialogue: 2,0:02:08.96,0:02:10.08,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and I decided to
+Dialogue: 3,0:02:08.96,0:02:10.08,Cap,,0,0,0,,{\pos(960,880)}and I decided to
+Dialogue: 2,0:02:10.08,0:02:10.88,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}go all in on
+Dialogue: 3,0:02:10.08,0:02:10.88,Cap,,0,0,0,,{\pos(960,880)}go all in on
+Dialogue: 2,0:02:10.88,0:02:11.42,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}dropshipping
+Dialogue: 3,0:02:10.88,0:02:11.42,Cap,,0,0,0,,{\pos(960,880)}dropshipping
+Dialogue: 2,0:02:11.42,0:02:12.08,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}When I told my
+Dialogue: 3,0:02:11.42,0:02:12.08,Cap,,0,0,0,,{\pos(960,880)}When I told my
+Dialogue: 2,0:02:12.08,0:02:13.18,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}cousins and my closest
+Dialogue: 3,0:02:12.08,0:02:13.18,Cap,,0,0,0,,{\pos(960,880)}cousins and my closest
+Dialogue: 2,0:02:13.18,0:02:13.94,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}friends that I was
+Dialogue: 3,0:02:13.18,0:02:13.94,Cap,,0,0,0,,{\pos(960,880)}friends that I was
+Dialogue: 2,0:02:13.94,0:02:14.50,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}going to go all
+Dialogue: 3,0:02:13.94,0:02:14.50,Cap,,0,0,0,,{\pos(960,880)}going to go all
+Dialogue: 2,0:02:14.50,0:02:15.50,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}in on dropshipping
+Dialogue: 3,0:02:14.50,0:02:15.50,Cap,,0,0,0,,{\pos(960,880)}in on dropshipping
+Dialogue: 2,0:02:15.50,0:02:16.47,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}they literally made
+Dialogue: 3,0:02:15.50,0:02:16.47,Cap,,0,0,0,,{\pos(960,880)}they literally made
+Dialogue: 2,0:02:16.47,0:02:17.21,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}fun of me and
+Dialogue: 3,0:02:16.47,0:02:17.21,Cap,,0,0,0,,{\pos(960,880)}fun of me and
+Dialogue: 2,0:02:17.21,0:02:17.68,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}they said
+Dialogue: 3,0:02:17.21,0:02:17.68,Cap,,0,0,0,,{\pos(960,880)}they said
+Dialogue: 2,0:02:20.71,0:02:21.89,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I took every dollar
+Dialogue: 3,0:02:20.71,0:02:21.89,Cap,,0,0,0,,{\pos(960,880)}I took every dollar
+Dialogue: 2,0:02:21.89,0:02:22.57,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I had
+Dialogue: 3,0:02:21.89,0:02:22.57,Cap,,0,0,0,,{\pos(960,880)}I had
+Dialogue: 2,0:02:22.57,0:02:24.57,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}spent $1,500 on a
+Dialogue: 3,0:02:22.57,0:02:24.57,Cap,,0,0,0,,{\pos(960,880)}spent $1,500 on a
+Dialogue: 2,0:02:24.57,0:02:24.93,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}mentor
+Dialogue: 3,0:02:24.57,0:02:24.93,Cap,,0,0,0,,{\pos(960,880)}mentor
+Dialogue: 2,0:02:24.93,0:02:25.87,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and he gave me
+Dialogue: 3,0:02:24.93,0:02:25.87,Cap,,0,0,0,,{\pos(960,880)}and he gave me
+Dialogue: 2,0:02:25.87,0:02:26.81,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}the worst advice
+Dialogue: 3,0:02:25.87,0:02:26.81,Cap,,0,0,0,,{\pos(960,880)}the worst advice
+Dialogue: 2,0:02:26.81,0:02:27.37,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}ever
+Dialogue: 3,0:02:26.81,0:02:27.37,Cap,,0,0,0,,{\pos(960,880)}ever
+Dialogue: 2,0:02:27.37,0:02:28.25,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}So I started teaching
+Dialogue: 3,0:02:27.37,0:02:28.25,Cap,,0,0,0,,{\pos(960,880)}So I started teaching
+Dialogue: 2,0:02:28.25,0:02:28.87,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}myself
+Dialogue: 3,0:02:28.25,0:02:28.87,Cap,,0,0,0,,{\pos(960,880)}myself
+Dialogue: 2,0:02:28.87,0:02:29.81,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I covered my entire
+Dialogue: 3,0:02:28.87,0:02:29.81,Cap,,0,0,0,,{\pos(960,880)}I covered my entire
+Dialogue: 2,0:02:29.81,0:02:31.03,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}wall in notes
+Dialogue: 3,0:02:29.81,0:02:31.03,Cap,,0,0,0,,{\pos(960,880)}wall in notes
+Dialogue: 2,0:02:31.03,0:02:32.21,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and I tested product
+Dialogue: 3,0:02:31.03,0:02:32.21,Cap,,0,0,0,,{\pos(960,880)}and I tested product
+Dialogue: 2,0:02:32.21,0:02:33.25,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}after product after
+Dialogue: 3,0:02:32.21,0:02:33.25,Cap,,0,0,0,,{\pos(960,880)}after product after
+Dialogue: 2,0:02:33.25,0:02:33.71,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}product
+Dialogue: 3,0:02:33.25,0:02:33.71,Cap,,0,0,0,,{\pos(960,880)}product
+Dialogue: 2,0:02:33.71,0:02:34.75,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And I even ran
+Dialogue: 3,0:02:33.71,0:02:34.75,Cap,,0,0,0,,{\pos(960,880)}And I even ran
+Dialogue: 2,0:02:34.75,0:02:36.29,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}40 different products
+Dialogue: 3,0:02:34.75,0:02:36.29,Cap,,0,0,0,,{\pos(960,880)}40 different products
+Dialogue: 2,0:02:36.29,0:02:37.53,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and I still made
+Dialogue: 3,0:02:36.29,0:02:37.53,Cap,,0,0,0,,{\pos(960,880)}and I still made
+Dialogue: 2,0:02:37.53,0:02:38.77,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}only a couple hundred
+Dialogue: 3,0:02:37.53,0:02:38.77,Cap,,0,0,0,,{\pos(960,880)}only a couple hundred
+Dialogue: 2,0:02:38.77,0:02:39.45,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}bucks
+Dialogue: 3,0:02:38.77,0:02:39.45,Cap,,0,0,0,,{\pos(960,880)}bucks
+Dialogue: 2,0:02:39.45,0:02:40.35,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And one finally went
+Dialogue: 3,0:02:39.45,0:02:40.35,Cap,,0,0,0,,{\pos(960,880)}And one finally went
+Dialogue: 2,0:02:40.35,0:02:40.87,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}viral
+Dialogue: 3,0:02:40.35,0:02:40.87,Cap,,0,0,0,,{\pos(960,880)}viral
+Dialogue: 2,0:02:40.87,0:02:41.07,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I got
+Dialogue: 3,0:02:40.87,0:02:41.07,Cap,,0,0,0,,{\pos(960,880)}I got
+Dialogue: 2,0:02:42.43,0:02:43.12,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}but I only made
+Dialogue: 3,0:02:42.43,0:02:43.12,Cap,,0,0,0,,{\pos(960,880)}but I only made
+Dialogue: 2,0:02:44.79,0:02:45.27,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}By then
+Dialogue: 3,0:02:44.79,0:02:45.27,Cap,,0,0,0,,{\pos(960,880)}By then
+Dialogue: 2,0:02:45.27,0:02:46.41,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I was $500 in
+Dialogue: 3,0:02:45.27,0:02:46.41,Cap,,0,0,0,,{\pos(960,880)}I was $500 in
+Dialogue: 2,0:02:46.41,0:02:47.15,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}debt to my mom
+Dialogue: 3,0:02:46.41,0:02:47.15,Cap,,0,0,0,,{\pos(960,880)}debt to my mom
+Dialogue: 2,0:02:47.15,0:02:48.07,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and she said
+Dialogue: 3,0:02:47.15,0:02:48.07,Cap,,0,0,0,,{\pos(960,880)}and she said
+Dialogue: 2,0:02:48.07,0:02:48.59,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Ricky
+Dialogue: 3,0:02:48.07,0:02:48.59,Cap,,0,0,0,,{\pos(960,880)}Ricky
+Dialogue: 2,0:02:48.59,0:02:49.35,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I don't think you
+Dialogue: 3,0:02:48.59,0:02:49.35,Cap,,0,0,0,,{\pos(960,880)}I don't think you
+Dialogue: 2,0:02:49.35,0:02:50.01,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}should be doing this
+Dialogue: 3,0:02:49.35,0:02:50.01,Cap,,0,0,0,,{\pos(960,880)}should be doing this
+Dialogue: 2,0:02:50.01,0:02:50.45,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}anymore
+Dialogue: 3,0:02:50.01,0:02:50.45,Cap,,0,0,0,,{\pos(960,880)}anymore
+Dialogue: 2,0:02:50.45,0:02:51.27,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}You should go back
+Dialogue: 3,0:02:50.45,0:02:51.27,Cap,,0,0,0,,{\pos(960,880)}You should go back
+Dialogue: 2,0:02:51.27,0:02:52.01,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}to working at the
+Dialogue: 3,0:02:51.27,0:02:52.01,Cap,,0,0,0,,{\pos(960,880)}to working at the
+Dialogue: 2,0:02:52.01,0:02:52.91,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}retirement home
+Dialogue: 3,0:02:52.01,0:02:52.91,Cap,,0,0,0,,{\pos(960,880)}retirement home
+Dialogue: 2,0:02:52.91,0:02:53.45,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And that was the
+Dialogue: 3,0:02:52.91,0:02:53.45,Cap,,0,0,0,,{\pos(960,880)}And that was the
+Dialogue: 2,0:02:53.45,0:02:54.25,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}fuel that I needed
+Dialogue: 3,0:02:53.45,0:02:54.25,Cap,,0,0,0,,{\pos(960,880)}fuel that I needed
+Dialogue: 2,0:02:54.25,0:02:55.13,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}to say
+Dialogue: 3,0:02:54.25,0:02:55.13,Cap,,0,0,0,,{\pos(960,880)}to say
+Dialogue: 2,0:02:55.13,0:02:55.77,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you know what
+Dialogue: 3,0:02:55.13,0:02:55.77,Cap,,0,0,0,,{\pos(960,880)}you know what
+Dialogue: 2,0:02:55.77,0:02:56.53,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I'm going to do
+Dialogue: 3,0:02:55.77,0:02:56.53,Cap,,0,0,0,,{\pos(960,880)}I'm going to do
+Dialogue: 2,0:02:56.53,0:02:57.21,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}everything in my
+Dialogue: 3,0:02:56.53,0:02:57.21,Cap,,0,0,0,,{\pos(960,880)}everything in my
+Dialogue: 2,0:02:57.21,0:02:58.13,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}power to make this
+Dialogue: 3,0:02:57.21,0:02:58.13,Cap,,0,0,0,,{\pos(960,880)}power to make this
+Dialogue: 2,0:02:58.13,0:02:58.45,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}work
+Dialogue: 3,0:02:58.13,0:02:58.45,Cap,,0,0,0,,{\pos(960,880)}work
+Dialogue: 2,0:02:58.45,0:02:59.43,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And I did
+Dialogue: 3,0:02:58.45,0:02:59.43,Cap,,0,0,0,,{\pos(960,880)}And I did
+Dialogue: 2,0:02:59.43,0:03:00.05,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}But honestly
+Dialogue: 3,0:02:59.43,0:03:00.05,Cap,,0,0,0,,{\pos(960,880)}But honestly
+Dialogue: 2,0:03:00.05,0:03:00.57,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I started to
+Dialogue: 3,0:03:00.05,0:03:00.57,Cap,,0,0,0,,{\pos(960,880)}I started to
+Dialogue: 2,0:03:02.85,0:03:03.71,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And if that's where
+Dialogue: 3,0:03:02.85,0:03:03.71,Cap,,0,0,0,,{\pos(960,880)}And if that's where
+Dialogue: 2,0:03:03.71,0:03:04.79,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you are right now
+Dialogue: 3,0:03:03.71,0:03:04.79,Cap,,0,0,0,,{\pos(960,880)}you are right now
+Dialogue: 2,0:03:06.87,0:03:07.91,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}because what happened
+Dialogue: 3,0:03:06.87,0:03:07.91,Cap,,0,0,0,,{\pos(960,880)}because what happened
+Dialogue: 2,0:03:07.91,0:03:09.23,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}next is why I'm
+Dialogue: 3,0:03:07.91,0:03:09.23,Cap,,0,0,0,,{\pos(960,880)}next is why I'm
+Dialogue: 2,0:03:09.23,0:03:10.15,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}actually making this
+Dialogue: 3,0:03:09.23,0:03:10.15,Cap,,0,0,0,,{\pos(960,880)}actually making this
+Dialogue: 2,0:03:10.15,0:03:10.95,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}video now
+Dialogue: 3,0:03:10.15,0:03:10.95,Cap,,0,0,0,,{\pos(960,880)}video now
+Dialogue: 2,0:03:10.95,0:03:11.55,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}But there was one
+Dialogue: 3,0:03:10.95,0:03:11.55,Cap,,0,0,0,,{\pos(960,880)}But there was one
+Dialogue: 2,0:03:11.55,0:03:12.61,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}place that I never
+Dialogue: 3,0:03:11.55,0:03:12.61,Cap,,0,0,0,,{\pos(960,880)}place that I never
+Dialogue: 2,0:03:12.61,0:03:13.75,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}tried that every
+Dialogue: 3,0:03:12.61,0:03:13.75,Cap,,0,0,0,,{\pos(960,880)}tried that every
+Dialogue: 2,0:03:13.75,0:03:14.51,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}dropshipper said
+Dialogue: 3,0:03:13.75,0:03:14.51,Cap,,0,0,0,,{\pos(960,880)}dropshipper said
+Dialogue: 2,0:03:14.51,0:03:15.33,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}to stay away from
+Dialogue: 3,0:03:14.51,0:03:15.33,Cap,,0,0,0,,{\pos(960,880)}to stay away from
+Dialogue: 2,0:03:15.33,0:03:16.61,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}because only kids
+Dialogue: 3,0:03:15.33,0:03:16.61,Cap,,0,0,0,,{\pos(960,880)}because only kids
+Dialogue: 2,0:03:16.61,0:03:17.41,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}watch it and it
+Dialogue: 3,0:03:16.61,0:03:17.41,Cap,,0,0,0,,{\pos(960,880)}watch it and it
+Dialogue: 2,0:03:17.41,0:03:18.22,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}doesn't convert
+Dialogue: 3,0:03:17.41,0:03:18.22,Cap,,0,0,0,,{\pos(960,880)}doesn't convert
+Dialogue: 2,0:03:20.09,0:03:20.65,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}tried it
+Dialogue: 3,0:03:20.09,0:03:20.65,Cap,,0,0,0,,{\pos(960,880)}tried it
+Dialogue: 2,0:03:23.51,0:03:23.81,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}As
+Dialogue: 3,0:03:23.51,0:03:23.81,Cap,,0,0,0,,{\pos(960,880)}As
+Dialogue: 2,0:03:23.81,0:03:24.63,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}soon as I posted
+Dialogue: 3,0:03:23.81,0:03:24.63,Cap,,0,0,0,,{\pos(960,880)}soon as I posted
+Dialogue: 2,0:03:24.63,0:03:25.63,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}my first video
+Dialogue: 3,0:03:24.63,0:03:25.63,Cap,,0,0,0,,{\pos(960,880)}my first video
+Dialogue: 2,0:03:25.63,0:03:26.85,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I was getting hundreds
+Dialogue: 3,0:03:25.63,0:03:26.85,Cap,,0,0,0,,{\pos(960,880)}I was getting hundreds
+Dialogue: 2,0:03:26.85,0:03:28.05,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}of thousands of views
+Dialogue: 3,0:03:26.85,0:03:28.05,Cap,,0,0,0,,{\pos(960,880)}of thousands of views
+Dialogue: 2,0:03:28.05,0:03:29.55,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}every single day
+Dialogue: 3,0:03:28.05,0:03:29.55,Cap,,0,0,0,,{\pos(960,880)}every single day
+Dialogue: 2,0:03:29.55,0:03:30.81,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}until finally
+Dialogue: 3,0:03:29.55,0:03:30.81,Cap,,0,0,0,,{\pos(960,880)}until finally
+Dialogue: 2,0:03:30.81,0:03:31.95,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I was getting millions
+Dialogue: 3,0:03:30.81,0:03:31.95,Cap,,0,0,0,,{\pos(960,880)}I was getting millions
+Dialogue: 2,0:03:31.95,0:03:33.21,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}of views every single
+Dialogue: 3,0:03:31.95,0:03:33.21,Cap,,0,0,0,,{\pos(960,880)}of views every single
+Dialogue: 2,0:03:33.21,0:03:33.65,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}day
+Dialogue: 3,0:03:33.21,0:03:33.65,Cap,,0,0,0,,{\pos(960,880)}day
+Dialogue: 2,0:03:33.65,0:03:34.49,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And I've been running
+Dialogue: 3,0:03:33.65,0:03:34.49,Cap,,0,0,0,,{\pos(960,880)}And I've been running
+Dialogue: 2,0:03:34.49,0:03:35.35,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}the same channel
+Dialogue: 3,0:03:34.49,0:03:35.35,Cap,,0,0,0,,{\pos(960,880)}the same channel
+Dialogue: 2,0:03:35.35,0:03:36.45,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}for over a year
+Dialogue: 3,0:03:35.35,0:03:36.45,Cap,,0,0,0,,{\pos(960,880)}for over a year
+Dialogue: 2,0:03:36.45,0:03:36.89,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}now
+Dialogue: 3,0:03:36.45,0:03:36.89,Cap,,0,0,0,,{\pos(960,880)}now
+Dialogue: 2,0:03:36.89,0:03:37.11,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And
+Dialogue: 3,0:03:36.89,0:03:37.11,Cap,,0,0,0,,{\pos(960,880)}And
+Dialogue: 2,0:03:37.11,0:03:37.57,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}that channel
+Dialogue: 3,0:03:37.11,0:03:37.57,Cap,,0,0,0,,{\pos(960,880)}that channel
+Dialogue: 2,0:03:39.17,0:03:40.47,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}because I found out
+Dialogue: 3,0:03:39.17,0:03:40.47,Cap,,0,0,0,,{\pos(960,880)}because I found out
+Dialogue: 2,0:03:40.47,0:03:41.80,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}about YouTube Store
+Dialogue: 3,0:03:40.47,0:03:41.80,Cap,,0,0,0,,{\pos(960,880)}about YouTube Store
+Dialogue: 2,0:03:41.80,0:03:42.49,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}where you can tag
+Dialogue: 3,0:03:41.80,0:03:42.49,Cap,,0,0,0,,{\pos(960,880)}where you can tag
+Dialogue: 2,0:03:42.49,0:03:43.37,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}your products
+Dialogue: 3,0:03:42.49,0:03:43.37,Cap,,0,0,0,,{\pos(960,880)}your products
+Dialogue: 2,0:03:43.37,0:03:44.25,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And ever since I
+Dialogue: 3,0:03:43.37,0:03:44.25,Cap,,0,0,0,,{\pos(960,880)}And ever since I
+Dialogue: 2,0:03:44.25,0:03:45.15,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}started doing that
+Dialogue: 3,0:03:44.25,0:03:45.15,Cap,,0,0,0,,{\pos(960,880)}started doing that
+Dialogue: 2,0:03:45.15,0:03:45.52,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I
+Dialogue: 3,0:03:45.15,0:03:45.52,Cap,,0,0,0,,{\pos(960,880)}I
+Dialogue: 2,0:03:49.45,0:03:49.75,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}So
+Dialogue: 3,0:03:49.45,0:03:49.75,Cap,,0,0,0,,{\pos(960,880)}So
+Dialogue: 2,0:03:49.75,0:03:50.41,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I went back to
+Dialogue: 3,0:03:49.75,0:03:50.41,Cap,,0,0,0,,{\pos(960,880)}I went back to
+Dialogue: 2,0:03:50.41,0:03:51.85,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}TikTok and ran all
+Dialogue: 3,0:03:50.41,0:03:51.85,Cap,,0,0,0,,{\pos(960,880)}TikTok and ran all
+Dialogue: 2,0:03:51.85,0:03:52.85,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}of the products that
+Dialogue: 3,0:03:51.85,0:03:52.85,Cap,,0,0,0,,{\pos(960,880)}of the products that
+Dialogue: 2,0:03:52.85,0:03:53.77,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I ran before that
+Dialogue: 3,0:03:52.85,0:03:53.77,Cap,,0,0,0,,{\pos(960,880)}I ran before that
+Dialogue: 2,0:03:53.77,0:03:54.89,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}didn't make me money
+Dialogue: 3,0:03:53.77,0:03:54.89,Cap,,0,0,0,,{\pos(960,880)}didn't make me money
+Dialogue: 2,0:03:55.11,0:03:56.23,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And they all started
+Dialogue: 3,0:03:55.11,0:03:56.23,Cap,,0,0,0,,{\pos(960,880)}And they all started
+Dialogue: 2,0:03:56.23,0:03:56.97,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}printing
+Dialogue: 3,0:03:56.23,0:03:56.97,Cap,,0,0,0,,{\pos(960,880)}printing
+Dialogue: 2,0:03:56.97,0:03:58.08,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}85 million views
+Dialogue: 3,0:03:56.97,0:03:58.08,Cap,,0,0,0,,{\pos(960,880)}85 million views
+Dialogue: 2,0:03:58.08,0:03:59.10,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}in 90 days
+Dialogue: 3,0:03:58.08,0:03:59.10,Cap,,0,0,0,,{\pos(960,880)}in 90 days
+Dialogue: 2,0:03:59.10,0:03:59.76,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And this channel
+Dialogue: 3,0:03:59.10,0:03:59.76,Cap,,0,0,0,,{\pos(960,880)}And this channel
+Dialogue: 2,0:03:59.76,0:04:00.70,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}went from zero to
+Dialogue: 3,0:03:59.76,0:04:00.70,Cap,,0,0,0,,{\pos(960,880)}went from zero to
+Dialogue: 2,0:04:00.70,0:04:01.50,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a quarter million
+Dialogue: 3,0:04:00.70,0:04:01.50,Cap,,0,0,0,,{\pos(960,880)}a quarter million
+Dialogue: 2,0:04:01.50,0:04:02.76,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}views in just two
+Dialogue: 3,0:04:01.50,0:04:02.76,Cap,,0,0,0,,{\pos(960,880)}views in just two
+Dialogue: 2,0:04:02.76,0:04:03.38,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}days
+Dialogue: 3,0:04:02.76,0:04:03.38,Cap,,0,0,0,,{\pos(960,880)}days
+Dialogue: 2,0:04:03.38,0:04:04.58,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}This channel got
+Dialogue: 3,0:04:03.38,0:04:04.58,Cap,,0,0,0,,{\pos(960,880)}This channel got
+Dialogue: 2,0:04:04.58,0:04:05.72,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}19 million views
+Dialogue: 3,0:04:04.58,0:04:05.72,Cap,,0,0,0,,{\pos(960,880)}19 million views
+Dialogue: 2,0:04:05.72,0:04:06.76,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}in the very first
+Dialogue: 3,0:04:05.72,0:04:06.76,Cap,,0,0,0,,{\pos(960,880)}in the very first
+Dialogue: 2,0:04:06.76,0:04:07.76,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}month of posting
+Dialogue: 3,0:04:06.76,0:04:07.76,Cap,,0,0,0,,{\pos(960,880)}month of posting
+Dialogue: 2,0:04:07.76,0:04:08.42,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And this channel
+Dialogue: 3,0:04:07.76,0:04:08.42,Cap,,0,0,0,,{\pos(960,880)}And this channel
+Dialogue: 2,0:04:08.42,0:04:10.14,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}got 36 million views
+Dialogue: 3,0:04:08.42,0:04:10.14,Cap,,0,0,0,,{\pos(960,880)}got 36 million views
+Dialogue: 2,0:04:10.14,0:04:10.90,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a lifetime
+Dialogue: 3,0:04:10.14,0:04:10.90,Cap,,0,0,0,,{\pos(960,880)}a lifetime
+Dialogue: 2,0:04:10.90,0:04:11.84,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And there are a
+Dialogue: 3,0:04:10.90,0:04:11.84,Cap,,0,0,0,,{\pos(960,880)}And there are a
+Dialogue: 2,0:04:11.84,0:04:12.84,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}dozen other channels
+Dialogue: 3,0:04:11.84,0:04:12.84,Cap,,0,0,0,,{\pos(960,880)}dozen other channels
+Dialogue: 2,0:04:12.84,0:04:13.76,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}that I've run that
+Dialogue: 3,0:04:12.84,0:04:13.76,Cap,,0,0,0,,{\pos(960,880)}that I've run that
+Dialogue: 2,0:04:13.76,0:04:14.66,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}have gotten results
+Dialogue: 3,0:04:13.76,0:04:14.66,Cap,,0,0,0,,{\pos(960,880)}have gotten results
+Dialogue: 2,0:04:14.66,0:04:15.70,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}just like this
+Dialogue: 3,0:04:14.66,0:04:15.70,Cap,,0,0,0,,{\pos(960,880)}just like this
+Dialogue: 2,0:04:15.70,0:04:16.08,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And
+Dialogue: 3,0:04:15.70,0:04:16.08,Cap,,0,0,0,,{\pos(960,880)}And
+Dialogue: 2,0:04:16.08,0:04:16.30,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}after
+Dialogue: 3,0:04:16.08,0:04:16.30,Cap,,0,0,0,,{\pos(960,880)}after
+Dialogue: 2,0:04:18.02,0:04:18.88,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I started going on
+Dialogue: 3,0:04:18.02,0:04:18.88,Cap,,0,0,0,,{\pos(960,880)}I started going on
+Dialogue: 2,0:04:18.88,0:04:19.84,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}vacations
+Dialogue: 3,0:04:18.88,0:04:19.84,Cap,,0,0,0,,{\pos(960,880)}vacations
+Dialogue: 2,0:04:19.84,0:04:20.80,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}buying my brother
+Dialogue: 3,0:04:19.84,0:04:20.80,Cap,,0,0,0,,{\pos(960,880)}buying my brother
+Dialogue: 2,0:04:20.80,0:04:22.12,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}the brand new iPhone
+Dialogue: 3,0:04:20.80,0:04:22.12,Cap,,0,0,0,,{\pos(960,880)}the brand new iPhone
+Dialogue: 2,0:04:22.12,0:04:23.36,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and just doing whatever
+Dialogue: 3,0:04:22.12,0:04:23.36,Cap,,0,0,0,,{\pos(960,880)}and just doing whatever
+Dialogue: 2,0:04:23.36,0:04:24.42,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I wanted to at
+Dialogue: 3,0:04:23.36,0:04:24.42,Cap,,0,0,0,,{\pos(960,880)}I wanted to at
+Dialogue: 2,0:04:24.42,0:04:25.46,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a very young age
+Dialogue: 3,0:04:24.42,0:04:25.46,Cap,,0,0,0,,{\pos(960,880)}a very young age
+Dialogue: 2,0:04:25.46,0:04:25.80,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And every
+Dialogue: 3,0:04:25.46,0:04:25.80,Cap,,0,0,0,,{\pos(960,880)}And every
+Dialogue: 2,0:04:35.02,0:04:36.04,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Posting on YouTube
+Dialogue: 3,0:04:35.02,0:04:36.04,Cap,,0,0,0,,{\pos(960,880)}Posting on YouTube
+Dialogue: 2,0:04:36.04,0:04:36.45,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Shorts
+Dialogue: 3,0:04:36.04,0:04:36.45,Cap,,0,0,0,,{\pos(960,880)}Shorts
+Dialogue: 2,0:04:39.09,0:04:39.99,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}There are dropshippers
+Dialogue: 3,0:04:39.09,0:04:39.99,Cap,,0,0,0,,{\pos(960,880)}There are dropshippers
+Dialogue: 2,0:04:39.99,0:04:40.87,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}posting on YouTube
+Dialogue: 3,0:04:39.99,0:04:40.87,Cap,,0,0,0,,{\pos(960,880)}posting on YouTube
+Dialogue: 2,0:04:40.87,0:04:41.94,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}Shorts every single
+Dialogue: 3,0:04:40.87,0:04:41.94,Cap,,0,0,0,,{\pos(960,880)}Shorts every single
+Dialogue: 2,0:04:41.94,0:04:43.32,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}day that still aren't
+Dialogue: 3,0:04:41.94,0:04:43.32,Cap,,0,0,0,,{\pos(960,880)}day that still aren't
+Dialogue: 2,0:04:43.32,0:04:44.28,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}getting any sales
+Dialogue: 3,0:04:43.32,0:04:44.28,Cap,,0,0,0,,{\pos(960,880)}getting any sales
+Dialogue: 2,0:04:44.28,0:04:45.50,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}What made the difference
+Dialogue: 3,0:04:44.28,0:04:45.50,Cap,,0,0,0,,{\pos(960,880)}What made the difference
+Dialogue: 2,0:04:45.50,0:04:46.86,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}was the three things
+Dialogue: 3,0:04:45.50,0:04:46.86,Cap,,0,0,0,,{\pos(960,880)}was the three things
+Dialogue: 2,0:04:46.86,0:04:47.90,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}that I promised you
+Dialogue: 3,0:04:46.86,0:04:47.90,Cap,,0,0,0,,{\pos(960,880)}that I promised you
+Dialogue: 2,0:04:47.90,0:04:48.80,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}at the start
+Dialogue: 3,0:04:47.90,0:04:48.80,Cap,,0,0,0,,{\pos(960,880)}at the start
+Dialogue: 2,0:05:12.77,0:05:13.61,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}YTD
+Dialogue: 3,0:05:12.77,0:05:13.61,Cap,,0,0,0,,{\pos(960,880)}YTD
+Dialogue: 2,0:05:13.61,0:05:15.31,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}My one-on-one mentorship
+Dialogue: 3,0:05:13.61,0:05:15.31,Cap,,0,0,0,,{\pos(960,880)}My one-on-one mentorship
+Dialogue: 2,0:05:15.35,0:05:16.07,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}We will find your
+Dialogue: 3,0:05:15.35,0:05:16.07,Cap,,0,0,0,,{\pos(960,880)}We will find your
+Dialogue: 2,0:05:16.07,0:05:16.65,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}product
+Dialogue: 3,0:05:16.07,0:05:16.65,Cap,,0,0,0,,{\pos(960,880)}product
+Dialogue: 2,0:05:16.65,0:05:17.73,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}make you go viral
+Dialogue: 3,0:05:16.65,0:05:17.73,Cap,,0,0,0,,{\pos(960,880)}make you go viral
+Dialogue: 2,0:05:50.13,0:05:50.77,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}If you do the
+Dialogue: 3,0:05:50.13,0:05:50.77,Cap,,0,0,0,,{\pos(960,880)}If you do the
+Dialogue: 2,0:05:50.77,0:05:51.53,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}work and you're not
+Dialogue: 3,0:05:50.77,0:05:51.53,Cap,,0,0,0,,{\pos(960,880)}work and you're not
+Dialogue: 2,0:05:51.53,0:05:52.71,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}live with a product
+Dialogue: 3,0:05:51.53,0:05:52.71,Cap,,0,0,0,,{\pos(960,880)}live with a product
+Dialogue: 2,0:05:52.71,0:05:53.23,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a store
+Dialogue: 3,0:05:52.71,0:05:53.23,Cap,,0,0,0,,{\pos(960,880)}a store
+Dialogue: 2,0:05:53.23,0:05:53.98,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and a channel
+Dialogue: 3,0:05:53.23,0:05:53.98,Cap,,0,0,0,,{\pos(960,880)}and a channel
+Dialogue: 2,0:05:55.59,0:05:56.73,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I will continue working
+Dialogue: 3,0:05:55.59,0:05:56.73,Cap,,0,0,0,,{\pos(960,880)}I will continue working
+Dialogue: 2,0:05:58.53,0:05:59.29,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I take every call
+Dialogue: 3,0:05:58.53,0:05:59.29,Cap,,0,0,0,,{\pos(960,880)}I take every call
+Dialogue: 2,0:05:59.29,0:06:00.79,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}myself and I only
+Dialogue: 3,0:05:59.29,0:06:00.79,Cap,,0,0,0,,{\pos(960,880)}myself and I only
+Dialogue: 2,0:06:00.79,0:06:01.67,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}work with a small
+Dialogue: 3,0:06:00.79,0:06:01.67,Cap,,0,0,0,,{\pos(960,880)}work with a small
+Dialogue: 2,0:06:01.67,0:06:02.59,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}group of people at
+Dialogue: 3,0:06:01.67,0:06:02.59,Cap,,0,0,0,,{\pos(960,880)}group of people at
+Dialogue: 2,0:06:02.59,0:06:02.99,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a time
+Dialogue: 3,0:06:02.59,0:06:02.99,Cap,,0,0,0,,{\pos(960,880)}a time
+Dialogue: 2,0:06:02.99,0:06:03.82,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}If you're tired of
+Dialogue: 3,0:06:02.99,0:06:03.82,Cap,,0,0,0,,{\pos(960,880)}If you're tired of
+Dialogue: 2,0:06:03.82,0:06:04.94,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}getting zero views
+Dialogue: 3,0:06:03.82,0:06:04.94,Cap,,0,0,0,,{\pos(960,880)}getting zero views
+Dialogue: 2,0:06:04.94,0:06:06.25,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}not getting any sales
+Dialogue: 3,0:06:04.94,0:06:06.25,Cap,,0,0,0,,{\pos(960,880)}not getting any sales
+Dialogue: 2,0:06:08.44,0:06:09.26,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}And then we will
+Dialogue: 3,0:06:08.44,0:06:09.26,Cap,,0,0,0,,{\pos(960,880)}And then we will
+Dialogue: 2,0:06:09.26,0:06:10.06,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}look at your product
+Dialogue: 3,0:06:09.26,0:06:10.06,Cap,,0,0,0,,{\pos(960,880)}look at your product
+Dialogue: 2,0:06:10.06,0:06:11.26,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and your store live
+Dialogue: 3,0:06:10.06,0:06:11.26,Cap,,0,0,0,,{\pos(960,880)}and your store live
+Dialogue: 2,0:06:11.26,0:06:12.34,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and point you in
+Dialogue: 3,0:06:11.26,0:06:12.34,Cap,,0,0,0,,{\pos(960,880)}and point you in
+Dialogue: 2,0:06:12.34,0:06:13.10,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}the right direction
+Dialogue: 3,0:06:12.34,0:06:13.10,Cap,,0,0,0,,{\pos(960,880)}the right direction
+Dialogue: 2,0:06:13.10,0:06:13.86,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}and tell you the
+Dialogue: 3,0:06:13.10,0:06:13.86,Cap,,0,0,0,,{\pos(960,880)}and tell you the
+Dialogue: 2,0:06:13.86,0:06:15.00,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}price straight up
+Dialogue: 3,0:06:13.86,0:06:15.00,Cap,,0,0,0,,{\pos(960,880)}price straight up
+Dialogue: 2,0:06:15.00,0:06:15.50,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}If it's not a
+Dialogue: 3,0:06:15.00,0:06:15.50,Cap,,0,0,0,,{\pos(960,880)}If it's not a
+Dialogue: 2,0:06:15.50,0:06:15.86,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}fit
+Dialogue: 3,0:06:15.50,0:06:15.86,Cap,,0,0,0,,{\pos(960,880)}fit
+Dialogue: 2,0:06:15.86,0:06:16.40,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}you'll know within
+Dialogue: 3,0:06:15.86,0:06:16.40,Cap,,0,0,0,,{\pos(960,880)}you'll know within
+Dialogue: 2,0:06:16.40,0:06:17.48,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}a couple of minutes
+Dialogue: 3,0:06:16.40,0:06:17.48,Cap,,0,0,0,,{\pos(960,880)}a couple of minutes
+Dialogue: 2,0:06:17.48,0:06:18.36,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}I will see you
+Dialogue: 3,0:06:17.48,0:06:18.36,Cap,,0,0,0,,{\pos(960,880)}I will see you
+Dialogue: 2,0:06:18.36,0:06:18.96,Cap,,0,0,0,,{\pos(960,884)\c&H000000&\alpha&H6A&\blur9}inside
+Dialogue: 3,0:06:18.36,0:06:18.96,Cap,,0,0,0,,{\pos(960,880)}inside
+Dialogue: 9,0:06:18.60,0:06:19.30,Box,,0,0,0,,{\an7\pos(0,0)\c&H000000&\fad(550,0)}{\p1}m 0 0 l 1920 0 1920 1080 0 1080{\p0}
