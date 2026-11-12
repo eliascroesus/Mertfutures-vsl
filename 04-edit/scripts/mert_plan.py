@@ -15,7 +15,7 @@ D = "/home/user/work/mert"
 LEAD = 0.06
 
 # what Whisper misheard (or his phrasing that reads wrong as a caption) -> what the caption shows
-FIX = {"mertz": "Mert", "sp500": "S&P 500", "sp": "S&P", "reached": "reads", "seek": "take", "twitch": "this",
+FIX = {"mertz": "Mert", "sp500": "S&P 500", "sp": "S&P", "reached": "reads", "seek": "take", "twitch": "to teach", "octomics": "Auctomics",
        "mentorships": "mentorship", "evolution": "evaluations", "oneonone": "1-on-1"}
 
 
@@ -345,7 +345,7 @@ def build():
            T("and i keep it small") - LEAD, cy=520)
     e.sfx.append(["swipe", round(T("signals") + 0.3, 3), 0.8])
     e.push("so i can watch every", 1.15, 2.2)
-    e.callout("every student's trade", "lime")
+    e.callout("every student's trade myself", "lime")
 
     e.text("it's a one-on-one mentorships", [("_ _ 1-ON-1", "big", 200, "lime"), ("MENTORSHIP.", "big", 92, "white", {"ul": True})],
            T("weeks one to eight") - LEAD, cy=520)

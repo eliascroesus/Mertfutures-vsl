@@ -5,8 +5,8 @@ The edit starts at **0:17.8** ("I am Mert"); everything before it (the "every tr
 screenshots, a Lambo…" intro and the first-payout line) is cut.
 
 Words Whisper wasn't sure about: his name (heard as "Mertz", captioned **Mert**), the AI tool's name (heard as
-"Octomics"; it isn't shown in any graphic, only in the captions), "Deep off market" (captioned **Depth of market**),
-"evolutions" (captioned **evaluations**), "I never planned Twitch" (captioned **I never planned this**).
+"Octomics"; it is **Auctomics**, shown only in the captions), "Deep off market" (captioned **Depth of market**),
+"evolutions" (captioned **evaluations**), "I never planned Twitch" (captioned **I never planned to teach**).
 
 **0:00.0** Every trading videos start with payout screenshots, a Lambo or a view from Tower.  
 **0:05.9** You have seen a lot, so you stop believing them. Let me start with my first payout,  
