@@ -10,6 +10,8 @@ AB Nasdaq reference VSL breakdowns in [`01-vsls/reference-vsls/`](01-vsls/refere
 | Folder | What goes in it |
 | --- | --- |
 | [`mert-raw-vsl-footage/`](mert-raw-vsl-footage/) | **Mert's** raw, unedited VSL recording (the one we're editing) |
+| [`mert-faq-raw-footage/`](mert-faq-raw-footage/) | **Mert's** raw FAQ videos |
+| [`mert-thank-you-raw-footage/`](mert-thank-you-raw-footage/) | **Mert's** raw thank-you video |
 | [`01-vsls/`](01-vsls/) | Ricky's current VSL (`current-vsl/`) and example VSLs to learn from (`reference-vsls/`, broken down in [BREAKDOWN.md](01-vsls/reference-vsls/BREAKDOWN.md)) |
 | [`02-results-and-b-roll/`](02-results-and-b-roll/) | Everything else, all in one place: results, testimonials, B-roll, photos, journey pictures, context (mapped in [ASSET-MAP.md](02-results-and-b-roll/ASSET-MAP.md)) |
 | [`03-raw-vsl-footage/`](03-raw-vsl-footage/) | Ricky's raw VSL recording and its transcript (copied over; not Mert's) |
@@ -27,6 +29,8 @@ then click **Publish release**:
 | Videos | Upload link |
 | --- | --- |
 | **Mert raw VSL** | [releases/new?tag=mert-raw-vsl](https://github.com/eliascroesus/Mertfutures-vsl/releases/new?tag=mert-raw-vsl&title=Mert%20raw%20VSL) |
+| **Mert FAQ raw footage** | [releases/new?tag=mert-faq](https://github.com/eliascroesus/Mertfutures-vsl/releases/new?tag=mert-faq&title=Mert%20FAQ%20raw%20footage) |
+| **Mert thank-you raw footage** | [releases/new?tag=mert-thank-you](https://github.com/eliascroesus/Mertfutures-vsl/releases/new?tag=mert-thank-you&title=Mert%20thank-you%20raw%20footage) |
 | Current VSL | [releases/new?tag=current-vsl](https://github.com/eliascroesus/Mertfutures-vsl/releases/new?tag=current-vsl&title=Current%20VSL) |
 | Reference VSLs | [releases/new?tag=reference-vsls](https://github.com/eliascroesus/Mertfutures-vsl/releases/new?tag=reference-vsls&title=Reference%20VSLs) |
 | Results and B-roll | [releases/new?tag=results-and-b-roll](https://github.com/eliascroesus/Mertfutures-vsl/releases/new?tag=results-and-b-roll&title=Results%20and%20B-roll) |
