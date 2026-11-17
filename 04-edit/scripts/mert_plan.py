@@ -13,6 +13,9 @@ from ty_plan import load_words, mapper, norm
 
 D = "/home/user/work/mert"
 LEAD = 0.06
+VSL_FIXES = [("deep off market", ["Depth", "of", "market"]), ("someone check my work", ["someone", "checks", "my", "work"]),
+             ("a mistake get catch you", ["a", "mistake", "gets", "caught", "–"]), ("i seek trade", ["I", "take", "the trade"]),
+             ("because it's almost", ["because", "it", "almost"]), ("then i switched sp", ["then", "I", "switched to", "S&P"])]
 
 # what Whisper misheard (or his phrasing that reads wrong as a caption) -> what the caption shows
 FIX = {"mertz": "Mert", "sp500": "S&P 500", "sp": "S&P", "reached": "reads", "seek": "take", "twitch": "to teach", "octomics": "Auctomics",
@@ -20,23 +23,20 @@ FIX = {"mertz": "Mert", "sp500": "S&P 500", "sp": "S&P", "reached": "reads", "se
 
 
 class Edit:
-    def __init__(self):
-        c = json.load(open(f"{D}/cuts.json"))
+    def __init__(self, d=None, fixes=None, anchor=(980, 560)):
+        self.d, self.anchor = d or D, list(anchor)
+        c = json.load(open(f"{self.d}/cuts.json"))
         self.keep = [tuple(k) for k in c["keep"]]
         out, self.dur = mapper(self.keep)
-        W = load_words(f"{D}/transcript.json")[c["start_word"]:]
+        W = load_words(f"{self.d}/transcript.json")[c["start_word"]:]
         self.words = []
         for i, w in enumerate(W):
             n = norm(w["w"])
             d = re.sub(r"[,.!?;:]", "", w["w"])
             d = FIX.get(n, d)
             self.words.append({"w": d, "raw": w["w"], "s": round(out(w["s"]), 3), "e": round(out(w["e"]), 3), "n": n})
-        self.fix_phrase("deep off market", ["Depth", "of", "market"])
-        self.fix_phrase("someone check my work", ["someone", "checks", "my", "work"])
-        self.fix_phrase("a mistake get catch you", ["a", "mistake", "gets", "caught", "–"])
-        self.fix_phrase("i seek trade", ["I", "take", "the trade"])
-        self.fix_phrase("because it's almost", ["because", "it", "almost"])
-        self.fix_phrase("then i switched sp", ["then", "I", "switched to", "S&P"])
+        for ph, disp in (fixes if fixes is not None else VSL_FIXES):
+            self.fix_phrase(ph, disp)
         self.toks = [w["n"] for w in self.words]
         self.scenes, self.leaks, self.off, self.zk, self.hl, self.sfx = [], [], [], [[0.0, 1.0]], [], []
 
@@ -184,9 +184,9 @@ class Edit:
         self.zk.sort(key=lambda k: k[0])
         self.scenes.sort(key=lambda s: s["t0"])
         plan = {"keep": [[round(a, 4), round(b, 4)] for a, b in self.keep], "dur": round(self.dur, 3),
-                "anchor": [980, 560], "intro_t1": next(s["t1"] for s in self.scenes if s["kind"] == "intro"), "words": self.words, "scenes": self.scenes, "leaks": self.leaks, "zoom": self.zk,
+                "anchor": self.anchor, "intro_t1": next((s["t1"] for s in self.scenes if s["kind"] == "intro"), 0), "words": self.words, "scenes": self.scenes, "leaks": self.leaks, "zoom": self.zk,
                 "captions": caps, "off": off, "sfx": sorted(self.sfx, key=lambda s: s[1])}
-        json.dump(plan, open(f"{D}/plan.json", "w"), indent=1)
+        json.dump(plan, open(f"{self.d}/plan.json", "w"), indent=1)
         pushes = sum(1 for a, b in zip(self.zk, self.zk[1:]) if b[1] > a[1] + 1e-3)
         full = sum(1 for s in self.scenes if s.get("full"))
         print(f"{self.dur:.2f}s: {full} full-screen graphics, {len(self.scenes) - full} overlays, {pushes} push-ins, "

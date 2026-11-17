@@ -312,3 +312,29 @@ edited in Iman Gadzhi's motion-graphics style with AB Nasdaq's structure. Transc
   items, pops on the process steps, a swipe on the strike-through; mix at −14 LUFS.
 - **Rendering:** `mert_plan.py` → `mert/plan.json`; `mert_render.py plan.json base.mp4 out.mp4 [f0 f1]` (run in chunks in
   parallel); `mert_render.py plan.json stills base.mp4 dir t1,t2,…` for checking single frames.
+
+## Mert's thank-you video and FAQ videos (`scripts/clip_prep.py`, `scripts/clip_plans.py`, plans in `mert-clips/`)
+
+The thank-you video (`Thanks.mov`, [mert-thank-you release](https://github.com/eliascroesus/Mertfutures-vsl/releases/tag/mert-thank-you))
+and the five FAQ videos ([mert-faq-latest release](https://github.com/eliascroesus/Mertfutures-vsl/releases/tag/mert-faq-latest)),
+edited exactly like the VSL with the same compositor (`mert_render.py`): Poppins, Iman-style cards on the frosted plate,
+AB word captions with lime/red callouts, underlines, side text, split-screen lists, slow push-ins, zoom-blur transitions,
+grain and vignette.
+
+- `clip_prep.py name src.mov`: voice clean-up, word-level transcript, cut list (dead air trimmed only on true silence),
+  and the graded 30 fps A-roll at 2560×1440, cropped to 16:9 (the "beginners" clip is rotated and both it and
+  "full-time job" are taller than 16:9, so a little is taken off the top and bottom).
+- **Thank-you (1:26):** the VSL's intro (letterbox bars, "YO, WHAT'S UP / MERT." with the underline, "THANK YOU FOR
+  APPLYING / TO THE ELITE MENTORSHIP"), cards for "90% OF TRADERS COULDN'T DO", "CONSISTENCY / PROFITABILITY / TIME,
+  LOCATION & FINANCIAL FREEDOM", "NEXT STEPS?", "SMS", a red "TRADING GURUS / SELLING DREAMS" card, "ELITE MENTORSHIP",
+  "GO CHECK YOUR EMAIL"; side text for "my best students is reviewing your application"; headlines "I TOTALLY GET IT"
+  and "PROFITABLE / sooner rather than later". **Music:** the same bed as the VSL ("Me And The Devil" from where the
+  symphony comes in, untouched, 12 dB under his voice).
+- **FAQs, no music** (voice and the subtle sound effects only), each opening on a card with the question and his first answer:
+  - `fulltime` (0:12): "CAN I DO THIS WITH A FULL-TIME JOB? / YES, ABSOLUTELY." → "AUCTION MARKET THEORY / ORDER FLOW".
+  - `boughtcourse` (0:19): "…WHY IS THIS ONE DIFFERENT? / NOT JUST ANOTHER VIDEO COURSE." → split-screen list →
+    "FUNDED ACCOUNT / OR FIRST PAYOUT."
+  - `beginners` (0:10): "IS THIS MENTORSHIP FOR BEGINNERS? / YES, ABSOLUTELY." → "BEGINNER / OR EXPERIENCED."
+  - `whatsinside` (0:28): "INSIDE THE ORDER FLOW ELITE MENTORSHIP." → split-screen list of everything included (two
+    pages) → "THE GOAL IS SIMPLE / MASTER AUCTION MARKET THEORY / ORDER FLOW."
+  - `mertorassistant` (0:11): "WILL I WORK WITH MERT OR AN ASSISTANT? / WORK DIRECTLY WITH ME." → split-screen list.

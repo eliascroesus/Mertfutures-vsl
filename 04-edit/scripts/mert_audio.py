@@ -86,7 +86,7 @@ def make(kind):
 def main():
     plan = json.load(open(sys.argv[1]))
     v, vsr = sf.read(sys.argv[2], dtype="float64")
-    bed, bsr = sf.read(sys.argv[3], dtype="float64", always_2d=True)
+    bed, bsr = (np.zeros((1, 2)), SR) if sys.argv[3] == "none" else sf.read(sys.argv[3], dtype="float64", always_2d=True)
     out = sys.argv[4]
     under = float(sys.argv[5]) if len(sys.argv) > 5 else 18.0
     assert vsr == SR and bsr == SR
@@ -108,7 +108,8 @@ def main():
     m_rms = np.sqrt((bed ** 2).mean())
     music = np.zeros((n, 2))
     mm = min(n, len(bed))
-    music[:mm] = bed[:mm] * (v_rms / m_rms * 10 ** (-under / 20))
+    if m_rms > 0:
+        music[:mm] = bed[:mm] * (v_rms / m_rms * 10 ** (-under / 20))
     fx = np.zeros((n, 2))
     lib = {}
     for kind, t, g in plan["sfx"]:

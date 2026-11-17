@@ -1,0 +1,458 @@
+{
+ "keep": [
+  [
+   0.0,
+   10.24
+  ]
+ ],
+ "dur": 10.24,
+ "anchor": [
+  915,
+  480
+ ],
+ "intro_t1": 0,
+ "words": [
+  {
+   "w": "yes",
+   "raw": "yes",
+   "s": 0.0,
+   "e": 0.98,
+   "n": "yes"
+  },
+  {
+   "w": "absolutely",
+   "raw": "absolutely",
+   "s": 0.98,
+   "e": 1.7,
+   "n": "absolutely"
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 1.7,
+   "e": 2.38,
+   "n": "it"
+  },
+  {
+   "w": "doesn't",
+   "raw": "doesn't",
+   "s": 2.38,
+   "e": 2.76,
+   "n": "doesn't"
+  },
+  {
+   "w": "matter",
+   "raw": "matter",
+   "s": 2.76,
+   "e": 2.98,
+   "n": "matter"
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 2.98,
+   "e": 3.22,
+   "n": "if"
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 3.22,
+   "e": 3.34,
+   "n": "you"
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 3.34,
+   "e": 3.46,
+   "n": "are"
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 3.46,
+   "e": 3.54,
+   "n": "a"
+  },
+  {
+   "w": "beginner",
+   "raw": "beginner",
+   "s": 3.54,
+   "e": 3.8,
+   "n": "beginner"
+  },
+  {
+   "w": "or",
+   "raw": "or",
+   "s": 3.8,
+   "e": 4.34,
+   "n": "or"
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 4.34,
+   "e": 4.72,
+   "n": "already"
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 4.72,
+   "e": 4.98,
+   "n": "have"
+  },
+  {
+   "w": "trading",
+   "raw": "trading",
+   "s": 4.98,
+   "e": 5.26,
+   "n": "trading"
+  },
+  {
+   "w": "experience",
+   "raw": "experience",
+   "s": 5.26,
+   "e": 5.84,
+   "n": "experience"
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 5.84,
+   "e": 6.64,
+   "n": "we"
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 6.64,
+   "e": 6.8,
+   "n": "will"
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 6.8,
+   "e": 7.08,
+   "n": "start"
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 7.08,
+   "e": 7.34,
+   "n": "from"
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 7.34,
+   "e": 7.54,
+   "n": "your"
+  },
+  {
+   "w": "level",
+   "raw": "level",
+   "s": 7.54,
+   "e": 7.92,
+   "n": "level"
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 7.92,
+   "e": 8.38,
+   "n": "and"
+  },
+  {
+   "w": "improve",
+   "raw": "improve",
+   "s": 8.38,
+   "e": 8.8,
+   "n": "improve"
+  },
+  {
+   "w": "step",
+   "raw": "step",
+   "s": 8.8,
+   "e": 9.1,
+   "n": "step"
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 9.1,
+   "e": 9.32,
+   "n": "by"
+  },
+  {
+   "w": "step",
+   "raw": "step",
+   "s": 9.32,
+   "e": 9.64,
+   "n": "step"
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "iman",
+   "t0": 0.0,
+   "t1": 1.64,
+   "full": true,
+   "cy": 520,
+   "rows": [
+    {
+     "words": [
+      [
+       "IS THIS MENTORSHIP",
+       0.05
+      ]
+     ],
+     "style": "sub",
+     "size": 32,
+     "color": "dim"
+    },
+    {
+     "words": [
+      [
+       "FOR BEGINNERS?",
+       0.17
+      ]
+     ],
+     "style": "sub",
+     "size": 32,
+     "color": "dim"
+    },
+    {
+     "words": [
+      [
+       "YES,",
+       0.0
+      ],
+      [
+       "ABSOLUTELY.",
+       0.98
+      ]
+     ],
+     "style": "big",
+     "size": 130,
+     "color": "lime",
+     "ul": true
+    }
+   ]
+  },
+  {
+   "kind": "iman",
+   "t0": 1.64,
+   "t1": 5.78,
+   "full": true,
+   "cy": 520,
+   "rows": [
+    {
+     "words": [
+      [
+       "IT",
+       1.7
+      ],
+      [
+       "DOESN'T",
+       2.38
+      ],
+      [
+       "MATTER",
+       2.76
+      ],
+      [
+       "IF",
+       2.98
+      ],
+      [
+       "_",
+       3.22
+      ],
+      [
+       "_",
+       3.34
+      ]
+     ],
+     "style": "sub",
+     "size": 38,
+     "color": "dim"
+    },
+    {
+     "words": [
+      [
+       "_",
+       3.46
+      ],
+      [
+       "BEGINNER",
+       3.54
+      ]
+     ],
+     "style": "big",
+     "size": 130,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "OR",
+       3.8
+      ],
+      [
+       "_",
+       4.34
+      ],
+      [
+       "_",
+       4.72
+      ],
+      [
+       "_",
+       4.98
+      ],
+      [
+       "EXPERIENCED.",
+       5.26
+      ]
+     ],
+     "style": "big",
+     "size": 120,
+     "color": "lime",
+     "ul": true
+    }
+   ]
+  }
+ ],
+ "leaks": [
+  {
+   "t": 1.64,
+   "s": 0.75
+  },
+  {
+   "t": 5.78,
+   "s": 0.75
+  }
+ ],
+ "zoom": [
+  [
+   0.0,
+   1.0
+  ],
+  [
+   7.92,
+   1.0
+  ],
+  [
+   9.12,
+   1.15
+  ],
+  [
+   10.24,
+   1.15
+  ]
+ ],
+ "captions": [
+  {
+   "words": [
+    [
+     "we",
+     5.84
+    ],
+    [
+     "will",
+     6.64
+    ]
+   ],
+   "hl": null,
+   "end": 6.8,
+   "t0": 5.84,
+   "t1": 6.8
+  },
+  {
+   "words": [
+    [
+     "START",
+     6.8
+    ],
+    [
+     "FROM",
+     7.08
+    ],
+    [
+     "YOUR",
+     7.34
+    ],
+    [
+     "LEVEL",
+     7.54
+    ]
+   ],
+   "hl": "lime",
+   "end": 7.92,
+   "t0": 6.8,
+   "t1": 7.92
+  },
+  {
+   "words": [
+    [
+     "and",
+     7.92
+    ],
+    [
+     "improve",
+     8.38
+    ]
+   ],
+   "hl": null,
+   "end": 8.8,
+   "t0": 7.92,
+   "t1": 8.8
+  },
+  {
+   "words": [
+    [
+     "STEP",
+     8.8
+    ],
+    [
+     "BY",
+     9.1
+    ],
+    [
+     "STEP",
+     9.32
+    ]
+   ],
+   "hl": "lime",
+   "end": 9.64,
+   "t0": 8.8,
+   "t1": 10.24
+  }
+ ],
+ "off": [
+  [
+   0.0,
+   1.64
+  ],
+  [
+   1.64,
+   5.78
+  ]
+ ],
+ "sfx": [
+  [
+   "whoosh_soft",
+   6.68,
+   0.55
+  ],
+  [
+   "whoosh_soft",
+   8.68,
+   0.55
+  ]
+ ]
+}

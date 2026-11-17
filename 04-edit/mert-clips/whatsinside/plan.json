@@ -1,0 +1,1074 @@
+{
+ "keep": [
+  [
+   0.0,
+   6.6333
+  ],
+  [
+   6.9,
+   9.9333
+  ],
+  [
+   10.0333,
+   16.2
+  ],
+  [
+   16.4,
+   20.5667
+  ],
+  [
+   20.8,
+   28.8
+  ]
+ ],
+ "dur": 28.0,
+ "anchor": [
+  1095,
+  465
+ ],
+ "intro_t1": 0,
+ "words": [
+  {
+   "w": "Inside",
+   "raw": "Inside",
+   "s": 0.0,
+   "e": 0.72,
+   "n": "inside"
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 0.72,
+   "e": 0.96,
+   "n": "the"
+  },
+  {
+   "w": "Order Flow",
+   "raw": "Orderflow",
+   "s": 0.96,
+   "e": 1.42,
+   "n": "orderflow"
+  },
+  {
+   "w": "Elite",
+   "raw": "Elite",
+   "s": 1.42,
+   "e": 1.76,
+   "n": "elite"
+  },
+  {
+   "w": "Mentorship",
+   "raw": "Mentorship,",
+   "s": 1.76,
+   "e": 2.3,
+   "n": "mentorship"
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 2.56,
+   "e": 2.76,
+   "n": "you"
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 2.76,
+   "e": 2.9,
+   "n": "will"
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 2.9,
+   "e": 3.08,
+   "n": "get"
+  },
+  {
+   "w": "access",
+   "raw": "access",
+   "s": 3.08,
+   "e": 3.42,
+   "n": "access"
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 3.42,
+   "e": 3.62,
+   "n": "to"
+  },
+  {
+   "w": "my",
+   "raw": "my",
+   "s": 3.62,
+   "e": 3.7,
+   "n": "my"
+  },
+  {
+   "w": "complete",
+   "raw": "complete",
+   "s": 3.7,
+   "e": 4.08,
+   "n": "complete"
+  },
+  {
+   "w": "video",
+   "raw": "video",
+   "s": 4.08,
+   "e": 4.44,
+   "n": "video"
+  },
+  {
+   "w": "course",
+   "raw": "course,",
+   "s": 4.44,
+   "e": 4.82,
+   "n": "course"
+  },
+  {
+   "w": "8",
+   "raw": "8",
+   "s": 4.96,
+   "e": 5.42,
+   "n": "8"
+  },
+  {
+   "w": "1-on-1",
+   "raw": "one-on-one",
+   "s": 5.42,
+   "e": 5.88,
+   "n": "oneonone"
+  },
+  {
+   "w": "calls",
+   "raw": "calls",
+   "s": 5.88,
+   "e": 6.16,
+   "n": "calls"
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 6.16,
+   "e": 6.36,
+   "n": "with"
+  },
+  {
+   "w": "me",
+   "raw": "me,",
+   "s": 6.36,
+   "e": 6.56,
+   "n": "me"
+  },
+  {
+   "w": "daily",
+   "raw": "daily",
+   "s": 6.673,
+   "e": 6.953,
+   "n": "daily"
+  },
+  {
+   "w": "live",
+   "raw": "live",
+   "s": 6.953,
+   "e": 7.273,
+   "n": "live"
+  },
+  {
+   "w": "pre-markets",
+   "raw": "pre-markets",
+   "s": 7.273,
+   "e": 7.933,
+   "n": "premarkets"
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 7.933,
+   "e": 8.293,
+   "n": "and"
+  },
+  {
+   "w": "daily",
+   "raw": "daily",
+   "s": 8.293,
+   "e": 8.593,
+   "n": "daily"
+  },
+  {
+   "w": "trading",
+   "raw": "trading",
+   "s": 8.593,
+   "e": 8.913,
+   "n": "trading"
+  },
+  {
+   "w": "sessions",
+   "raw": "sessions,",
+   "s": 8.913,
+   "e": 9.453,
+   "n": "sessions"
+  },
+  {
+   "w": "weekly",
+   "raw": "weekly",
+   "s": 9.713,
+   "e": 10.053,
+   "n": "weekly"
+  },
+  {
+   "w": "trade",
+   "raw": "trade",
+   "s": 10.053,
+   "e": 10.433,
+   "n": "trade"
+  },
+  {
+   "w": "recaps",
+   "raw": "recaps",
+   "s": 10.433,
+   "e": 11.053,
+   "n": "recaps"
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 11.053,
+   "e": 11.473,
+   "n": "and"
+  },
+  {
+   "w": "our",
+   "raw": "our",
+   "s": 11.473,
+   "e": 11.693,
+   "n": "our"
+  },
+  {
+   "w": "private",
+   "raw": "private",
+   "s": 11.693,
+   "e": 12.133,
+   "n": "private"
+  },
+  {
+   "w": "trading",
+   "raw": "trading",
+   "s": 12.133,
+   "e": 12.553,
+   "n": "trading"
+  },
+  {
+   "w": "community",
+   "raw": "community.",
+   "s": 12.553,
+   "e": 13.133,
+   "n": "community"
+  },
+  {
+   "w": "You",
+   "raw": "You",
+   "s": 13.433,
+   "e": 13.873,
+   "n": "you"
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 13.873,
+   "e": 14.013,
+   "n": "will"
+  },
+  {
+   "w": "also",
+   "raw": "also",
+   "s": 14.013,
+   "e": 14.313,
+   "n": "also"
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 14.313,
+   "e": 14.513,
+   "n": "get"
+  },
+  {
+   "w": "personal",
+   "raw": "personal",
+   "s": 14.513,
+   "e": 14.933,
+   "n": "personal"
+  },
+  {
+   "w": "trading",
+   "raw": "trading",
+   "s": 14.933,
+   "e": 15.353,
+   "n": "trading"
+  },
+  {
+   "w": "plan",
+   "raw": "plan,",
+   "s": 15.353,
+   "e": 15.753,
+   "n": "plan"
+  },
+  {
+   "w": "direct",
+   "raw": "direct",
+   "s": 15.873,
+   "e": 16.213,
+   "n": "direct"
+  },
+  {
+   "w": "support",
+   "raw": "support",
+   "s": 16.213,
+   "e": 16.593,
+   "n": "support"
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 16.593,
+   "e": 16.933,
+   "n": "from"
+  },
+  {
+   "w": "me",
+   "raw": "me",
+   "s": 16.933,
+   "e": 17.193,
+   "n": "me"
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 17.193,
+   "e": 17.753,
+   "n": "and"
+  },
+  {
+   "w": "4",
+   "raw": "4",
+   "s": 17.753,
+   "e": 18.133,
+   "n": "4"
+  },
+  {
+   "w": "extra",
+   "raw": "extra",
+   "s": 18.133,
+   "e": 18.593,
+   "n": "extra"
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 18.593,
+   "e": 18.913,
+   "n": "weeks"
+  },
+  {
+   "w": "follow-up",
+   "raw": "follow-up",
+   "s": 18.913,
+   "e": 19.473,
+   "n": "followup"
+  },
+  {
+   "w": "support",
+   "raw": "support.",
+   "s": 19.473,
+   "e": 19.893,
+   "n": "support"
+  },
+  {
+   "w": "The",
+   "raw": "The",
+   "s": 20.06,
+   "e": 20.38,
+   "n": "the"
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 20.38,
+   "e": 20.66,
+   "n": "goal"
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 20.66,
+   "e": 20.92,
+   "n": "is"
+  },
+  {
+   "w": "simple",
+   "raw": "simple,",
+   "s": 20.92,
+   "e": 21.36,
+   "n": "simple"
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 21.6,
+   "e": 21.94,
+   "n": "to"
+  },
+  {
+   "w": "help",
+   "raw": "help",
+   "s": 21.94,
+   "e": 22.18,
+   "n": "help"
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 22.18,
+   "e": 22.34,
+   "n": "you"
+  },
+  {
+   "w": "master",
+   "raw": "master",
+   "s": 22.34,
+   "e": 22.68,
+   "n": "master"
+  },
+  {
+   "w": "auction",
+   "raw": "auction",
+   "s": 22.68,
+   "e": 22.98,
+   "n": "auction"
+  },
+  {
+   "w": "market",
+   "raw": "market",
+   "s": 22.98,
+   "e": 23.34,
+   "n": "market"
+  },
+  {
+   "w": "theory",
+   "raw": "theory",
+   "s": 23.34,
+   "e": 23.72,
+   "n": "theory"
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 23.72,
+   "e": 24.02,
+   "n": "and"
+  },
+  {
+   "w": "order",
+   "raw": "order",
+   "s": 24.02,
+   "e": 24.3,
+   "n": "order"
+  },
+  {
+   "w": "flow",
+   "raw": "flow",
+   "s": 24.3,
+   "e": 24.62,
+   "n": "flow"
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 24.62,
+   "e": 25.2,
+   "n": "and"
+  },
+  {
+   "w": "become",
+   "raw": "become",
+   "s": 25.2,
+   "e": 25.58,
+   "n": "become"
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 25.58,
+   "e": 25.74,
+   "n": "a"
+  },
+  {
+   "w": "confident",
+   "raw": "confident",
+   "s": 25.74,
+   "e": 26.26,
+   "n": "confident"
+  },
+  {
+   "w": "independent",
+   "raw": "independent",
+   "s": 26.26,
+   "e": 26.72,
+   "n": "independent"
+  },
+  {
+   "w": "trader",
+   "raw": "trader.",
+   "s": 26.72,
+   "e": 27.4,
+   "n": "trader"
+  }
+ ],
+ "scenes": [
+  {
+   "kind": "iman",
+   "t0": 0.0,
+   "t1": 2.5,
+   "full": true,
+   "cy": 520,
+   "rows": [
+    {
+     "words": [
+      [
+       "INSIDE",
+       0.0
+      ],
+      [
+       "THE",
+       0.72
+      ]
+     ],
+     "style": "sub",
+     "size": 38,
+     "color": "dim"
+    },
+    {
+     "words": [
+      [
+       "ORDER FLOW",
+       0.96
+      ],
+      [
+       "ELITE",
+       1.42
+      ]
+     ],
+     "style": "big",
+     "size": 110,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "MENTORSHIP.",
+       1.76
+      ]
+     ],
+     "style": "big",
+     "size": 120,
+     "color": "lime",
+     "ul": true
+    }
+   ]
+  },
+  {
+   "kind": "split",
+   "t0": 2.5,
+   "t1": 20.0,
+   "t_swap": 13.133,
+   "a": [
+    {
+     "words": [
+      [
+       "YOU GET ACCESS TO",
+       2.56
+      ]
+     ],
+     "style": "sub",
+     "size": 32,
+     "color": "lime"
+    },
+    {
+     "words": [
+      [
+       "_",
+       3.62
+      ],
+      [
+       "COMPLETE",
+       3.7
+      ],
+      [
+       "VIDEO",
+       4.08
+      ],
+      [
+       "COURSE",
+       4.44
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "8",
+       4.96
+      ],
+      [
+       "1-ON-1",
+       5.42
+      ],
+      [
+       "CALLS",
+       5.88
+      ],
+      [
+       "WITH",
+       6.16
+      ],
+      [
+       "ME",
+       6.36
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "DAILY",
+       6.673
+      ],
+      [
+       "LIVE",
+       6.953
+      ],
+      [
+       "PRE-MARKETS",
+       7.273
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "_",
+       7.933
+      ],
+      [
+       "DAILY",
+       8.293
+      ],
+      [
+       "TRADING",
+       8.593
+      ],
+      [
+       "SESSIONS",
+       8.913
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "WEEKLY",
+       9.713
+      ],
+      [
+       "TRADE",
+       10.053
+      ],
+      [
+       "RECAPS",
+       10.433
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "_",
+       11.053
+      ],
+      [
+       "_",
+       11.473
+      ],
+      [
+       "PRIVATE",
+       11.693
+      ],
+      [
+       "TRADING",
+       12.133
+      ],
+      [
+       "COMMUNITY",
+       12.553
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    }
+   ],
+   "b": [
+    {
+     "words": [
+      [
+       "YOU ALSO GET",
+       13.433
+      ]
+     ],
+     "style": "sub",
+     "size": 32,
+     "color": "lime"
+    },
+    {
+     "words": [
+      [
+       "PERSONAL",
+       14.513
+      ],
+      [
+       "TRADING",
+       14.933
+      ],
+      [
+       "PLAN",
+       15.353
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "DIRECT",
+       15.873
+      ],
+      [
+       "SUPPORT",
+       16.213
+      ],
+      [
+       "FROM",
+       16.593
+      ],
+      [
+       "ME",
+       16.933
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "_",
+       17.193
+      ],
+      [
+       "4",
+       17.753
+      ],
+      [
+       "EXTRA",
+       18.133
+      ],
+      [
+       "WEEKS",
+       18.593
+      ],
+      [
+       "FOLLOW-UP",
+       18.913
+      ],
+      [
+       "SUPPORT",
+       19.473
+      ]
+     ],
+     "style": "item",
+     "size": 40,
+     "color": "white"
+    }
+   ]
+  },
+  {
+   "kind": "iman",
+   "t0": 20.0,
+   "t1": 24.56,
+   "full": true,
+   "rows": [
+    {
+     "words": [
+      [
+       "THE",
+       20.06
+      ],
+      [
+       "GOAL",
+       20.38
+      ],
+      [
+       "IS",
+       20.66
+      ],
+      [
+       "SIMPLE.",
+       20.92
+      ]
+     ],
+     "style": "sub",
+     "size": 38,
+     "color": "dim"
+    },
+    {
+     "words": [
+      [
+       "_",
+       21.6
+      ],
+      [
+       "_",
+       21.94
+      ],
+      [
+       "_",
+       22.18
+      ],
+      [
+       "MASTER",
+       22.34
+      ]
+     ],
+     "style": "sub",
+     "size": 42,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "AUCTION",
+       22.68
+      ],
+      [
+       "MARKET",
+       22.98
+      ],
+      [
+       "THEORY",
+       23.34
+      ]
+     ],
+     "style": "big",
+     "size": 82,
+     "color": "white"
+    },
+    {
+     "words": [
+      [
+       "_",
+       23.72
+      ],
+      [
+       "ORDER",
+       24.02
+      ],
+      [
+       "FLOW.",
+       24.3
+      ]
+     ],
+     "style": "big",
+     "size": 112,
+     "color": "lime",
+     "ul": true
+    }
+   ],
+   "cy": 520
+  }
+ ],
+ "leaks": [
+  {
+   "t": 2.5,
+   "s": 0.75
+  },
+  {
+   "t": 20.0,
+   "s": 0.75
+  },
+  {
+   "t": 24.56,
+   "s": 0.75
+  }
+ ],
+ "zoom": [
+  [
+   0.0,
+   1.0
+  ],
+  [
+   24.62,
+   1.0
+  ],
+  [
+   26.22,
+   1.14
+  ],
+  [
+   28.0,
+   1.14
+  ]
+ ],
+ "captions": [
+  {
+   "words": [
+    [
+     "and",
+     24.62
+    ],
+    [
+     "become",
+     25.2
+    ],
+    [
+     "a",
+     25.58
+    ]
+   ],
+   "hl": null,
+   "end": 25.74,
+   "t0": 24.62,
+   "t1": 25.74
+  },
+  {
+   "words": [
+    [
+     "CONFIDENT",
+     25.74
+    ],
+    [
+     "INDEPENDENT",
+     26.26
+    ],
+    [
+     "TRADER",
+     26.72
+    ]
+   ],
+   "hl": "lime",
+   "end": 27.4,
+   "t0": 25.74,
+   "t1": 28.0
+  }
+ ],
+ "off": [
+  [
+   0.0,
+   2.5
+  ],
+  [
+   2.5,
+   20.0
+  ],
+  [
+   20.0,
+   24.560000000000002
+  ]
+ ],
+ "sfx": [
+  [
+   "whoosh",
+   2.3,
+   0.9
+  ],
+  [
+   "tick",
+   3.62,
+   0.55
+  ],
+  [
+   "tick",
+   4.96,
+   0.55
+  ],
+  [
+   "tick",
+   6.673,
+   0.55
+  ],
+  [
+   "tick",
+   8.293,
+   0.55
+  ],
+  [
+   "tick",
+   9.713,
+   0.55
+  ],
+  [
+   "tick",
+   11.693,
+   0.55
+  ],
+  [
+   "whoosh_soft",
+   13.083,
+   0.7
+  ],
+  [
+   "tick",
+   14.513,
+   0.55
+  ],
+  [
+   "tick",
+   15.873,
+   0.55
+  ],
+  [
+   "tick",
+   17.753,
+   0.55
+  ],
+  [
+   "whoosh",
+   19.82,
+   1.0
+  ],
+  [
+   "whoosh_soft",
+   25.62,
+   0.55
+  ]
+ ]
+}
